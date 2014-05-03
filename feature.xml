@@ -172,13 +172,6 @@
          unpack="false"/>
 
    <plugin
-         id="com.jcraft.jsch"
-         download-size="0"
-         install-size="0"
-         version="0.1.41.v201101211617"
-         unpack="false"/>
-
-   <plugin
          id="com.jcraft.jsch.agentproxy.connector-factory"
          download-size="0"
          install-size="0"
@@ -218,13 +211,6 @@
          download-size="0"
          install-size="0"
          version="0.0.7"
-         unpack="false"/>
-
-   <plugin
-         id="com.jcraft.jsch.source"
-         download-size="0"
-         install-size="0"
-         version="0.1.41.v201101211617"
          unpack="false"/>
 
    <plugin
@@ -611,6 +597,13 @@
          download-size="0"
          install-size="0"
          version="3.0.0.v201112011016"
+         unpack="false"/>
+
+   <plugin
+         id="com.sun.jna"
+         download-size="0"
+         install-size="0"
+         version="3.0.0"
          unpack="false"/>
 
 </feature>
