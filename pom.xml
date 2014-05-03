@@ -45,6 +45,10 @@
 						<goals>
 							<goal>publish-features-and-bundles</goal>
 						</goals>
+						<configuration>
+							<compress>false</compress>
+							<name>jclouds2p2</name>
+						</configuration>
 					</execution>
 				</executions>
 			</plugin>
