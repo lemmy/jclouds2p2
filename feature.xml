@@ -494,13 +494,6 @@
          unpack="false"/>
 
    <plugin
-         id="virtualbox"
-         download-size="0"
-         install-size="0"
-         version="1.7.2"
-         unpack="false"/>
-
-   <plugin
          id="org.apache.servicemix.bundles.aopalliance"
          download-size="0"
          install-size="0"
@@ -551,41 +544,6 @@
          unpack="false"/>
 
    <plugin
-         id="org.eclipse.jetty.continuation"
-         download-size="0"
-         install-size="0"
-         version="8.1.8.v20121106"
-         unpack="false"/>
-
-   <plugin
-         id="org.eclipse.jetty.http"
-         download-size="0"
-         install-size="0"
-         version="8.1.8.v20121106"
-         unpack="false"/>
-
-   <plugin
-         id="org.eclipse.jetty.io"
-         download-size="0"
-         install-size="0"
-         version="8.1.8.v20121106"
-         unpack="false"/>
-
-   <plugin
-         id="org.eclipse.jetty.server"
-         download-size="0"
-         install-size="0"
-         version="8.1.8.v20121106"
-         unpack="false"/>
-
-   <plugin
-         id="org.eclipse.jetty.util"
-         download-size="0"
-         install-size="0"
-         version="8.1.8.v20121106"
-         unpack="false"/>
-
-   <plugin
          id="javax.ws.rs.jsr311-api"
          download-size="0"
          install-size="0"
@@ -593,17 +551,17 @@
          unpack="false"/>
 
    <plugin
-         id="javax.servlet"
-         download-size="0"
-         install-size="0"
-         version="3.0.0.v201112011016"
-         unpack="false"/>
-
-   <plugin
          id="com.sun.jna"
          download-size="0"
          install-size="0"
          version="3.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.apache.servicemix.bundles.java-xmlbuilder"
+         download-size="0"
+         install-size="0"
+         version="0.6.0.1"
          unpack="false"/>
 
 </feature>
