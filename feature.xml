@@ -2,7 +2,7 @@
 <feature
       id="org.apache.jclouds.feature"
       label="Feature"
-      version="1.0.0.qualifier">
+      version="1.7.3.qualifier">
 
    <description url="http://www.example.com/description">
       [Enter Feature Description here.]
@@ -20,126 +20,126 @@
          id="aws-ec2"
          download-size="0"
          install-size="0"
-         version="1.7.2"
+         version="1.7.3"
          unpack="false"/>
 
    <plugin
          id="aws-s3"
          download-size="0"
          install-size="0"
-         version="1.7.2"
+         version="1.7.3"
          unpack="false"/>
 
    <plugin
          id="ec2"
          download-size="0"
          install-size="0"
-         version="1.7.2"
+         version="1.7.3"
          unpack="false"/>
 
    <plugin
          id="openstack-nova-ec2"
          download-size="0"
          install-size="0"
-         version="1.7.2"
+         version="1.7.3"
          unpack="false"/>
 
    <plugin
          id="jclouds-blobstore"
          download-size="0"
          install-size="0"
-         version="1.7.2"
+         version="1.7.3"
          unpack="false"/>
 
    <plugin
          id="jclouds-bouncycastle"
          download-size="0"
          install-size="0"
-         version="1.7.2"
+         version="1.7.3"
          unpack="false"/>
 
    <plugin
          id="jclouds-compute"
          download-size="0"
          install-size="0"
-         version="1.7.2"
+         version="1.7.3"
          unpack="false"/>
 
    <plugin
          id="jclouds-core"
          download-size="0"
          install-size="0"
-         version="1.7.2"
+         version="1.7.3"
          unpack="false"/>
 
    <plugin
          id="jclouds-enterprise"
          download-size="0"
          install-size="0"
-         version="1.7.2"
+         version="1.7.3"
          unpack="false"/>
 
    <plugin
          id="jclouds-joda"
          download-size="0"
          install-size="0"
-         version="1.7.2"
+         version="1.7.3"
          unpack="false"/>
 
    <plugin
          id="jclouds-netty"
          download-size="0"
          install-size="0"
-         version="1.7.2"
+         version="1.7.3"
          unpack="false"/>
 
    <plugin
          id="jclouds-scriptbuilder"
          download-size="0"
          install-size="0"
-         version="1.7.2"
+         version="1.7.3"
          unpack="false"/>
 
    <plugin
          id="jclouds-slf4j"
          download-size="0"
          install-size="0"
-         version="1.7.2"
+         version="1.7.3"
          unpack="false"/>
 
    <plugin
          id="jclouds-sshj"
          download-size="0"
          install-size="0"
-         version="1.7.2"
+         version="1.7.3"
          unpack="false"/>
 
    <plugin
          id="openhosting-east1"
          download-size="0"
          install-size="0"
-         version="1.7.2"
+         version="1.7.3"
          unpack="false"/>
 
    <plugin
          id="openstack-common"
          download-size="0"
          install-size="0"
-         version="1.7.2"
+         version="1.7.3"
          unpack="false"/>
 
    <plugin
          id="openstack-keystone"
          download-size="0"
          install-size="0"
-         version="1.7.2"
+         version="1.7.3"
          unpack="false"/>
 
    <plugin
          id="openstack-nova"
          download-size="0"
          install-size="0"
-         version="1.7.2"
+         version="1.7.3"
          unpack="false"/>
 
    <plugin
@@ -217,7 +217,7 @@
          id="go2cloud-jhb1"
          download-size="0"
          install-size="0"
-         version="1.7.2"
+         version="1.7.3"
          unpack="false"/>
 
    <plugin
@@ -231,14 +231,14 @@
          id="joyent-cloudapi"
          download-size="0"
          install-size="0"
-         version="1.7.2"
+         version="1.7.3"
          unpack="false"/>
 
    <plugin
          id="joyentcloud"
          download-size="0"
          install-size="0"
-         version="1.7.2"
+         version="1.7.3"
          unpack="false"/>
 
    <plugin
@@ -329,133 +329,133 @@
          id="bluelock-vcloud-zone01"
          download-size="0"
          install-size="0"
-         version="1.7.2"
+         version="1.7.3"
          unpack="false"/>
 
    <plugin
          id="byon"
          download-size="0"
          install-size="0"
-         version="1.7.2"
+         version="1.7.3"
          unpack="false"/>
 
    <plugin
          id="cloudservers"
          download-size="0"
          install-size="0"
-         version="1.7.2"
+         version="1.7.3"
          unpack="false"/>
 
    <plugin
          id="cloudservers-uk"
          download-size="0"
          install-size="0"
-         version="1.7.2"
+         version="1.7.3"
          unpack="false"/>
 
    <plugin
          id="cloudservers-us"
          download-size="0"
          install-size="0"
-         version="1.7.2"
+         version="1.7.3"
          unpack="false"/>
 
    <plugin
          id="cloudsigma"
          download-size="0"
          install-size="0"
-         version="1.7.2"
+         version="1.7.3"
          unpack="false"/>
 
    <plugin
          id="cloudsigma-lvs"
          download-size="0"
          install-size="0"
-         version="1.7.2"
+         version="1.7.3"
          unpack="false"/>
 
    <plugin
          id="cloudsigma-zrh"
          download-size="0"
          install-size="0"
-         version="1.7.2"
+         version="1.7.3"
          unpack="false"/>
 
    <plugin
          id="cloudstack"
          download-size="0"
          install-size="0"
-         version="1.7.2"
+         version="1.7.3"
          unpack="false"/>
 
    <plugin
          id="greenhousedata-element-vcloud"
          download-size="0"
          install-size="0"
-         version="1.7.2"
+         version="1.7.3"
          unpack="false"/>
 
    <plugin
          id="hpcloud-compute"
          download-size="0"
          install-size="0"
-         version="1.7.2"
+         version="1.7.3"
          unpack="false"/>
 
    <plugin
          id="rackspace-cloudidentity"
          download-size="0"
          install-size="0"
-         version="1.7.2"
+         version="1.7.3"
          unpack="false"/>
 
    <plugin
          id="rackspace-cloudservers-uk"
          download-size="0"
          install-size="0"
-         version="1.7.2"
+         version="1.7.3"
          unpack="false"/>
 
    <plugin
          id="rackspace-cloudservers-us"
          download-size="0"
          install-size="0"
-         version="1.7.2"
+         version="1.7.3"
          unpack="false"/>
 
    <plugin
          id="elastichosts-lon-b"
          download-size="0"
          install-size="0"
-         version="1.7.2"
+         version="1.7.3"
          unpack="false"/>
 
    <plugin
          id="elastichosts-lon-p"
          download-size="0"
          install-size="0"
-         version="1.7.2"
+         version="1.7.3"
          unpack="false"/>
 
    <plugin
          id="elastichosts-sat-p"
          download-size="0"
          install-size="0"
-         version="1.7.2"
+         version="1.7.3"
          unpack="false"/>
 
    <plugin
          id="elasticstack"
          download-size="0"
          install-size="0"
-         version="1.7.2"
+         version="1.7.3"
          unpack="false"/>
 
    <plugin
          id="gogrid"
          download-size="0"
          install-size="0"
-         version="1.7.2"
+         version="1.7.3"
          unpack="false"/>
 
    <plugin
@@ -469,28 +469,28 @@
          id="skalicloud-sdg-my"
          download-size="0"
          install-size="0"
-         version="1.7.2"
+         version="1.7.3"
          unpack="false"/>
 
    <plugin
          id="ninefold-compute"
          download-size="0"
          install-size="0"
-         version="1.7.2"
+         version="1.7.3"
          unpack="false"/>
 
    <plugin
          id="serverlove-z1-man"
          download-size="0"
          install-size="0"
-         version="1.7.2"
+         version="1.7.3"
          unpack="false"/>
 
    <plugin
          id="softlayer"
          download-size="0"
          install-size="0"
-         version="1.7.2"
+         version="1.7.3"
          unpack="false"/>
 
    <plugin
@@ -512,14 +512,14 @@
          id="vcloud"
          download-size="0"
          install-size="0"
-         version="1.7.2"
+         version="1.7.3"
          unpack="false"/>
 
    <plugin
          id="s3"
          download-size="0"
          install-size="0"
-         version="1.7.2"
+         version="1.7.3"
          unpack="false"/>
 
    <plugin
@@ -533,7 +533,7 @@
          id="sts"
          download-size="0"
          install-size="0"
-         version="1.7.2"
+         version="1.7.3"
          unpack="false"/>
 
    <plugin
