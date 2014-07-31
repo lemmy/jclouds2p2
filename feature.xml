@@ -187,6 +187,7 @@
 
    <plugin
          id="com.jcraft.jsch.agentproxy.pageant"
+         os="win32"
          download-size="0"
          install-size="0"
          version="0.0.7"
@@ -194,6 +195,7 @@
 
    <plugin
          id="com.jcraft.jsch.agentproxy.sshagent"
+         os="linux,macosx"
          download-size="0"
          install-size="0"
          version="0.0.7"
@@ -201,6 +203,7 @@
 
    <plugin
          id="com.jcraft.jsch.agentproxy.usocket-jna"
+         os="win32"
          download-size="0"
          install-size="0"
          version="0.0.7"
@@ -208,6 +211,7 @@
 
    <plugin
          id="com.jcraft.jsch.agentproxy.usocket-nc"
+         os="linux,macosx"
          download-size="0"
          install-size="0"
          version="0.0.7"
