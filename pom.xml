@@ -8,6 +8,10 @@
 	<version>1.7.3-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	
+	<modules>
+		<module>jsch-agentproxy-fat</module>
+	</modules>
+
 	<build>
 		<plugins>
 			<!-- materialize pom dependencies to target folder -->
@@ -52,6 +56,27 @@
 									<directory>${basedir}</directory>
 									<includes>
 										<include>feature.xml</include>
+									</includes>
+								</resource>
+							</resources>
+						</configuration>
+					</execution>
+					<!-- Copy nested jsch bundle to to target/source/plugins -->
+					<!-- to be picked up by the tycho's publish-features-and-bundles below.  -->
+					<execution>
+						<id>copy-resources-jsch</id>
+						<!-- here the phase you need -->
+						<phase>package</phase>
+						<goals>
+							<goal>copy-resources</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>${basedir}/target/source/plugins/</outputDirectory>
+							<resources>
+								<resource>
+									<directory>${basedir}/jsch-agentproxy-fat/target/</directory>
+									<includes>
+										<include>jsch.agentproxy.osgi-0.0.7.jar</include>
 									</includes>
 								</resource>
 							</resources>
@@ -171,19 +196,16 @@
 		</dependency>
 		<dependency>
 			<groupId>org.apache.servicemix.bundles</groupId>
-			<artifactId>org.apache.servicemix.bundles.jsch-agentproxy-sshj</artifactId>
-			<version>0.0.7_1</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.servicemix.bundles</groupId>
 			<artifactId>org.apache.servicemix.bundles.jsch</artifactId>
 			<version>0.1.51_1</version>
 		</dependency>
+<!--
 		<dependency>
-			<groupId>org.apache.servicemix.bundles</groupId>
-			<artifactId>org.apache.servicemix.bundles.jsch-agentproxy-jsch</artifactId>
-			<version>0.0.7_1</version>
+			<groupId>com.jcraft</groupId>
+			<artifactId>jsch.agentproxy.osgi</artifactId>
+			<version>0.0.7</version>
 		</dependency>
+-->
 		<dependency>
 			<groupId>org.apache.servicemix.bundles</groupId>
 			<artifactId>org.apache.servicemix.bundles.javax-inject</artifactId>

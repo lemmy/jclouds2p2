@@ -2,7 +2,7 @@
 <feature
       id="org.apache.jclouds.feature"
       label="Feature"
-      version="1.7.3.qualifier">
+      version="1.7.3.7">
 
    <description url="http://www.example.com/description">
       [Enter Feature Description here.]
@@ -172,46 +172,7 @@
          unpack="false"/>
 
    <plugin
-         id="com.jcraft.jsch.agentproxy.connector-factory"
-         download-size="0"
-         install-size="0"
-         version="0.0.7"
-         unpack="false"/>
-
-   <plugin
-         id="com.jcraft.jsch.agentproxy.core"
-         download-size="0"
-         install-size="0"
-         version="0.0.7"
-         unpack="false"/>
-
-   <plugin
-         id="com.jcraft.jsch.agentproxy.pageant"
-         os="win32"
-         download-size="0"
-         install-size="0"
-         version="0.0.7"
-         unpack="false"/>
-
-   <plugin
-         id="com.jcraft.jsch.agentproxy.sshagent"
-         os="linux,macosx"
-         download-size="0"
-         install-size="0"
-         version="0.0.7"
-         unpack="false"/>
-
-   <plugin
-         id="com.jcraft.jsch.agentproxy.usocket-jna"
-         os="win32"
-         download-size="0"
-         install-size="0"
-         version="0.0.7"
-         unpack="false"/>
-
-   <plugin
-         id="com.jcraft.jsch.agentproxy.usocket-nc"
-         os="linux,macosx"
+         id="com.jcraft.jsch.agentproxy.osgi"
          download-size="0"
          install-size="0"
          version="0.0.7"
