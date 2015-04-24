@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/lemmy/jclouds2p2.png?branch=master)](https://travis-ci.org/lemmy/jclouds2p2)
+
 jclouds2p2
 ==========
 
