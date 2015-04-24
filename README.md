@@ -14,4 +14,4 @@ Make sure to start these jclouds bundles explicitly in a launch config to activa
 * sts_1.7.2
 
 
-Build is at http://tla.msr-inria.inria.fr/jclouds2p2/
+Additionally to Travis CI, a build is at http://tla.msr-inria.inria.fr/jclouds2p2/
