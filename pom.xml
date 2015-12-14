@@ -134,6 +134,11 @@
 			<artifactId>aws-ec2</artifactId>
 			<version>1.9.1</version>
 		</dependency>
+		<dependency>
+			<groupId>org.apache.jclouds.labs</groupId>
+			<artifactId>azurecompute</artifactId>
+			<version>1.9.1</version>
+		</dependency>
 		<!-- note that if you want a smaller distribution remove the above dependency 
 			and place something like below -->
 		<!-- <dependency> <groupId>org.apache.jclouds.provider</groupId> <artifactId>gogrid</artifactId> 
