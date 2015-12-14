@@ -2,10 +2,10 @@
 <?metadataRepository version='1.1.0'?>
 <repository name='file:/home/markus/src/TLA/jclouds2p2/target/repository - metadata' type='org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository' version='1'>
   <properties size='2'>
-    <property name='p2.timestamp' value='1449669996329'/>
+    <property name='p2.timestamp' value='1449689008768'/>
     <property name='p2.compressed' value='false'/>
   </properties>
-  <units size='46'>
+  <units size='47'>
     <unit id='jclouds-scriptbuilder' version='1.9.1' singleton='false'>
       <update id='jclouds-scriptbuilder' range='[0.0.0,1.9.1)' severity='0'/>
       <properties size='4'>
@@ -152,38 +152,8 @@
         </instructions>
       </touchpointData>
     </unit>
-    <unit id='com.jcraft.jsch.agentproxy.connector-factory' version='0.0.8' singleton='false'>
-      <update id='com.jcraft.jsch.agentproxy.connector-factory' range='[0.0.0,0.0.8)' severity='0'/>
-      <properties size='4'>
-        <property name='org.eclipse.equinox.p2.name' value='a connector factory'/>
-        <property name='org.eclipse.equinox.p2.description' value='a proxy to ssh-agent and Pageant in Java'/>
-        <property name='org.eclipse.equinox.p2.provider' value='JCraft,Inc.'/>
-        <property name='org.eclipse.equinox.p2.doc.url' value='http://www.jcraft.com/'/>
-      </properties>
-      <provides size='4'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='com.jcraft.jsch.agentproxy.connector-factory' version='0.0.8'/>
-        <provided namespace='osgi.bundle' name='com.jcraft.jsch.agentproxy.connector-factory' version='0.0.8'/>
-        <provided namespace='java.package' name='com.jcraft.jsch.agentproxy' version='0.0.8'/>
-        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
-      </provides>
-      <requires size='2'>
-        <required namespace='java.package' name='com.jcraft.jsch.agentproxy.connector' range='[0.0.0,1.0.0)'/>
-        <required namespace='java.package' name='com.jcraft.jsch.agentproxy.usocket' range='[0.0.0,1.0.0)'/>
-      </requires>
-      <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='com.jcraft.jsch.agentproxy.connector-factory' version='0.0.8'/>
-      </artifacts>
-      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='1'>
-          <instruction key='manifest'>
-            Bundle-SymbolicName: com.jcraft.jsch.agentproxy.connector-factory&#xA;Bundle-Version: 0.0.8&#xA;
-          </instruction>
-        </instructions>
-      </touchpointData>
-    </unit>
-    <unit id='org.apache.jclouds.feature.feature.group' version='1.9.1.0' singleton='false'>
-      <update id='org.apache.jclouds.feature.feature.group' range='[0.0.0,1.9.1.0)' severity='0'/>
+    <unit id='org.apache.jclouds.feature.feature.group' version='1.9.1.1' singleton='false'>
+      <update id='org.apache.jclouds.feature.feature.group' range='[0.0.0,1.9.1.1)' severity='0'/>
       <properties size='4'>
         <property name='org.eclipse.equinox.p2.name' value='Feature'/>
         <property name='org.eclipse.equinox.p2.description' value='[Enter Feature Description here.]'/>
@@ -191,12 +161,13 @@
         <property name='org.eclipse.equinox.p2.type.group' value='true'/>
       </properties>
       <provides size='1'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='org.apache.jclouds.feature.feature.group' version='1.9.1.0'/>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.apache.jclouds.feature.feature.group' version='1.9.1.1'/>
       </provides>
-      <requires size='36'>
+      <requires size='37'>
         <required namespace='org.eclipse.equinox.p2.iu' name='aws-ec2' range='[1.9.1,1.9.1]'/>
         <required namespace='org.eclipse.equinox.p2.iu' name='aws-s3' range='[1.9.1,1.9.1]'/>
         <required namespace='org.eclipse.equinox.p2.iu' name='ec2' range='[1.9.1,1.9.1]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='azurecompute' range='[1.9.1,1.9.1]'/>
         <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-blobstore' range='[1.9.1,1.9.1]'/>
         <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-bouncycastle' range='[1.9.1,1.9.1]'/>
         <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-compute' range='[1.9.1,1.9.1]'/>
@@ -229,7 +200,7 @@
         <required namespace='org.eclipse.equinox.p2.iu' name='com.sun.jna' range='[4.1.0,4.1.0]'/>
         <required namespace='org.eclipse.equinox.p2.iu' name='com.sun.jna.platform' range='[4.1.0,4.1.0]'/>
         <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.servicemix.bundles.java-xmlbuilder' range='[0.6.0.1,0.6.0.1]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.jclouds.feature.feature.jar' range='[1.9.1.0,1.9.1.0]'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.jclouds.feature.feature.jar' range='[1.9.1.1,1.9.1.1]'>
           <filter>
             (org.eclipse.update.install.features=true)
           </filter>
@@ -244,6 +215,36 @@
       <copyright uri='http://www.example.com/copyright' url='http://www.example.com/copyright'>
         [Enter Copyright Description here.]
       </copyright>
+    </unit>
+    <unit id='com.jcraft.jsch.agentproxy.connector-factory' version='0.0.8' singleton='false'>
+      <update id='com.jcraft.jsch.agentproxy.connector-factory' range='[0.0.0,0.0.8)' severity='0'/>
+      <properties size='4'>
+        <property name='org.eclipse.equinox.p2.name' value='a connector factory'/>
+        <property name='org.eclipse.equinox.p2.description' value='a proxy to ssh-agent and Pageant in Java'/>
+        <property name='org.eclipse.equinox.p2.provider' value='JCraft,Inc.'/>
+        <property name='org.eclipse.equinox.p2.doc.url' value='http://www.jcraft.com/'/>
+      </properties>
+      <provides size='4'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='com.jcraft.jsch.agentproxy.connector-factory' version='0.0.8'/>
+        <provided namespace='osgi.bundle' name='com.jcraft.jsch.agentproxy.connector-factory' version='0.0.8'/>
+        <provided namespace='java.package' name='com.jcraft.jsch.agentproxy' version='0.0.8'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='2'>
+        <required namespace='java.package' name='com.jcraft.jsch.agentproxy.connector' range='[0.0.0,1.0.0)'/>
+        <required namespace='java.package' name='com.jcraft.jsch.agentproxy.usocket' range='[0.0.0,1.0.0)'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='com.jcraft.jsch.agentproxy.connector-factory' version='0.0.8'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: com.jcraft.jsch.agentproxy.connector-factory&#xA;Bundle-Version: 0.0.8&#xA;
+          </instruction>
+        </instructions>
+      </touchpointData>
     </unit>
     <unit id='aws-s3' version='1.9.1' singleton='false'>
       <update id='aws-s3' range='[0.0.0,1.9.1)' severity='0'/>
@@ -476,6 +477,104 @@
         <instructions size='1'>
           <instruction key='manifest'>
             Bundle-SymbolicName: com.jcraft.jsch.agentproxy.usocket-jna&#xA;Bundle-Version: 0.0.8&#xA;
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='azurecompute' version='1.9.1' singleton='false'>
+      <update id='azurecompute' range='[0.0.0,1.9.1)' severity='0'/>
+      <properties size='4'>
+        <property name='org.eclipse.equinox.p2.name' value='jclouds azure compute API'/>
+        <property name='org.eclipse.equinox.p2.description' value='jclouds components to access an implementation of Azure&apos;s Compute Service'/>
+        <property name='org.eclipse.equinox.p2.provider' value='The Apache Software Foundation'/>
+        <property name='org.eclipse.equinox.p2.doc.url' value='http://www.apache.org/'/>
+      </properties>
+      <provides size='21'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='azurecompute' version='1.9.1'/>
+        <provided namespace='osgi.bundle' name='azurecompute' version='1.9.1'/>
+        <provided namespace='java.package' name='org.jclouds.azurecompute.xml' version='1.9.1'/>
+        <provided namespace='java.package' name='org.jclouds.azurecompute.compute.functions.internal' version='1.9.1'/>
+        <provided namespace='java.package' name='org.jclouds.azurecompute.functions' version='1.9.1'/>
+        <provided namespace='java.package' name='org.jclouds.azurecompute.config' version='1.9.1'/>
+        <provided namespace='java.package' name='org.jclouds.azurecompute.binders' version='1.9.1'/>
+        <provided namespace='java.package' name='org.jclouds.azurecompute.options' version='1.9.1'/>
+        <provided namespace='java.package' name='org.jclouds.azurecompute' version='1.9.1'/>
+        <provided namespace='java.package' name='org.jclouds.azurecompute.features' version='1.9.1'/>
+        <provided namespace='java.package' name='org.jclouds.azurecompute.util' version='1.9.1'/>
+        <provided namespace='java.package' name='org.jclouds.azurecompute.handlers' version='1.9.1'/>
+        <provided namespace='java.package' name='org.jclouds.azurecompute.compute.strategy.impl' version='1.9.1'/>
+        <provided namespace='java.package' name='org.jclouds.azurecompute.compute.functions' version='1.9.1'/>
+        <provided namespace='java.package' name='org.jclouds.azurecompute.domain' version='1.9.1'/>
+        <provided namespace='java.package' name='org.jclouds.azurecompute.suppliers' version='1.9.1'/>
+        <provided namespace='java.package' name='org.jclouds.azurecompute.compute.strategy' version='1.9.1'/>
+        <provided namespace='java.package' name='org.jclouds.azurecompute.compute' version='1.9.1'/>
+        <provided namespace='java.package' name='org.jclouds.azurecompute.compute.extensions' version='1.9.1'/>
+        <provided namespace='java.package' name='org.jclouds.azurecompute.compute.config' version='1.9.1'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='53'>
+        <required namespace='java.package' name='com.google.common.base' range='[16.0.0,17.0.0)'/>
+        <required namespace='java.package' name='com.google.common.collect' range='[16.0.0,17.0.0)'/>
+        <required namespace='java.package' name='com.google.common.io' range='[16.0.0,17.0.0)'/>
+        <required namespace='java.package' name='com.google.common.reflect' range='[16.0.0,17.0.0)'/>
+        <required namespace='java.package' name='com.google.common.util.concurrent' range='[16.0.0,17.0.0)'/>
+        <required namespace='java.package' name='com.google.inject' range='[1.3.0,2.0.0)'/>
+        <required namespace='java.package' name='com.google.inject.binder' range='[1.3.0,2.0.0)'/>
+        <required namespace='java.package' name='com.jamesmurty.utils' range='0.0.0'/>
+        <required namespace='java.package' name='javax.annotation' range='0.0.0'/>
+        <required namespace='java.package' name='javax.inject' range='0.0.0'/>
+        <required namespace='java.package' name='javax.net.ssl' range='0.0.0'/>
+        <required namespace='java.package' name='javax.ws.rs' range='[1.1.0,2.0.0)'/>
+        <required namespace='java.package' name='org.jclouds' range='1.9.1'/>
+        <required namespace='java.package' name='org.jclouds.apis' range='1.9.1'/>
+        <required namespace='java.package' name='org.jclouds.apis.internal' range='1.9.1'/>
+        <required namespace='java.package' name='org.jclouds.collect' range='1.9.1'/>
+        <required namespace='java.package' name='org.jclouds.compute' range='1.9.1'/>
+        <required namespace='java.package' name='org.jclouds.compute.config' range='1.9.1'/>
+        <required namespace='java.package' name='org.jclouds.compute.domain' range='1.9.1'/>
+        <required namespace='java.package' name='org.jclouds.compute.extensions' range='1.9.1'/>
+        <required namespace='java.package' name='org.jclouds.compute.functions' range='1.9.1'/>
+        <required namespace='java.package' name='org.jclouds.compute.options' range='1.9.1'/>
+        <required namespace='java.package' name='org.jclouds.compute.strategy' range='1.9.1'/>
+        <required namespace='java.package' name='org.jclouds.compute.strategy.impl' range='1.9.1'/>
+        <required namespace='java.package' name='org.jclouds.crypto' range='1.9.1'/>
+        <required namespace='java.package' name='org.jclouds.date' range='1.9.1'/>
+        <required namespace='java.package' name='org.jclouds.date.internal' range='1.9.1'/>
+        <required namespace='java.package' name='org.jclouds.domain' range='1.9.1'/>
+        <required namespace='java.package' name='org.jclouds.http' range='1.9.1'/>
+        <required namespace='java.package' name='org.jclouds.http.annotation' range='1.9.1'/>
+        <required namespace='java.package' name='org.jclouds.http.config' range='1.9.1'/>
+        <required namespace='java.package' name='org.jclouds.http.functions' range='1.9.1'/>
+        <required namespace='java.package' name='org.jclouds.io' range='1.9.1'/>
+        <required namespace='java.package' name='org.jclouds.javax.annotation' range='1.9.1'/>
+        <required namespace='java.package' name='org.jclouds.json.config' range='1.9.1'/>
+        <required namespace='java.package' name='org.jclouds.location' range='1.9.1'/>
+        <required namespace='java.package' name='org.jclouds.location.config' range='1.9.1'/>
+        <required namespace='java.package' name='org.jclouds.location.predicates' range='1.9.1'/>
+        <required namespace='java.package' name='org.jclouds.location.suppliers' range='1.9.1'/>
+        <required namespace='java.package' name='org.jclouds.location.suppliers.all' range='1.9.1'/>
+        <required namespace='java.package' name='org.jclouds.location.suppliers.implicit' range='1.9.1'/>
+        <required namespace='java.package' name='org.jclouds.logging' range='1.9.1'/>
+        <required namespace='java.package' name='org.jclouds.net.domain' range='1.9.1'/>
+        <required namespace='java.package' name='org.jclouds.providers' range='1.9.1'/>
+        <required namespace='java.package' name='org.jclouds.providers.internal' range='1.9.1'/>
+        <required namespace='java.package' name='org.jclouds.reflect' range='1.9.1'/>
+        <required namespace='java.package' name='org.jclouds.rest' range='1.9.1'/>
+        <required namespace='java.package' name='org.jclouds.rest.annotations' range='1.9.1'/>
+        <required namespace='java.package' name='org.jclouds.rest.config' range='1.9.1'/>
+        <required namespace='java.package' name='org.jclouds.rest.internal' range='1.9.1'/>
+        <required namespace='java.package' name='org.jclouds.util' range='1.9.1'/>
+        <required namespace='java.package' name='org.xml.sax' range='0.0.0'/>
+        <required namespace='java.package' name='org.xml.sax.helpers' range='0.0.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='azurecompute' version='1.9.1'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: azurecompute&#xA;Bundle-Version: 1.9.1&#xA;
           </instruction>
         </instructions>
       </touchpointData>
@@ -1220,40 +1319,6 @@
         </instructions>
       </touchpointData>
     </unit>
-    <unit id='org.apache.jclouds.feature.feature.jar' version='1.9.1.0'>
-      <properties size='3'>
-        <property name='org.eclipse.equinox.p2.name' value='Feature'/>
-        <property name='org.eclipse.equinox.p2.description' value='[Enter Feature Description here.]'/>
-        <property name='org.eclipse.equinox.p2.description.url' value='http://www.example.com/description'/>
-      </properties>
-      <provides size='3'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='org.apache.jclouds.feature.feature.jar' version='1.9.1.0'/>
-        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
-        <provided namespace='org.eclipse.update.feature' name='org.apache.jclouds.feature' version='1.9.1.0'/>
-      </provides>
-      <filter>
-        (org.eclipse.update.install.features=true)
-      </filter>
-      <artifacts size='1'>
-        <artifact classifier='org.eclipse.update.feature' id='org.apache.jclouds.feature' version='1.9.1.0'/>
-      </artifacts>
-      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='1'>
-          <instruction key='zipped'>
-            true
-          </instruction>
-        </instructions>
-      </touchpointData>
-      <licenses size='1'>
-        <license uri='http://www.example.com/license' url='http://www.example.com/license'>
-          [Enter License Description here.]
-        </license>
-      </licenses>
-      <copyright uri='http://www.example.com/copyright' url='http://www.example.com/copyright'>
-        [Enter Copyright Description here.]
-      </copyright>
-    </unit>
     <unit id='jclouds-bouncycastle' version='1.9.1' singleton='false'>
       <update id='jclouds-bouncycastle' range='[0.0.0,1.9.1)' severity='0'/>
       <properties size='4'>
@@ -1381,6 +1446,40 @@
           </instruction>
         </instructions>
       </touchpointData>
+    </unit>
+    <unit id='org.apache.jclouds.feature.feature.jar' version='1.9.1.1'>
+      <properties size='3'>
+        <property name='org.eclipse.equinox.p2.name' value='Feature'/>
+        <property name='org.eclipse.equinox.p2.description' value='[Enter Feature Description here.]'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='http://www.example.com/description'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.apache.jclouds.feature.feature.jar' version='1.9.1.1'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
+        <provided namespace='org.eclipse.update.feature' name='org.apache.jclouds.feature' version='1.9.1.1'/>
+      </provides>
+      <filter>
+        (org.eclipse.update.install.features=true)
+      </filter>
+      <artifacts size='1'>
+        <artifact classifier='org.eclipse.update.feature' id='org.apache.jclouds.feature' version='1.9.1.1'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+      <licenses size='1'>
+        <license uri='http://www.example.com/license' url='http://www.example.com/license'>
+          [Enter License Description here.]
+        </license>
+      </licenses>
+      <copyright uri='http://www.example.com/copyright' url='http://www.example.com/copyright'>
+        [Enter Copyright Description here.]
+      </copyright>
     </unit>
     <unit id='com.google.inject.assistedinject' version='3.0.0' singleton='false'>
       <update id='com.google.inject.assistedinject' range='[0.0.0,3.0.0)' severity='0'/>
