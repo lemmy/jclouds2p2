@@ -2,7 +2,7 @@
 <?artifactRepository version='1.1.0'?>
 <repository name='file:/home/markus/src/TLA/jclouds2p2/target/repository - artifacts' type='org.eclipse.equinox.p2.artifact.repository.simpleRepository' version='1'>
   <properties size='2'>
-    <property name='p2.timestamp' value='1449689008739'/>
+    <property name='p2.timestamp' value='1450782058991'/>
     <property name='p2.compressed' value='false'/>
   </properties>
   <mappings size='3'>
@@ -11,13 +11,6 @@
     <rule filter='(&amp; (classifier=org.eclipse.update.feature))' output='${repoUrl}/features/${id}_${version}.jar'/>
   </mappings>
   <artifacts size='46'>
-    <artifact classifier='org.eclipse.update.feature' id='org.apache.jclouds.feature' version='1.9.1.1'>
-      <properties size='3'>
-        <property name='artifact.size' value='4096'/>
-        <property name='download.size' value='848'/>
-        <property name='download.contentType' value='application/zip'/>
-      </properties>
-    </artifact>
     <artifact classifier='osgi.bundle' id='com.sun.jna' version='4.1.0'>
       <properties size='3'>
         <property name='artifact.size' value='914597'/>
@@ -298,11 +291,18 @@
         <property name='download.md5' value='c291551124c180d5b0610e7514e5ca1e'/>
       </properties>
     </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.apache.jclouds.feature' version='1.9.1.2'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='862'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='com.jcraft.jsch.agentproxy.osgi' version='0.0.7'>
       <properties size='3'>
-        <property name='artifact.size' value='35305'/>
-        <property name='download.size' value='35305'/>
-        <property name='download.md5' value='c93b6229bc0a00fe8c8883792e4528d7'/>
+        <property name='artifact.size' value='35302'/>
+        <property name='download.size' value='35302'/>
+        <property name='download.md5' value='de514ec9bf0e9c72d1a3f4263a550cea'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='com.jcraft.jsch.agentproxy.usocket-jna' version='0.0.8'>
