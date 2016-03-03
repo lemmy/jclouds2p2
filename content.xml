@@ -2,7 +2,7 @@
 <?metadataRepository version='1.1.0'?>
 <repository name='file:/home/markus/src/TLA/jclouds2p2/target/repository - metadata' type='org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository' version='1'>
   <properties size='2'>
-    <property name='p2.timestamp' value='1450782059019'/>
+    <property name='p2.timestamp' value='1456994088241'/>
     <property name='p2.compressed' value='false'/>
   </properties>
   <units size='47'>
@@ -2557,7 +2557,7 @@
       <provides size='1'>
         <provided namespace='org.eclipse.equinox.p2.iu' name='org.apache.jclouds.feature.feature.group' version='1.9.1.2'/>
       </provides>
-      <requires size='38'>
+      <requires size='39'>
         <required namespace='org.eclipse.equinox.p2.iu' name='aws-ec2' range='[1.9.1,1.9.1]'/>
         <required namespace='org.eclipse.equinox.p2.iu' name='aws-s3' range='[1.9.1,1.9.1]'/>
         <required namespace='org.eclipse.equinox.p2.iu' name='ec2' range='[1.9.1,1.9.1]'/>
@@ -2595,6 +2595,7 @@
         <required namespace='org.eclipse.equinox.p2.iu' name='com.sun.jna' range='[4.1.0,4.1.0]'/>
         <required namespace='org.eclipse.equinox.p2.iu' name='com.sun.jna.platform' range='[4.1.0,4.1.0]'/>
         <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.servicemix.bundles.java-xmlbuilder' range='[0.6.0.1,0.6.0.1]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='rocoto' range='[6.2.0,6.2.0]'/>
         <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.jclouds.feature.feature.jar' range='[1.9.1.2,1.9.1.2]'>
           <filter>
             (org.eclipse.update.install.features=true)
