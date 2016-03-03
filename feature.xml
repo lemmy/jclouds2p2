@@ -294,4 +294,11 @@
          version="0.6.0.1"
          unpack="false"/>
 
+   <plugin
+         id="rocoto"
+         download-size="0"
+         install-size="0"
+         version="6.2.0"
+         unpack="false"/>
+
 </feature>
