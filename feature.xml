@@ -195,20 +195,6 @@
          unpack="false"/>
 
    <plugin
-         id="ch.qos.logback.classic"
-         download-size="0"
-         install-size="0"
-         version="1.0.9"
-         unpack="false"/>
-
-   <plugin
-         id="ch.qos.logback.core"
-         download-size="0"
-         install-size="0"
-         version="1.0.9"
-         unpack="false"/>
-
-   <plugin
          id="bcpkix"
          download-size="0"
          install-size="0"
@@ -249,7 +235,14 @@
          id="slf4j.api"
          download-size="0"
          install-size="0"
-         version="1.7.2"
+         version="1.7.5"
+         unpack="false"/>
+
+   <plugin
+         id="slf4j.nop"
+         download-size="0"
+         install-size="0"
+         version="1.7.5"
          unpack="false"/>
 
    <plugin
