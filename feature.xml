@@ -2,7 +2,7 @@
 <feature
       id="org.apache.jclouds.feature"
       label="Feature"
-      version="1.9.1.2">
+      version="1.9.3.1">
 
    <description url="http://www.example.com/description">
       [Enter Feature Description here.]
@@ -20,98 +20,98 @@
          id="aws-ec2"
          download-size="0"
          install-size="0"
-         version="1.9.1"
+         version="1.9.3"
          unpack="false"/>
 
    <plugin
          id="aws-s3"
          download-size="0"
          install-size="0"
-         version="1.9.1"
+         version="1.9.3"
          unpack="false"/>
 
    <plugin
          id="ec2"
          download-size="0"
          install-size="0"
-         version="1.9.1"
+         version="1.9.3"
          unpack="false"/>
 
    <plugin
          id="azurecompute"
          download-size="0"
          install-size="0"
-         version="1.9.1"
+         version="1.9.3"
          unpack="false"/>
 
    <plugin
          id="jclouds-blobstore"
          download-size="0"
          install-size="0"
-         version="1.9.1"
+         version="1.9.3"
          unpack="false"/>
 
    <plugin
          id="jclouds-bouncycastle"
          download-size="0"
          install-size="0"
-         version="1.9.1"
+         version="1.9.3"
          unpack="false"/>
 
    <plugin
          id="jclouds-compute"
          download-size="0"
          install-size="0"
-         version="1.9.1"
+         version="1.9.3"
          unpack="false"/>
 
    <plugin
          id="jclouds-core"
          download-size="0"
          install-size="0"
-         version="1.9.1"
+         version="1.9.3"
          unpack="false"/>
 
    <plugin
          id="jclouds-enterprise"
          download-size="0"
          install-size="0"
-         version="1.9.1"
+         version="1.9.3"
          unpack="false"/>
 
    <plugin
          id="jclouds-joda"
          download-size="0"
          install-size="0"
-         version="1.9.1"
+         version="1.9.3"
          unpack="false"/>
 
    <plugin
          id="jclouds-netty"
          download-size="0"
          install-size="0"
-         version="1.9.1"
+         version="1.9.3"
          unpack="false"/>
 
    <plugin
          id="jclouds-scriptbuilder"
          download-size="0"
          install-size="0"
-         version="1.9.1"
+         version="1.9.3"
          unpack="false"/>
 
    <plugin
          id="jclouds-slf4j"
          download-size="0"
          install-size="0"
-         version="1.9.1"
+         version="1.9.3"
          unpack="false"/>
 
    <plugin
          id="jclouds-sshj"
          download-size="0"
          install-size="0"
-         version="1.9.1"
+         version="1.9.3"
          unpack="false"/>
 
    <plugin
@@ -228,7 +228,7 @@
          id="s3"
          download-size="0"
          install-size="0"
-         version="1.9.1"
+         version="1.9.3"
          unpack="false"/>
 
    <plugin
@@ -249,7 +249,7 @@
          id="sts"
          download-size="0"
          install-size="0"
-         version="1.9.1"
+         version="1.9.3"
          unpack="false"/>
 
    <plugin
