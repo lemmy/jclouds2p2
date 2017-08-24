@@ -147,7 +147,7 @@
          id="com.jcraft.jsch.agentproxy.osgi"
          download-size="0"
          install-size="0"
-         version="0.0.7"
+         version="0.0.8"
          unpack="false"/>
 
    <plugin
@@ -158,10 +158,10 @@
          unpack="false"/>
 
    <plugin
-         id="net.schmizz.sshj"
+         id="com.hierynomus.sshj"
          download-size="0"
          install-size="0"
-         version="0.9.0"
+         version="0.21.1"
          unpack="false"/>
 
    <plugin

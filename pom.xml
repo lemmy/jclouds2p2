@@ -76,7 +76,7 @@
 								<resource>
 									<directory>${basedir}/jsch-agentproxy-fat/target/</directory>
 									<includes>
-										<include>jsch.agentproxy.osgi-0.0.7.jar</include>
+										<include>jsch.agentproxy.osgi-0.0.8.jar</include>
 									</includes>
 								</resource>
 							</resources>
@@ -208,9 +208,9 @@
 		</dependency>
 
 		<dependency>
-			<groupId>net.schmizz</groupId>
+			<groupId>com.hierynomus</groupId>
 			<artifactId>sshj</artifactId>
-			<version>0.9.0</version>
+			<version>0.21.1</version>
 		</dependency>
 		<dependency>
 			<groupId>net.java.dev.jna</groupId>

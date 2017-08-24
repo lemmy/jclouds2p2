@@ -5,15 +5,15 @@
 
   <groupId>com.jcraft</groupId>
   <artifactId>jsch.agentproxy.osgi</artifactId>
-  <version>0.0.7</version>
+  <version>0.0.8</version>
   <name>Wrapper bundle containing all jsch dependent bundles</name>
   <packaging>bundle</packaging>
 
   <dependencies>
     <dependency>
-      <groupId>net.schmizz</groupId>
+      <groupId>com.hierynomus</groupId>
       <artifactId>sshj</artifactId>
-      <version>0.9.0</version>
+      <version>0.21.1</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
@@ -40,6 +40,13 @@
       <groupId>com.jcraft</groupId>
       <artifactId>jsch.agentproxy.sshj</artifactId>
       <version>${project.version}</version>
+      <exclusions>
+        <!-- required due to sshj group ID change -->
+        <exclusion>
+          <groupId>net.schmizz</groupId>
+          <artifactId>sshj</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>com.jcraft</groupId>
