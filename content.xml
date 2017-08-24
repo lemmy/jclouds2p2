@@ -2,7 +2,7 @@
 <?metadataRepository version='1.1.0'?>
 <repository name='file:/home/markus/src/TLA/jclouds2p2/target/repository - metadata' type='org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository' version='1'>
   <properties size='2'>
-    <property name='p2.timestamp' value='1503328493245'/>
+    <property name='p2.timestamp' value='1503562254718'/>
     <property name='p2.compressed' value='false'/>
   </properties>
   <units size='46'>
@@ -254,8 +254,8 @@
         </instructions>
       </touchpointData>
     </unit>
-    <unit id='jclouds-slf4j' version='1.9.1' singleton='false'>
-      <update id='jclouds-slf4j' range='[0.0.0,1.9.1)' severity='0'/>
+    <unit id='jclouds-slf4j' version='1.9.3' singleton='false'>
+      <update id='jclouds-slf4j' range='[0.0.0,1.9.3)' severity='0'/>
       <properties size='4'>
         <property name='org.eclipse.equinox.p2.name' value='jclouds SLF4J Logging Module'/>
         <property name='org.eclipse.equinox.p2.description' value='jclouds SLF4J Logging Module'/>
@@ -263,25 +263,25 @@
         <property name='org.eclipse.equinox.p2.doc.url' value='http://www.apache.org/'/>
       </properties>
       <provides size='5'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='jclouds-slf4j' version='1.9.1'/>
-        <provided namespace='osgi.bundle' name='jclouds-slf4j' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.logging.slf4j.config' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.logging.slf4j' version='1.9.1'/>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='jclouds-slf4j' version='1.9.3'/>
+        <provided namespace='osgi.bundle' name='jclouds-slf4j' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.logging.slf4j.config' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.logging.slf4j' version='1.9.3'/>
         <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
       </provides>
       <requires size='3'>
-        <required namespace='java.package' name='org.jclouds.logging' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.logging.config' range='1.9.1'/>
+        <required namespace='java.package' name='org.jclouds.logging' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.logging.config' range='1.9.3'/>
         <required namespace='java.package' name='org.slf4j' range='[1.5.0,2.0.0)'/>
       </requires>
       <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='jclouds-slf4j' version='1.9.1'/>
+        <artifact classifier='osgi.bundle' id='jclouds-slf4j' version='1.9.3'/>
       </artifacts>
       <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
       <touchpointData size='1'>
         <instructions size='1'>
           <instruction key='manifest'>
-            Bundle-SymbolicName: jclouds-slf4j&#xA;Bundle-Version: 1.9.1&#xA;
+            Bundle-SymbolicName: jclouds-slf4j&#xA;Bundle-Version: 1.9.3&#xA;
           </instruction>
         </instructions>
       </touchpointData>
@@ -342,8 +342,8 @@
         </instructions>
       </touchpointData>
     </unit>
-    <unit id='jclouds-netty' version='1.9.1' singleton='false'>
-      <update id='jclouds-netty' range='[0.0.0,1.9.1)' severity='0'/>
+    <unit id='jclouds-netty' version='1.9.3' singleton='false'>
+      <update id='jclouds-netty' range='[0.0.0,1.9.3)' severity='0'/>
       <properties size='4'>
         <property name='org.eclipse.equinox.p2.name' value='jclouds netty payload module'/>
         <property name='org.eclipse.equinox.p2.description' value='jclouds netty payload module'/>
@@ -351,10 +351,10 @@
         <property name='org.eclipse.equinox.p2.doc.url' value='http://www.apache.org/'/>
       </properties>
       <provides size='5'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='jclouds-netty' version='1.9.1'/>
-        <provided namespace='osgi.bundle' name='jclouds-netty' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.netty.io' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.netty.config' version='1.9.1'/>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='jclouds-netty' version='1.9.3'/>
+        <provided namespace='osgi.bundle' name='jclouds-netty' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.netty.io' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.netty.config' version='1.9.3'/>
         <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
       </provides>
       <requires size='8'>
@@ -363,21 +363,86 @@
         <required namespace='java.package' name='javax.inject' range='0.0.0'/>
         <required namespace='java.package' name='org.jboss.netty.buffer' range='[3.3.0,4.0.0)'/>
         <required namespace='java.package' name='org.jboss.netty.handler.stream' range='[3.3.0,4.0.0)'/>
-        <required namespace='java.package' name='org.jclouds.io' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.io.internal' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.io.payloads' range='1.9.1'/>
+        <required namespace='java.package' name='org.jclouds.io' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.io.internal' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.io.payloads' range='1.9.3'/>
       </requires>
       <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='jclouds-netty' version='1.9.1'/>
+        <artifact classifier='osgi.bundle' id='jclouds-netty' version='1.9.3'/>
       </artifacts>
       <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
       <touchpointData size='1'>
         <instructions size='1'>
           <instruction key='manifest'>
-            Bundle-SymbolicName: jclouds-netty&#xA;Bundle-Version: 1.9.1&#xA;
+            Bundle-SymbolicName: jclouds-netty&#xA;Bundle-Version: 1.9.3&#xA;
           </instruction>
         </instructions>
       </touchpointData>
+    </unit>
+    <unit id='org.apache.jclouds.feature.feature.group' version='1.9.3.1' singleton='false'>
+      <update id='org.apache.jclouds.feature.feature.group' range='[0.0.0,1.9.3.1)' severity='0'/>
+      <properties size='4'>
+        <property name='org.eclipse.equinox.p2.name' value='Feature'/>
+        <property name='org.eclipse.equinox.p2.description' value='[Enter Feature Description here.]'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='http://www.example.com/description'/>
+        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.apache.jclouds.feature.feature.group' version='1.9.3.1'/>
+      </provides>
+      <requires size='38'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='aws-ec2' range='[1.9.3,1.9.3]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='aws-s3' range='[1.9.3,1.9.3]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='ec2' range='[1.9.3,1.9.3]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='azurecompute' range='[1.9.3,1.9.3]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-blobstore' range='[1.9.3,1.9.3]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-bouncycastle' range='[1.9.3,1.9.3]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-compute' range='[1.9.3,1.9.3]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-core' range='[1.9.3,1.9.3]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-enterprise' range='[1.9.3,1.9.3]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-joda' range='[1.9.3,1.9.3]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-netty' range='[1.9.3,1.9.3]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-scriptbuilder' range='[1.9.3,1.9.3]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-slf4j' range='[1.9.3,1.9.3]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-sshj' range='[1.9.3,1.9.3]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='com.google.gson' range='[2.3.0,2.3.0]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='com.google.guava' range='[16.0.1,16.0.1]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='com.google.inject' range='[3.0.0,3.0.0]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='com.google.inject.assistedinject' range='[3.0.0,3.0.0]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='com.jcraft.jsch.agentproxy.osgi' range='[0.0.7,0.0.7]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='joda-time' range='[2.1.0,2.1.0]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.schmizz.sshj' range='[0.9.0,0.9.0]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.servicemix.bundles.javax-inject' range='[1.0.0.2,1.0.0.2]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.servicemix.bundles.jsch' range='[0.1.51.1,0.1.51.1]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.servicemix.bundles.jzlib' range='[1.1.3.2,1.1.3.2]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='bcpkix' range='[1.49.0,1.49.0]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='bcprov-ext' range='[1.49.0,1.49.0]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.servicemix.bundles.aopalliance' range='[1.0.0.6,1.0.0.6]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='s3' range='[1.9.3,1.9.3]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='slf4j.api' range='[1.7.5,1.7.5]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='slf4j.nop' range='[1.7.5,1.7.5]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='sts' range='[1.9.3,1.9.3]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.jboss.netty' range='[3.5.9.Final,3.5.9.Final]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='javax.ws.rs.jsr311-api' range='[1.1.1,1.1.1]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='com.sun.jna' range='[4.1.0,4.1.0]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='com.sun.jna.platform' range='[4.1.0,4.1.0]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.servicemix.bundles.java-xmlbuilder' range='[0.6.0.1,0.6.0.1]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='rocoto' range='[6.2.0,6.2.0]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.jclouds.feature.feature.jar' range='[1.9.3.1,1.9.3.1]'>
+          <filter>
+            (org.eclipse.update.install.features=true)
+          </filter>
+        </required>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+      <licenses size='1'>
+        <license uri='http://www.example.com/license' url='http://www.example.com/license'>
+          [Enter License Description here.]
+        </license>
+      </licenses>
+      <copyright uri='http://www.example.com/copyright' url='http://www.example.com/copyright'>
+        [Enter Copyright Description here.]
+      </copyright>
     </unit>
     <unit id='org.apache.servicemix.bundles.javax-inject' version='1.0.0.2' singleton='false'>
       <update id='org.apache.servicemix.bundles.javax-inject' range='[0.0.0,1.0.0.2)' severity='0'/>
@@ -405,8 +470,8 @@
         </instructions>
       </touchpointData>
     </unit>
-    <unit id='aws-s3' version='1.9.1' singleton='false'>
-      <update id='aws-s3' range='[0.0.0,1.9.1)' severity='0'/>
+    <unit id='aws-s3' version='1.9.3' singleton='false'>
+      <update id='aws-s3' range='[0.0.0,1.9.3)' severity='0'/>
       <properties size='4'>
         <property name='org.eclipse.equinox.p2.name' value='jclouds Amazon Simple Storage Service (S3) provider'/>
         <property name='org.eclipse.equinox.p2.description' value='Simple Storage Service (S3) implementation targeted to Amazon Web Services'/>
@@ -414,79 +479,79 @@
         <property name='org.eclipse.equinox.p2.doc.url' value='http://www.apache.org/'/>
       </properties>
       <provides size='11'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='aws-s3' version='1.9.1'/>
-        <provided namespace='osgi.bundle' name='aws-s3' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.aws.s3.predicates.validators' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.aws.s3.blobstore' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.aws.s3.blobstore.config' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.aws.s3.blobstore.options' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.aws.s3.config' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.aws.s3.filters' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.aws.s3' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.aws.s3.blobstore.internal' version='1.9.1'/>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='aws-s3' version='1.9.3'/>
+        <provided namespace='osgi.bundle' name='aws-s3' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.aws.s3.predicates.validators' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.aws.s3.blobstore' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.aws.s3.blobstore.config' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.aws.s3.blobstore.options' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.aws.s3.config' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.aws.s3.filters' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.aws.s3' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.aws.s3.blobstore.internal' version='1.9.3'/>
         <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
       </provides>
       <requires size='45'>
-        <required namespace='java.package' name='com.google.common.base' range='[16.0.0,17.0.0)'/>
-        <required namespace='java.package' name='com.google.common.cache' range='[16.0.0,17.0.0)'/>
-        <required namespace='java.package' name='com.google.common.collect' range='[16.0.0,17.0.0)'/>
-        <required namespace='java.package' name='com.google.common.reflect' range='[16.0.0,17.0.0)'/>
+        <required namespace='java.package' name='com.google.common.base' range='[16.0.1,20.0.0)'/>
+        <required namespace='java.package' name='com.google.common.cache' range='[16.0.1,20.0.0)'/>
+        <required namespace='java.package' name='com.google.common.collect' range='[16.0.1,20.0.0)'/>
+        <required namespace='java.package' name='com.google.common.reflect' range='[16.0.1,20.0.0)'/>
         <required namespace='java.package' name='com.google.inject' range='[1.3.0,2.0.0)'/>
         <required namespace='java.package' name='com.google.inject.binder' range='[1.3.0,2.0.0)'/>
         <required namespace='java.package' name='javax.inject' range='0.0.0'/>
-        <required namespace='java.package' name='org.jclouds' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.apis' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.apis.internal' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.aws.domain' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.blobstore' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.blobstore.attr' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.blobstore.domain' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.blobstore.functions' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.blobstore.options' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.blobstore.strategy.internal' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.blobstore.util' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.collect' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.crypto' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.date' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.domain' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.http' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.http.internal' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.http.options' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.http.utils' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.io' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.location' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.providers' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.providers.internal' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.reflect' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.rest' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.rest.annotations' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.rest.internal' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.s3' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.s3.blobstore' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.s3.blobstore.config' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.s3.blobstore.functions' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.s3.blobstore.internal' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.s3.blobstore.strategy' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.s3.config' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.s3.domain' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.s3.filters' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.s3.options' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.s3.predicates.validators' range='1.9.1'/>
+        <required namespace='java.package' name='org.jclouds' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.apis' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.apis.internal' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.aws.domain' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.blobstore' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.blobstore.attr' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.blobstore.domain' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.blobstore.functions' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.blobstore.options' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.blobstore.strategy.internal' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.blobstore.util' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.collect' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.crypto' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.date' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.domain' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.http' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.http.internal' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.http.options' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.http.utils' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.io' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.location' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.providers' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.providers.internal' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.reflect' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.rest' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.rest.annotations' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.rest.internal' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.s3' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.s3.blobstore' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.s3.blobstore.config' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.s3.blobstore.functions' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.s3.blobstore.internal' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.s3.blobstore.strategy' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.s3.config' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.s3.domain' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.s3.filters' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.s3.options' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.s3.predicates.validators' range='1.9.3'/>
       </requires>
       <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='aws-s3' version='1.9.1'/>
+        <artifact classifier='osgi.bundle' id='aws-s3' version='1.9.3'/>
       </artifacts>
       <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
       <touchpointData size='1'>
         <instructions size='1'>
           <instruction key='manifest'>
-            Bundle-SymbolicName: aws-s3&#xA;Bundle-Version: 1.9.1&#xA;
+            Bundle-SymbolicName: aws-s3&#xA;Bundle-Version: 1.9.3&#xA;
           </instruction>
         </instructions>
       </touchpointData>
     </unit>
-    <unit id='jclouds-enterprise' version='1.9.1' singleton='false'>
-      <update id='jclouds-enterprise' range='[0.0.0,1.9.1)' severity='0'/>
+    <unit id='jclouds-enterprise' version='1.9.3' singleton='false'>
+      <update id='jclouds-enterprise' range='[0.0.0,1.9.3)' severity='0'/>
       <properties size='4'>
         <property name='org.eclipse.equinox.p2.name' value='jclouds enterprise Module'/>
         <property name='org.eclipse.equinox.p2.description' value='jclouds enterprise configuration'/>
@@ -494,33 +559,33 @@
         <property name='org.eclipse.equinox.p2.doc.url' value='http://www.apache.org/'/>
       </properties>
       <provides size='4'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='jclouds-enterprise' version='1.9.1'/>
-        <provided namespace='osgi.bundle' name='jclouds-enterprise' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.enterprise.config' version='1.9.1'/>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='jclouds-enterprise' version='1.9.3'/>
+        <provided namespace='osgi.bundle' name='jclouds-enterprise' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.enterprise.config' version='1.9.3'/>
         <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
       </provides>
       <requires size='6'>
-        <required namespace='java.package' name='com.google.common.util.concurrent' range='[16.0.0,17.0.0)'/>
+        <required namespace='java.package' name='com.google.common.util.concurrent' range='[16.0.1,20.0.0)'/>
         <required namespace='java.package' name='com.google.inject' range='[1.3.0,2.0.0)'/>
-        <required namespace='java.package' name='org.jclouds.concurrent.config' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.date.joda.config' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.encryption.bouncycastle.config' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.netty.config' range='1.9.1'/>
+        <required namespace='java.package' name='org.jclouds.concurrent.config' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.date.joda.config' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.encryption.bouncycastle.config' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.netty.config' range='1.9.3'/>
       </requires>
       <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='jclouds-enterprise' version='1.9.1'/>
+        <artifact classifier='osgi.bundle' id='jclouds-enterprise' version='1.9.3'/>
       </artifacts>
       <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
       <touchpointData size='1'>
         <instructions size='1'>
           <instruction key='manifest'>
-            Bundle-SymbolicName: jclouds-enterprise&#xA;Bundle-Version: 1.9.1&#xA;
+            Bundle-SymbolicName: jclouds-enterprise&#xA;Bundle-Version: 1.9.3&#xA;
           </instruction>
         </instructions>
       </touchpointData>
     </unit>
-    <unit id='ec2' version='1.9.1' singleton='false'>
-      <update id='ec2' range='[0.0.0,1.9.1)' severity='0'/>
+    <unit id='ec2' version='1.9.3' singleton='false'>
+      <update id='ec2' range='[0.0.0,1.9.3)' severity='0'/>
       <properties size='4'>
         <property name='org.eclipse.equinox.p2.name' value='jclouds ec2 api'/>
         <property name='org.eclipse.equinox.p2.description' value='jclouds components to access an implementation of EC2'/>
@@ -528,44 +593,44 @@
         <property name='org.eclipse.equinox.p2.doc.url' value='http://www.apache.org/'/>
       </properties>
       <provides size='28'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='ec2' version='1.9.1'/>
-        <provided namespace='osgi.bundle' name='ec2' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.ec2.compute.predicates' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.ec2.reference' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.ec2.compute.extensions' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.ec2.domain' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.ec2' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.ec2.options' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.ec2.xml' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.ec2.compute.loaders' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.ec2.features' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.ec2.options.internal' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.ec2.compute.functions' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.ec2.compute.config' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.ec2.compute.domain' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.ec2.compute.suppliers' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.ec2.functions' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.ec2.util' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.ec2.compute' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.ec2.binders' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.ec2.compute.options' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.ec2.compute.strategy' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.ec2.compute.internal' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.ec2.suppliers' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.ec2.config' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.ec2.predicates' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.ec2.compute.util' version='1.9.1'/>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='ec2' version='1.9.3'/>
+        <provided namespace='osgi.bundle' name='ec2' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.ec2.compute.predicates' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.ec2.reference' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.ec2.compute.extensions' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.ec2.domain' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.ec2' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.ec2.options' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.ec2.xml' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.ec2.compute.loaders' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.ec2.features' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.ec2.options.internal' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.ec2.compute.functions' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.ec2.compute.config' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.ec2.compute.domain' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.ec2.compute.suppliers' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.ec2.functions' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.ec2.util' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.ec2.compute' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.ec2.binders' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.ec2.compute.options' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.ec2.compute.strategy' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.ec2.compute.internal' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.ec2.suppliers' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.ec2.config' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.ec2.predicates' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.ec2.compute.util' version='1.9.3'/>
         <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
       </provides>
       <requires size='68'>
-        <required namespace='java.package' name='com.google.common.base' range='[16.0.0,17.0.0)'/>
-        <required namespace='java.package' name='com.google.common.cache' range='[16.0.0,17.0.0)'/>
-        <required namespace='java.package' name='com.google.common.collect' range='[16.0.0,17.0.0)'/>
-        <required namespace='java.package' name='com.google.common.hash' range='[16.0.0,17.0.0)'/>
-        <required namespace='java.package' name='com.google.common.io' range='[16.0.0,17.0.0)'/>
-        <required namespace='java.package' name='com.google.common.primitives' range='[16.0.0,17.0.0)'/>
-        <required namespace='java.package' name='com.google.common.reflect' range='[16.0.0,17.0.0)'/>
-        <required namespace='java.package' name='com.google.common.util.concurrent' range='[16.0.0,17.0.0)'/>
+        <required namespace='java.package' name='com.google.common.base' range='[16.0.1,20.0.0)'/>
+        <required namespace='java.package' name='com.google.common.cache' range='[16.0.1,20.0.0)'/>
+        <required namespace='java.package' name='com.google.common.collect' range='[16.0.1,20.0.0)'/>
+        <required namespace='java.package' name='com.google.common.hash' range='[16.0.1,20.0.0)'/>
+        <required namespace='java.package' name='com.google.common.io' range='[16.0.1,20.0.0)'/>
+        <required namespace='java.package' name='com.google.common.primitives' range='[16.0.1,20.0.0)'/>
+        <required namespace='java.package' name='com.google.common.reflect' range='[16.0.1,20.0.0)'/>
+        <required namespace='java.package' name='com.google.common.util.concurrent' range='[16.0.1,20.0.0)'/>
         <required namespace='java.package' name='com.google.inject' range='[1.3.0,2.0.0)'/>
         <required namespace='java.package' name='com.google.inject.binder' range='[1.3.0,2.0.0)'/>
         <required namespace='java.package' name='com.google.inject.name' range='[1.3.0,2.0.0)'/>
@@ -573,74 +638,74 @@
         <required namespace='java.package' name='javax.crypto' range='0.0.0'/>
         <required namespace='java.package' name='javax.inject' range='0.0.0'/>
         <required namespace='java.package' name='javax.ws.rs' range='[1.1.0,2.0.0)'/>
-        <required namespace='java.package' name='org.jclouds' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.apis' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.apis.internal' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.aws' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.aws.config' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.aws.domain' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.aws.filters' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.aws.util' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.collect' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.compute' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.compute.callables' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.compute.config' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.compute.domain' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.compute.domain.internal' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.compute.extensions' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.compute.functions' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.compute.internal' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.compute.options' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.compute.predicates' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.compute.reference' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.compute.strategy' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.compute.strategy.impl' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.compute.suppliers' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.compute.util' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.crypto' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.date' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.domain' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.http' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.http.functions' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.http.options' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.http.utils' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.io' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.io.payloads' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.javax.annotation' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.location' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.location.config' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.location.functions' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.location.predicates' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.location.suppliers' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.location.suppliers.derived' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.location.suppliers.fromconfig' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.logging' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.net.domain' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.reflect' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.rest' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.rest.annotations' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.rest.internal' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.rest.suppliers' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.scriptbuilder.domain' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.scriptbuilder.functions' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.ssh' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.util' range='1.9.1'/>
+        <required namespace='java.package' name='org.jclouds' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.apis' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.apis.internal' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.aws' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.aws.config' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.aws.domain' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.aws.filters' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.aws.util' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.collect' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.compute' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.compute.callables' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.compute.config' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.compute.domain' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.compute.domain.internal' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.compute.extensions' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.compute.functions' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.compute.internal' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.compute.options' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.compute.predicates' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.compute.reference' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.compute.strategy' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.compute.strategy.impl' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.compute.suppliers' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.compute.util' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.crypto' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.date' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.domain' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.http' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.http.functions' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.http.options' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.http.utils' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.io' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.io.payloads' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.javax.annotation' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.location' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.location.config' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.location.functions' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.location.predicates' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.location.suppliers' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.location.suppliers.derived' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.location.suppliers.fromconfig' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.logging' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.net.domain' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.reflect' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.rest' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.rest.annotations' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.rest.internal' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.rest.suppliers' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.scriptbuilder.domain' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.scriptbuilder.functions' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.ssh' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.util' range='1.9.3'/>
         <required namespace='java.package' name='org.xml.sax' range='0.0.0'/>
       </requires>
       <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='ec2' version='1.9.1'/>
+        <artifact classifier='osgi.bundle' id='ec2' version='1.9.3'/>
       </artifacts>
       <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
       <touchpointData size='1'>
         <instructions size='1'>
           <instruction key='manifest'>
-            Bundle-SymbolicName: ec2&#xA;Bundle-Version: 1.9.1&#xA;
+            Bundle-SymbolicName: ec2&#xA;Bundle-Version: 1.9.3&#xA;
           </instruction>
         </instructions>
       </touchpointData>
     </unit>
-    <unit id='jclouds-core' version='1.9.1' singleton='false'>
-      <update id='jclouds-core' range='[0.0.0,1.9.1)' severity='0'/>
+    <unit id='jclouds-core' version='1.9.3' singleton='false'>
+      <update id='jclouds-core' range='[0.0.0,1.9.3)' severity='0'/>
       <properties size='4'>
         <property name='org.eclipse.equinox.p2.name' value='jclouds Components Core'/>
         <property name='org.eclipse.equinox.p2.description' value='Core components to access jclouds services'/>
@@ -648,98 +713,98 @@
         <property name='org.eclipse.equinox.p2.doc.url' value='http://www.apache.org/'/>
       </properties>
       <provides size='80'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='jclouds-core' version='1.9.1'/>
-        <provided namespace='osgi.bundle' name='jclouds-core' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.events.handlers' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.xml.internal' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.logging.internal' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.rest.annotations' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.util' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.location.reference' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.http.options' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.location.config' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.location.suppliers.all' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.logging' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.json.config' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.rest.internal' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.http' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.collect.internal' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.http.utils' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.location.predicates.fromconfig' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.location.suppliers.fromconfig' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.logging.config' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.location' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.internal' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.config' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.encryption.internal' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.rest.config' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.collect' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.annotations' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.events.config.annotations' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.javax.annotation.concurrent' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.location.suppliers.implicit' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.xml' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.location.functions' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.lifecycle.config' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.io' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.json' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.logging.jdk.config' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.rest.binders' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.json.internal' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.domain.internal' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.logging.jdk' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.events.config' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.location.suppliers' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.http.functions' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.location.suppliers.derived' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.predicates' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.http.handlers' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.rest' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.io.internal' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.providers.internal' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.providers.config' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.suppliers' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.fallbacks' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.http.functions.config' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.date.internal' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.http.config' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.apis' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.javax.annotation' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.rest.suppliers' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.io.payloads' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.lifecycle' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.reflect' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.domain' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.http.internal' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.functions' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.apis.internal' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.providers' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.predicates.validators' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.http.annotation' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.http.filters' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.proxy' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.proxy.internal' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.osgi' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.crypto' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.concurrent.config' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.location.predicates' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.date' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.rest.functions' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.concurrent' version='1.9.1'/>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='jclouds-core' version='1.9.3'/>
+        <provided namespace='osgi.bundle' name='jclouds-core' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.events.handlers' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.xml.internal' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.logging.internal' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.rest.annotations' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.util' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.location.reference' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.http.options' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.location.config' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.location.suppliers.all' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.logging' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.json.config' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.rest.internal' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.http' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.collect.internal' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.http.utils' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.location.predicates.fromconfig' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.location.suppliers.fromconfig' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.logging.config' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.location' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.internal' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.config' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.encryption.internal' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.rest.config' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.collect' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.annotations' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.events.config.annotations' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.javax.annotation.concurrent' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.location.suppliers.implicit' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.xml' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.location.functions' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.lifecycle.config' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.io' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.json' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.logging.jdk.config' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.rest.binders' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.json.internal' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.domain.internal' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.logging.jdk' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.events.config' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.location.suppliers' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.http.functions' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.location.suppliers.derived' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.predicates' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.http.handlers' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.rest' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.io.internal' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.providers.internal' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.providers.config' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.suppliers' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.fallbacks' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.http.functions.config' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.date.internal' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.http.config' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.apis' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.javax.annotation' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.rest.suppliers' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.io.payloads' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.lifecycle' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.reflect' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.domain' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.http.internal' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.functions' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.apis.internal' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.providers' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.predicates.validators' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.http.annotation' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.http.filters' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.proxy' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.proxy.internal' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.osgi' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.crypto' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.concurrent.config' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.location.predicates' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.date' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.rest.functions' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.concurrent' version='1.9.3'/>
         <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
       </provides>
       <requires size='38'>
-        <required namespace='java.package' name='com.google.common.base' range='[16.0.0,17.0.0)'/>
-        <required namespace='java.package' name='com.google.common.cache' range='[16.0.0,17.0.0)'/>
-        <required namespace='java.package' name='com.google.common.collect' range='[16.0.0,17.0.0)'/>
-        <required namespace='java.package' name='com.google.common.eventbus' range='[16.0.0,17.0.0)'/>
-        <required namespace='java.package' name='com.google.common.hash' range='[16.0.0,17.0.0)'/>
-        <required namespace='java.package' name='com.google.common.io' range='[16.0.0,17.0.0)'/>
-        <required namespace='java.package' name='com.google.common.net' range='[16.0.0,17.0.0)'/>
-        <required namespace='java.package' name='com.google.common.primitives' range='[16.0.0,17.0.0)'/>
-        <required namespace='java.package' name='com.google.common.reflect' range='[16.0.0,17.0.0)'/>
-        <required namespace='java.package' name='com.google.common.util.concurrent' range='[16.0.0,17.0.0)'/>
+        <required namespace='java.package' name='com.google.common.base' range='[16.0.1,20.0.0)'/>
+        <required namespace='java.package' name='com.google.common.cache' range='[16.0.1,20.0.0)'/>
+        <required namespace='java.package' name='com.google.common.collect' range='[16.0.1,20.0.0)'/>
+        <required namespace='java.package' name='com.google.common.eventbus' range='[16.0.1,20.0.0)'/>
+        <required namespace='java.package' name='com.google.common.hash' range='[16.0.1,20.0.0)'/>
+        <required namespace='java.package' name='com.google.common.io' range='[16.0.1,20.0.0)'/>
+        <required namespace='java.package' name='com.google.common.net' range='[16.0.1,20.0.0)'/>
+        <required namespace='java.package' name='com.google.common.primitives' range='[16.0.1,20.0.0)'/>
+        <required namespace='java.package' name='com.google.common.reflect' range='[16.0.1,20.0.0)'/>
+        <required namespace='java.package' name='com.google.common.util.concurrent' range='[16.0.1,20.0.0)'/>
         <required namespace='java.package' name='com.google.gson' range='[2.3.0,3.0.0)'/>
         <required namespace='java.package' name='com.google.gson.annotations' range='[2.3.0,3.0.0)'/>
         <required namespace='java.package' name='com.google.gson.internal' range='[2.3.0,3.0.0)'/>
@@ -770,19 +835,19 @@
         <required namespace='java.package' name='org.xml.sax.helpers' range='0.0.0'/>
       </requires>
       <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='jclouds-core' version='1.9.1'/>
+        <artifact classifier='osgi.bundle' id='jclouds-core' version='1.9.3'/>
       </artifacts>
       <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
       <touchpointData size='1'>
         <instructions size='1'>
           <instruction key='manifest'>
-            Bundle-SymbolicName: jclouds-core&#xA;Bundle-Version: 1.9.1&#xA;
+            Bundle-SymbolicName: jclouds-core&#xA;Bundle-Version: 1.9.3&#xA;
           </instruction>
         </instructions>
       </touchpointData>
     </unit>
-    <unit id='jclouds-sshj' version='1.9.1' singleton='false'>
-      <update id='jclouds-sshj' range='[0.0.0,1.9.1)' severity='0'/>
+    <unit id='jclouds-sshj' version='1.9.3' singleton='false'>
+      <update id='jclouds-sshj' range='[0.0.0,1.9.3)' severity='0'/>
       <properties size='4'>
         <property name='org.eclipse.equinox.p2.name' value='jclouds sshj ssh client'/>
         <property name='org.eclipse.equinox.p2.description' value='jclouds sshj ssh client'/>
@@ -790,18 +855,18 @@
         <property name='org.eclipse.equinox.p2.doc.url' value='http://www.apache.org/'/>
       </properties>
       <provides size='5'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='jclouds-sshj' version='1.9.1'/>
-        <provided namespace='osgi.bundle' name='jclouds-sshj' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.sshj.config' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.sshj' version='1.9.1'/>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='jclouds-sshj' version='1.9.3'/>
+        <provided namespace='osgi.bundle' name='jclouds-sshj' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.sshj.config' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.sshj' version='1.9.3'/>
         <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
       </provides>
       <requires size='32'>
-        <required namespace='java.package' name='com.google.common.base' range='[16.0.0,17.0.0)'/>
-        <required namespace='java.package' name='com.google.common.collect' range='[16.0.0,17.0.0)'/>
-        <required namespace='java.package' name='com.google.common.hash' range='[16.0.0,17.0.0)'/>
-        <required namespace='java.package' name='com.google.common.io' range='[16.0.0,17.0.0)'/>
-        <required namespace='java.package' name='com.google.common.net' range='[16.0.0,17.0.0)'/>
+        <required namespace='java.package' name='com.google.common.base' range='[16.0.1,20.0.0)'/>
+        <required namespace='java.package' name='com.google.common.collect' range='[16.0.1,20.0.0)'/>
+        <required namespace='java.package' name='com.google.common.hash' range='[16.0.1,20.0.0)'/>
+        <required namespace='java.package' name='com.google.common.io' range='[16.0.1,20.0.0)'/>
+        <required namespace='java.package' name='com.google.common.net' range='[16.0.1,20.0.0)'/>
         <required namespace='java.package' name='com.google.inject' range='[1.3.0,2.0.0)'/>
         <required namespace='java.package' name='com.google.inject.binder' range='[1.3.0,2.0.0)'/>
         <required namespace='java.package' name='com.jcraft.jsch.agentproxy' range='[0.0.0,1.0.0)'/>
@@ -819,25 +884,25 @@
         <required namespace='java.package' name='net.schmizz.sshj.userauth.keyprovider' range='[0.8.0,1.0.0)'/>
         <required namespace='java.package' name='net.schmizz.sshj.userauth.method' range='[0.8.0,1.0.0)'/>
         <required namespace='java.package' name='net.schmizz.sshj.xfer' range='[0.8.0,1.0.0)'/>
-        <required namespace='java.package' name='org.jclouds.compute.domain' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.domain' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.http.handlers' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.io' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.io.payloads' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.logging' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.rest' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.ssh' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.ssh.config' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.util' range='1.9.1'/>
+        <required namespace='java.package' name='org.jclouds.compute.domain' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.domain' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.http.handlers' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.io' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.io.payloads' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.logging' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.rest' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.ssh' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.ssh.config' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.util' range='1.9.3'/>
       </requires>
       <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='jclouds-sshj' version='1.9.1'/>
+        <artifact classifier='osgi.bundle' id='jclouds-sshj' version='1.9.3'/>
       </artifacts>
       <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
       <touchpointData size='1'>
         <instructions size='1'>
           <instruction key='manifest'>
-            Bundle-SymbolicName: jclouds-sshj&#xA;Bundle-Version: 1.9.1&#xA;
+            Bundle-SymbolicName: jclouds-sshj&#xA;Bundle-Version: 1.9.3&#xA;
           </instruction>
         </instructions>
       </touchpointData>
@@ -936,8 +1001,8 @@
         </instructions>
       </touchpointData>
     </unit>
-    <unit id='jclouds-scriptbuilder' version='1.9.1' singleton='false'>
-      <update id='jclouds-scriptbuilder' range='[0.0.0,1.9.1)' severity='0'/>
+    <unit id='jclouds-scriptbuilder' version='1.9.3' singleton='false'>
+      <update id='jclouds-scriptbuilder' range='[0.0.0,1.9.3)' severity='0'/>
       <properties size='4'>
         <property name='org.eclipse.equinox.p2.name' value='jclouds script builder'/>
         <property name='org.eclipse.equinox.p2.description' value='creates scripts that can be used to manage services'/>
@@ -945,43 +1010,43 @@
         <property name='org.eclipse.equinox.p2.doc.url' value='http://www.apache.org/'/>
       </properties>
       <provides size='17'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='jclouds-scriptbuilder' version='1.9.1'/>
-        <provided namespace='osgi.bundle' name='jclouds-scriptbuilder' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.scriptbuilder.statements.java' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.scriptbuilder.domain' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.scriptbuilder.statements.git' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.scriptbuilder.functionloader.filters' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.scriptbuilder.domain.chef' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.scriptbuilder.functionloader.osgi' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.scriptbuilder.functionloader' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.scriptbuilder.statements.ruby' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.scriptbuilder.statements.chef' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.scriptbuilder.functions' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.scriptbuilder' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.scriptbuilder.statements.ssh' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.scriptbuilder.statements.login' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.scriptbuilder.util' version='1.9.1'/>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='jclouds-scriptbuilder' version='1.9.3'/>
+        <provided namespace='osgi.bundle' name='jclouds-scriptbuilder' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.scriptbuilder.statements.java' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.scriptbuilder.domain' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.scriptbuilder.statements.git' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.scriptbuilder.functionloader.filters' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.scriptbuilder.domain.chef' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.scriptbuilder.functionloader.osgi' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.scriptbuilder.functionloader' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.scriptbuilder.statements.ruby' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.scriptbuilder.statements.chef' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.scriptbuilder.functions' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.scriptbuilder' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.scriptbuilder.statements.ssh' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.scriptbuilder.statements.login' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.scriptbuilder.util' version='1.9.3'/>
         <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
       </provides>
       <requires size='9'>
-        <required namespace='java.package' name='com.google.common.base' range='[16.0.0,17.0.0)'/>
-        <required namespace='java.package' name='com.google.common.cache' range='[16.0.0,17.0.0)'/>
-        <required namespace='java.package' name='com.google.common.collect' range='[16.0.0,17.0.0)'/>
-        <required namespace='java.package' name='com.google.common.io' range='[16.0.0,17.0.0)'/>
-        <required namespace='java.package' name='com.google.common.util.concurrent' range='[16.0.0,17.0.0)'/>
+        <required namespace='java.package' name='com.google.common.base' range='[16.0.1,20.0.0)'/>
+        <required namespace='java.package' name='com.google.common.cache' range='[16.0.1,20.0.0)'/>
+        <required namespace='java.package' name='com.google.common.collect' range='[16.0.1,20.0.0)'/>
+        <required namespace='java.package' name='com.google.common.io' range='[16.0.1,20.0.0)'/>
+        <required namespace='java.package' name='com.google.common.util.concurrent' range='[16.0.1,20.0.0)'/>
         <required namespace='java.package' name='javax.inject' range='0.0.0' optional='true' greedy='false'/>
-        <required namespace='java.package' name='org.jclouds.domain' range='1.9.1' optional='true' greedy='false'/>
-        <required namespace='java.package' name='org.jclouds.javax.annotation' range='1.9.1' optional='true' greedy='false'/>
+        <required namespace='java.package' name='org.jclouds.domain' range='1.9.3' optional='true' greedy='false'/>
+        <required namespace='java.package' name='org.jclouds.javax.annotation' range='1.9.3' optional='true' greedy='false'/>
         <required namespace='java.package' name='org.osgi.framework' range='[1.5.0,2.0.0)'/>
       </requires>
       <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='jclouds-scriptbuilder' version='1.9.1'/>
+        <artifact classifier='osgi.bundle' id='jclouds-scriptbuilder' version='1.9.3'/>
       </artifacts>
       <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
       <touchpointData size='1'>
         <instructions size='1'>
           <instruction key='manifest'>
-            Bundle-SymbolicName: jclouds-scriptbuilder&#xA;Bundle-Version: 1.9.1&#xA;
+            Bundle-SymbolicName: jclouds-scriptbuilder&#xA;Bundle-Version: 1.9.3&#xA;
           </instruction>
         </instructions>
       </touchpointData>
@@ -1047,8 +1112,8 @@
         </instructions>
       </touchpointData>
     </unit>
-    <unit id='azurecompute' version='1.9.1' singleton='false'>
-      <update id='azurecompute' range='[0.0.0,1.9.1)' severity='0'/>
+    <unit id='azurecompute' version='1.9.3' singleton='false'>
+      <update id='azurecompute' range='[0.0.0,1.9.3)' severity='0'/>
       <properties size='4'>
         <property name='org.eclipse.equinox.p2.name' value='jclouds azure compute API'/>
         <property name='org.eclipse.equinox.p2.description' value='jclouds components to access an implementation of Azure&apos;s Compute Service'/>
@@ -1056,34 +1121,34 @@
         <property name='org.eclipse.equinox.p2.doc.url' value='http://www.apache.org/'/>
       </properties>
       <provides size='21'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='azurecompute' version='1.9.1'/>
-        <provided namespace='osgi.bundle' name='azurecompute' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.azurecompute.xml' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.azurecompute.compute.functions.internal' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.azurecompute.functions' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.azurecompute.config' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.azurecompute.binders' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.azurecompute.options' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.azurecompute' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.azurecompute.features' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.azurecompute.util' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.azurecompute.handlers' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.azurecompute.compute.strategy.impl' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.azurecompute.compute.functions' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.azurecompute.domain' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.azurecompute.suppliers' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.azurecompute.compute.strategy' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.azurecompute.compute' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.azurecompute.compute.extensions' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.azurecompute.compute.config' version='1.9.1'/>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='azurecompute' version='1.9.3'/>
+        <provided namespace='osgi.bundle' name='azurecompute' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.azurecompute.xml' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.azurecompute.compute.functions.internal' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.azurecompute.functions' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.azurecompute.config' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.azurecompute.binders' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.azurecompute' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.azurecompute.features' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.azurecompute.util' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.azurecompute.handlers' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.azurecompute.compute.functions' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.azurecompute.domain' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.azurecompute.suppliers' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.azurecompute.compute.options' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.azurecompute.compute.strategy' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.azurecompute.compute' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.azurecompute.compute.predicates' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.azurecompute.compute.extensions' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.azurecompute.compute.config' version='1.9.3'/>
         <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
       </provides>
-      <requires size='53'>
-        <required namespace='java.package' name='com.google.common.base' range='[16.0.0,17.0.0)'/>
-        <required namespace='java.package' name='com.google.common.collect' range='[16.0.0,17.0.0)'/>
-        <required namespace='java.package' name='com.google.common.io' range='[16.0.0,17.0.0)'/>
-        <required namespace='java.package' name='com.google.common.reflect' range='[16.0.0,17.0.0)'/>
-        <required namespace='java.package' name='com.google.common.util.concurrent' range='[16.0.0,17.0.0)'/>
+      <requires size='54'>
+        <required namespace='java.package' name='com.google.common.base' range='[16.0.1,20.0.0)'/>
+        <required namespace='java.package' name='com.google.common.collect' range='[16.0.1,20.0.0)'/>
+        <required namespace='java.package' name='com.google.common.io' range='[16.0.1,20.0.0)'/>
+        <required namespace='java.package' name='com.google.common.reflect' range='[16.0.1,20.0.0)'/>
+        <required namespace='java.package' name='com.google.common.util.concurrent' range='[16.0.1,20.0.0)'/>
         <required namespace='java.package' name='com.google.inject' range='[1.3.0,2.0.0)'/>
         <required namespace='java.package' name='com.google.inject.binder' range='[1.3.0,2.0.0)'/>
         <required namespace='java.package' name='com.jamesmurty.utils' range='0.0.0'/>
@@ -1091,76 +1156,77 @@
         <required namespace='java.package' name='javax.inject' range='0.0.0'/>
         <required namespace='java.package' name='javax.net.ssl' range='0.0.0'/>
         <required namespace='java.package' name='javax.ws.rs' range='[1.1.0,2.0.0)'/>
-        <required namespace='java.package' name='org.jclouds' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.apis' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.apis.internal' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.collect' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.compute' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.compute.config' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.compute.domain' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.compute.extensions' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.compute.functions' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.compute.options' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.compute.strategy' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.compute.strategy.impl' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.crypto' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.date' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.date.internal' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.domain' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.http' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.http.annotation' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.http.config' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.http.functions' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.io' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.javax.annotation' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.json.config' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.location' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.location.config' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.location.predicates' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.location.suppliers' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.location.suppliers.all' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.location.suppliers.implicit' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.logging' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.net.domain' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.providers' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.providers.internal' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.reflect' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.rest' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.rest.annotations' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.rest.config' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.rest.internal' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.util' range='1.9.1'/>
+        <required namespace='java.package' name='org.jclouds' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.apis' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.apis.internal' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.collect' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.compute' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.compute.config' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.compute.domain' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.compute.extensions' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.compute.functions' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.compute.options' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.compute.strategy' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.compute.strategy.impl' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.crypto' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.date' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.date.internal' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.domain' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.http' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.http.annotation' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.http.config' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.http.functions' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.io' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.javax.annotation' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.json.config' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.location' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.location.config' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.location.predicates' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.location.suppliers' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.location.suppliers.all' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.location.suppliers.implicit' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.logging' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.net.domain' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.providers' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.providers.internal' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.reflect' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.rest' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.rest.annotations' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.rest.config' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.rest.internal' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.scriptbuilder.domain' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.util' range='1.9.3'/>
         <required namespace='java.package' name='org.xml.sax' range='0.0.0'/>
         <required namespace='java.package' name='org.xml.sax.helpers' range='0.0.0'/>
       </requires>
       <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='azurecompute' version='1.9.1'/>
+        <artifact classifier='osgi.bundle' id='azurecompute' version='1.9.3'/>
       </artifacts>
       <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
       <touchpointData size='1'>
         <instructions size='1'>
           <instruction key='manifest'>
-            Bundle-SymbolicName: azurecompute&#xA;Bundle-Version: 1.9.1&#xA;
+            Bundle-SymbolicName: azurecompute&#xA;Bundle-Version: 1.9.3&#xA;
           </instruction>
         </instructions>
       </touchpointData>
     </unit>
-    <unit id='org.apache.jclouds.feature.feature.jar' version='1.9.1.2'>
+    <unit id='org.apache.jclouds.feature.feature.jar' version='1.9.3.1'>
       <properties size='3'>
         <property name='org.eclipse.equinox.p2.name' value='Feature'/>
         <property name='org.eclipse.equinox.p2.description' value='[Enter Feature Description here.]'/>
         <property name='org.eclipse.equinox.p2.description.url' value='http://www.example.com/description'/>
       </properties>
       <provides size='3'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='org.apache.jclouds.feature.feature.jar' version='1.9.1.2'/>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.apache.jclouds.feature.feature.jar' version='1.9.3.1'/>
         <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
-        <provided namespace='org.eclipse.update.feature' name='org.apache.jclouds.feature' version='1.9.1.2'/>
+        <provided namespace='org.eclipse.update.feature' name='org.apache.jclouds.feature' version='1.9.3.1'/>
       </provides>
       <filter>
         (org.eclipse.update.install.features=true)
       </filter>
       <artifacts size='1'>
-        <artifact classifier='org.eclipse.update.feature' id='org.apache.jclouds.feature' version='1.9.1.2'/>
+        <artifact classifier='org.eclipse.update.feature' id='org.apache.jclouds.feature' version='1.9.3.1'/>
       </artifacts>
       <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
       <touchpointData size='1'>
@@ -1454,8 +1520,8 @@
         </instructions>
       </touchpointData>
     </unit>
-    <unit id='jclouds-bouncycastle' version='1.9.1' singleton='false'>
-      <update id='jclouds-bouncycastle' range='[0.0.0,1.9.1)' severity='0'/>
+    <unit id='jclouds-bouncycastle' version='1.9.3' singleton='false'>
+      <update id='jclouds-bouncycastle' range='[0.0.0,1.9.3)' severity='0'/>
       <properties size='4'>
         <property name='org.eclipse.equinox.p2.name' value='jclouds bouncycastle EncryptionService Module'/>
         <property name='org.eclipse.equinox.p2.description' value='jclouds bouncycastle EncryptionService Module'/>
@@ -1463,10 +1529,10 @@
         <property name='org.eclipse.equinox.p2.doc.url' value='http://www.apache.org/'/>
       </properties>
       <provides size='5'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='jclouds-bouncycastle' version='1.9.1'/>
-        <provided namespace='osgi.bundle' name='jclouds-bouncycastle' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.encryption.bouncycastle' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.encryption.bouncycastle.config' version='1.9.1'/>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='jclouds-bouncycastle' version='1.9.3'/>
+        <provided namespace='osgi.bundle' name='jclouds-bouncycastle' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.encryption.bouncycastle' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.encryption.bouncycastle.config' version='1.9.3'/>
         <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
       </provides>
       <requires size='7'>
@@ -1475,23 +1541,23 @@
         <required namespace='java.package' name='javax.crypto' range='0.0.0'/>
         <required namespace='java.package' name='javax.inject' range='0.0.0'/>
         <required namespace='java.package' name='org.bouncycastle.jce.provider' range='0.0.0'/>
-        <required namespace='java.package' name='org.jclouds.crypto' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.encryption.internal' range='1.9.1'/>
+        <required namespace='java.package' name='org.jclouds.crypto' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.encryption.internal' range='1.9.3'/>
       </requires>
       <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='jclouds-bouncycastle' version='1.9.1'/>
+        <artifact classifier='osgi.bundle' id='jclouds-bouncycastle' version='1.9.3'/>
       </artifacts>
       <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
       <touchpointData size='1'>
         <instructions size='1'>
           <instruction key='manifest'>
-            Bundle-SymbolicName: jclouds-bouncycastle&#xA;Bundle-Version: 1.9.1&#xA;
+            Bundle-SymbolicName: jclouds-bouncycastle&#xA;Bundle-Version: 1.9.3&#xA;
           </instruction>
         </instructions>
       </touchpointData>
     </unit>
-    <unit id='s3' version='1.9.1' singleton='false'>
-      <update id='s3' range='[0.0.0,1.9.1)' severity='0'/>
+    <unit id='s3' version='1.9.3' singleton='false'>
+      <update id='s3' range='[0.0.0,1.9.3)' severity='0'/>
       <properties size='4'>
         <property name='org.eclipse.equinox.p2.name' value='jclouds s3 api'/>
         <property name='org.eclipse.equinox.p2.description' value='jclouds components to access an implementation of S3'/>
@@ -1499,38 +1565,38 @@
         <property name='org.eclipse.equinox.p2.doc.url' value='http://www.apache.org/'/>
       </properties>
       <provides size='23'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='s3' version='1.9.1'/>
-        <provided namespace='osgi.bundle' name='s3' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.s3.blobstore.strategy.internal' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.s3.binders' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.s3.domain.internal' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.s3.blobstore.strategy' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.s3.predicates.validators' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.s3.blobstore.internal' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.s3.util' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.s3.blobstore.config' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.s3.functions' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.s3.filters' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.s3.options' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.s3.reference' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.s3.fallbacks' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.s3.handlers' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.s3' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.s3.config' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.s3.xml' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.s3.blobstore.functions' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.s3.domain' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.s3.blobstore' version='1.9.1'/>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='s3' version='1.9.3'/>
+        <provided namespace='osgi.bundle' name='s3' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.s3.blobstore.strategy.internal' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.s3.binders' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.s3.domain.internal' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.s3.blobstore.strategy' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.s3.predicates.validators' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.s3.blobstore.internal' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.s3.util' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.s3.blobstore.config' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.s3.functions' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.s3.filters' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.s3.options' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.s3.reference' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.s3.fallbacks' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.s3.handlers' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.s3' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.s3.config' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.s3.xml' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.s3.blobstore.functions' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.s3.domain' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.s3.blobstore' version='1.9.3'/>
         <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
       </provides>
       <requires size='66'>
-        <required namespace='java.package' name='com.google.common.base' range='[16.0.0,17.0.0)'/>
-        <required namespace='java.package' name='com.google.common.cache' range='[16.0.0,17.0.0)'/>
-        <required namespace='java.package' name='com.google.common.collect' range='[16.0.0,17.0.0)'/>
-        <required namespace='java.package' name='com.google.common.hash' range='[16.0.0,17.0.0)'/>
-        <required namespace='java.package' name='com.google.common.io' range='[16.0.0,17.0.0)'/>
-        <required namespace='java.package' name='com.google.common.reflect' range='[16.0.0,17.0.0)'/>
-        <required namespace='java.package' name='com.google.common.util.concurrent' range='[16.0.0,17.0.0)'/>
+        <required namespace='java.package' name='com.google.common.base' range='[16.0.1,20.0.0)'/>
+        <required namespace='java.package' name='com.google.common.cache' range='[16.0.1,20.0.0)'/>
+        <required namespace='java.package' name='com.google.common.collect' range='[16.0.1,20.0.0)'/>
+        <required namespace='java.package' name='com.google.common.hash' range='[16.0.1,20.0.0)'/>
+        <required namespace='java.package' name='com.google.common.io' range='[16.0.1,20.0.0)'/>
+        <required namespace='java.package' name='com.google.common.reflect' range='[16.0.1,20.0.0)'/>
+        <required namespace='java.package' name='com.google.common.util.concurrent' range='[16.0.1,20.0.0)'/>
         <required namespace='java.package' name='com.google.inject' range='[1.3.0,2.0.0)'/>
         <required namespace='java.package' name='com.google.inject.binder' range='[1.3.0,2.0.0)'/>
         <required namespace='java.package' name='com.jamesmurty.utils' range='0.0.0'/>
@@ -1540,65 +1606,65 @@
         <required namespace='java.package' name='javax.ws.rs' range='[1.1.0,2.0.0)'/>
         <required namespace='java.package' name='javax.xml.parsers' range='0.0.0'/>
         <required namespace='java.package' name='javax.xml.transform' range='0.0.0'/>
-        <required namespace='java.package' name='org.jclouds' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.apis' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.apis.internal' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.aws' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.aws.config' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.aws.domain' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.aws.handlers' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.aws.util' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.blobstore' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.blobstore.attr' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.blobstore.binders' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.blobstore.config' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.blobstore.domain' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.blobstore.domain.internal' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.blobstore.functions' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.blobstore.internal' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.blobstore.options' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.blobstore.strategy' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.blobstore.strategy.internal' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.blobstore.util' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.collect' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.concurrent' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.crypto' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.date' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.date.internal' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.domain' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.http' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.http.annotation' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.http.functions' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.http.handlers' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.http.internal' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.http.options' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.http.utils' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.io' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.io.payloads' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.javax.annotation' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.json.config' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.location' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.location.functions' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.location.predicates' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.logging' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.predicates.validators' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.providers' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.reflect' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.rest' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.rest.annotations' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.rest.binders' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.rest.internal' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.util' range='1.9.1'/>
+        <required namespace='java.package' name='org.jclouds' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.apis' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.apis.internal' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.aws' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.aws.config' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.aws.domain' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.aws.handlers' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.aws.util' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.blobstore' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.blobstore.attr' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.blobstore.binders' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.blobstore.config' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.blobstore.domain' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.blobstore.domain.internal' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.blobstore.functions' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.blobstore.internal' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.blobstore.options' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.blobstore.strategy' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.blobstore.strategy.internal' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.blobstore.util' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.collect' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.concurrent' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.crypto' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.date' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.date.internal' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.domain' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.http' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.http.annotation' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.http.functions' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.http.handlers' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.http.internal' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.http.options' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.http.utils' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.io' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.io.payloads' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.javax.annotation' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.json.config' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.location' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.location.functions' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.location.predicates' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.logging' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.predicates.validators' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.providers' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.reflect' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.rest' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.rest.annotations' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.rest.binders' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.rest.internal' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.util' range='1.9.3'/>
         <required namespace='java.package' name='org.xml.sax' range='0.0.0'/>
       </requires>
       <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='s3' version='1.9.1'/>
+        <artifact classifier='osgi.bundle' id='s3' version='1.9.3'/>
       </artifacts>
       <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
       <touchpointData size='1'>
         <instructions size='1'>
           <instruction key='manifest'>
-            Bundle-SymbolicName: s3&#xA;Bundle-Version: 1.9.1&#xA;
+            Bundle-SymbolicName: s3&#xA;Bundle-Version: 1.9.3&#xA;
           </instruction>
         </instructions>
       </touchpointData>
@@ -1689,8 +1755,8 @@
         </instructions>
       </touchpointData>
     </unit>
-    <unit id='jclouds-blobstore' version='1.9.1' singleton='false'>
-      <update id='jclouds-blobstore' range='[0.0.0,1.9.1)' severity='0'/>
+    <unit id='jclouds-blobstore' version='1.9.3' singleton='false'>
+      <update id='jclouds-blobstore' range='[0.0.0,1.9.3)' severity='0'/>
       <properties size='4'>
         <property name='org.eclipse.equinox.p2.name' value='jclouds blobstore core'/>
         <property name='org.eclipse.equinox.p2.description' value='jclouds components to access blobstore'/>
@@ -1698,37 +1764,37 @@
         <property name='org.eclipse.equinox.p2.doc.url' value='http://www.apache.org/'/>
       </properties>
       <provides size='17'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='jclouds-blobstore' version='1.9.1'/>
-        <provided namespace='osgi.bundle' name='jclouds-blobstore' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.blobstore.strategy' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.blobstore.binders' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.blobstore.domain.internal' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.blobstore' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.blobstore.attr' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.blobstore.util' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.blobstore.options' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.blobstore.functions' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.blobstore.domain' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.blobstore.util.internal' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.blobstore.strategy.internal' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.blobstore.reference' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.blobstore.internal' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.blobstore.config' version='1.9.1'/>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='jclouds-blobstore' version='1.9.3'/>
+        <provided namespace='osgi.bundle' name='jclouds-blobstore' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.blobstore.strategy' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.blobstore.binders' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.blobstore.domain.internal' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.blobstore' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.blobstore.attr' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.blobstore.util' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.blobstore.options' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.blobstore.functions' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.blobstore.domain' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.blobstore.util.internal' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.blobstore.strategy.internal' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.blobstore.reference' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.blobstore.internal' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.blobstore.config' version='1.9.3'/>
         <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
       </provides>
       <requires size='34'>
-        <required namespace='java.package' name='com.google.common.base' range='[16.0.0,17.0.0)'/>
-        <required namespace='java.package' name='com.google.common.collect' range='[16.0.0,17.0.0)'/>
-        <required namespace='java.package' name='com.google.common.hash' range='[16.0.0,17.0.0)'/>
-        <required namespace='java.package' name='com.google.common.io' range='[16.0.0,17.0.0)'/>
-        <required namespace='java.package' name='com.google.common.net' range='[16.0.0,17.0.0)'/>
-        <required namespace='java.package' name='com.google.common.reflect' range='[16.0.0,17.0.0)'/>
-        <required namespace='java.package' name='com.google.common.util.concurrent' range='[16.0.0,17.0.0)'/>
+        <required namespace='java.package' name='com.google.common.base' range='[16.0.1,20.0.0)'/>
+        <required namespace='java.package' name='com.google.common.collect' range='[16.0.1,20.0.0)'/>
+        <required namespace='java.package' name='com.google.common.hash' range='[16.0.1,20.0.0)'/>
+        <required namespace='java.package' name='com.google.common.io' range='[16.0.1,20.0.0)'/>
+        <required namespace='java.package' name='com.google.common.net' range='[16.0.1,20.0.0)'/>
+        <required namespace='java.package' name='com.google.common.reflect' range='[16.0.1,20.0.0)'/>
+        <required namespace='java.package' name='com.google.common.util.concurrent' range='[16.0.1,20.0.0)'/>
         <required namespace='java.package' name='com.google.inject' range='[1.3.0,2.0.0)'/>
         <required namespace='java.package' name='com.google.inject.binder' range='[1.3.0,2.0.0)'/>
         <required namespace='java.package' name='javax.annotation' range='0.0.0'/>
         <required namespace='java.package' name='javax.inject' range='0.0.0'/>
-        <required namespace='java.package' name='org.jclouds' range='1.9.1'/>
+        <required namespace='java.package' name='org.jclouds' range='1.9.3'/>
         <required namespace='java.package' name='org.jclouds.apis' range='[1.9.0,2.0.0)'/>
         <required namespace='java.package' name='org.jclouds.apis.internal' range='[1.9.0,2.0.0)'/>
         <required namespace='java.package' name='org.jclouds.collect' range='[1.9.0,2.0.0)'/>
@@ -1753,13 +1819,13 @@
         <required namespace='java.package' name='org.jclouds.util' range='[1.9.0,2.0.0)'/>
       </requires>
       <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='jclouds-blobstore' version='1.9.1'/>
+        <artifact classifier='osgi.bundle' id='jclouds-blobstore' version='1.9.3'/>
       </artifacts>
       <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
       <touchpointData size='1'>
         <instructions size='1'>
           <instruction key='manifest'>
-            Bundle-SymbolicName: jclouds-blobstore&#xA;Bundle-Version: 1.9.1&#xA;
+            Bundle-SymbolicName: jclouds-blobstore&#xA;Bundle-Version: 1.9.3&#xA;
           </instruction>
         </instructions>
       </touchpointData>
@@ -1800,71 +1866,6 @@
           </instruction>
         </instructions>
       </touchpointData>
-    </unit>
-    <unit id='org.apache.jclouds.feature.feature.group' version='1.9.1.2' singleton='false'>
-      <update id='org.apache.jclouds.feature.feature.group' range='[0.0.0,1.9.1.2)' severity='0'/>
-      <properties size='4'>
-        <property name='org.eclipse.equinox.p2.name' value='Feature'/>
-        <property name='org.eclipse.equinox.p2.description' value='[Enter Feature Description here.]'/>
-        <property name='org.eclipse.equinox.p2.description.url' value='http://www.example.com/description'/>
-        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
-      </properties>
-      <provides size='1'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='org.apache.jclouds.feature.feature.group' version='1.9.1.2'/>
-      </provides>
-      <requires size='38'>
-        <required namespace='org.eclipse.equinox.p2.iu' name='aws-ec2' range='[1.9.1,1.9.1]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='aws-s3' range='[1.9.1,1.9.1]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='ec2' range='[1.9.1,1.9.1]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='azurecompute' range='[1.9.1,1.9.1]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-blobstore' range='[1.9.1,1.9.1]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-bouncycastle' range='[1.9.1,1.9.1]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-compute' range='[1.9.1,1.9.1]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-core' range='[1.9.1,1.9.1]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-enterprise' range='[1.9.1,1.9.1]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-joda' range='[1.9.1,1.9.1]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-netty' range='[1.9.1,1.9.1]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-scriptbuilder' range='[1.9.1,1.9.1]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-slf4j' range='[1.9.1,1.9.1]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-sshj' range='[1.9.1,1.9.1]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='com.google.gson' range='[2.3.0,2.3.0]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='com.google.guava' range='[16.0.1,16.0.1]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='com.google.inject' range='[3.0.0,3.0.0]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='com.google.inject.assistedinject' range='[3.0.0,3.0.0]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='com.jcraft.jsch.agentproxy.osgi' range='[0.0.7,0.0.7]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='joda-time' range='[2.1.0,2.1.0]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='net.schmizz.sshj' range='[0.9.0,0.9.0]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.servicemix.bundles.javax-inject' range='[1.0.0.2,1.0.0.2]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.servicemix.bundles.jsch' range='[0.1.51.1,0.1.51.1]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.servicemix.bundles.jzlib' range='[1.1.3.2,1.1.3.2]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='bcpkix' range='[1.49.0,1.49.0]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='bcprov-ext' range='[1.49.0,1.49.0]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.servicemix.bundles.aopalliance' range='[1.0.0.6,1.0.0.6]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='s3' range='[1.9.1,1.9.1]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='slf4j.api' range='[1.7.5,1.7.5]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='slf4j.nop' range='[1.7.5,1.7.5]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='sts' range='[1.9.1,1.9.1]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.jboss.netty' range='[3.5.9.Final,3.5.9.Final]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='javax.ws.rs.jsr311-api' range='[1.1.1,1.1.1]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='com.sun.jna' range='[4.1.0,4.1.0]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='com.sun.jna.platform' range='[4.1.0,4.1.0]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.servicemix.bundles.java-xmlbuilder' range='[0.6.0.1,0.6.0.1]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='rocoto' range='[6.2.0,6.2.0]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.jclouds.feature.feature.jar' range='[1.9.1.2,1.9.1.2]'>
-          <filter>
-            (org.eclipse.update.install.features=true)
-          </filter>
-        </required>
-      </requires>
-      <touchpoint id='null' version='0.0.0'/>
-      <licenses size='1'>
-        <license uri='http://www.example.com/license' url='http://www.example.com/license'>
-          [Enter License Description here.]
-        </license>
-      </licenses>
-      <copyright uri='http://www.example.com/copyright' url='http://www.example.com/copyright'>
-        [Enter Copyright Description here.]
-      </copyright>
     </unit>
     <unit id='joda-time' version='2.1.0' singleton='false'>
       <update id='joda-time' range='[0.0.0,2.1.0)' severity='0'/>
@@ -1928,8 +1929,8 @@
         </instructions>
       </touchpointData>
     </unit>
-    <unit id='jclouds-compute' version='1.9.1' singleton='false'>
-      <update id='jclouds-compute' range='[0.0.0,1.9.1)' severity='0'/>
+    <unit id='jclouds-compute' version='1.9.3' singleton='false'>
+      <update id='jclouds-compute' range='[0.0.0,1.9.3)' severity='0'/>
       <properties size='4'>
         <property name='org.eclipse.equinox.p2.name' value='jclouds compute core'/>
         <property name='org.eclipse.equinox.p2.description' value='jclouds components to access compute providers'/>
@@ -1937,108 +1938,108 @@
         <property name='org.eclipse.equinox.p2.doc.url' value='http://www.apache.org/'/>
       </properties>
       <provides size='35'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='jclouds-compute' version='1.9.1'/>
-        <provided namespace='osgi.bundle' name='jclouds-compute' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.cim.xml' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.cim.functions' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.cim' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.compute' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.compute.events' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.compute.functions' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.compute.suppliers' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.compute.domain.internal' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.compute.stub.extensions' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.compute.stub.config' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.compute.predicates.internal' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.compute.extensions' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.compute.domain' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.compute.strategy' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.compute.internal' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.compute.strategy.impl' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.compute.options' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.compute.callables' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.compute.reference' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.compute.stub' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.compute.config' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.compute.util' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.compute.predicates' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.net.util' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.net.domain' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.ovf' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.ovf.xml' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.ovf.xml.internal' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.ovf.internal' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.ssh.internal' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.ssh.config' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.ssh' version='1.9.1'/>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='jclouds-compute' version='1.9.3'/>
+        <provided namespace='osgi.bundle' name='jclouds-compute' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.cim.xml' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.cim.functions' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.cim' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.compute' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.compute.events' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.compute.functions' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.compute.suppliers' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.compute.domain.internal' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.compute.stub.extensions' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.compute.stub.config' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.compute.predicates.internal' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.compute.extensions' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.compute.domain' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.compute.strategy' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.compute.internal' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.compute.strategy.impl' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.compute.options' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.compute.callables' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.compute.reference' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.compute.stub' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.compute.config' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.compute.util' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.compute.predicates' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.net.util' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.net.domain' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.ovf' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.ovf.xml' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.ovf.xml.internal' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.ovf.internal' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.ssh.internal' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.ssh.config' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.ssh' version='1.9.3'/>
         <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
       </provides>
       <requires size='50'>
-        <required namespace='java.package' name='com.google.common.base' range='[16.0.0,17.0.0)'/>
-        <required namespace='java.package' name='com.google.common.cache' range='[16.0.0,17.0.0)'/>
-        <required namespace='java.package' name='com.google.common.collect' range='[16.0.0,17.0.0)'/>
-        <required namespace='java.package' name='com.google.common.eventbus' range='[16.0.0,17.0.0)'/>
-        <required namespace='java.package' name='com.google.common.hash' range='[16.0.0,17.0.0)'/>
-        <required namespace='java.package' name='com.google.common.io' range='[16.0.0,17.0.0)'/>
-        <required namespace='java.package' name='com.google.common.net' range='[16.0.0,17.0.0)'/>
-        <required namespace='java.package' name='com.google.common.primitives' range='[16.0.0,17.0.0)'/>
-        <required namespace='java.package' name='com.google.common.reflect' range='[16.0.0,17.0.0)'/>
-        <required namespace='java.package' name='com.google.common.util.concurrent' range='[16.0.0,17.0.0)'/>
+        <required namespace='java.package' name='com.google.common.base' range='[16.0.1,20.0.0)'/>
+        <required namespace='java.package' name='com.google.common.cache' range='[16.0.1,20.0.0)'/>
+        <required namespace='java.package' name='com.google.common.collect' range='[16.0.1,20.0.0)'/>
+        <required namespace='java.package' name='com.google.common.eventbus' range='[16.0.1,20.0.0)'/>
+        <required namespace='java.package' name='com.google.common.hash' range='[16.0.1,20.0.0)'/>
+        <required namespace='java.package' name='com.google.common.io' range='[16.0.1,20.0.0)'/>
+        <required namespace='java.package' name='com.google.common.net' range='[16.0.1,20.0.0)'/>
+        <required namespace='java.package' name='com.google.common.primitives' range='[16.0.1,20.0.0)'/>
+        <required namespace='java.package' name='com.google.common.reflect' range='[16.0.1,20.0.0)'/>
+        <required namespace='java.package' name='com.google.common.util.concurrent' range='[16.0.1,20.0.0)'/>
         <required namespace='java.package' name='com.google.inject' range='[1.3.0,2.0.0)'/>
         <required namespace='java.package' name='com.google.inject.assistedinject' range='[1.3.0,2.0.0)'/>
         <required namespace='java.package' name='com.google.inject.binder' range='[1.3.0,2.0.0)'/>
         <required namespace='java.package' name='com.google.inject.name' range='[1.3.0,2.0.0)'/>
         <required namespace='java.package' name='javax.annotation' range='0.0.0'/>
         <required namespace='java.package' name='javax.inject' range='0.0.0'/>
-        <required namespace='java.package' name='org.jclouds' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.apis' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.apis.internal' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.collect' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.concurrent' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.config' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.crypto' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.date' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.domain' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.domain.internal' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.functions' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.http' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.http.functions' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.internal' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.io' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.javax.annotation' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.json' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.location' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.location.suppliers' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.location.suppliers.all' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.logging' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.predicates' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.predicates.validators' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.rest' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.rest.internal' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.rest.suppliers' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.scriptbuilder' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.scriptbuilder.domain' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.scriptbuilder.functions' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.scriptbuilder.statements.login' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.scriptbuilder.statements.ssh' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.util' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.xml' range='1.9.1'/>
+        <required namespace='java.package' name='org.jclouds' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.apis' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.apis.internal' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.collect' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.concurrent' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.config' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.crypto' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.date' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.domain' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.domain.internal' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.functions' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.http' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.http.functions' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.internal' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.io' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.javax.annotation' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.json' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.location' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.location.suppliers' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.location.suppliers.all' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.logging' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.predicates' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.predicates.validators' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.rest' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.rest.internal' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.rest.suppliers' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.scriptbuilder' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.scriptbuilder.domain' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.scriptbuilder.functions' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.scriptbuilder.statements.login' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.scriptbuilder.statements.ssh' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.util' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.xml' range='1.9.3'/>
         <required namespace='java.package' name='org.xml.sax' range='0.0.0'/>
       </requires>
       <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='jclouds-compute' version='1.9.1'/>
+        <artifact classifier='osgi.bundle' id='jclouds-compute' version='1.9.3'/>
       </artifacts>
       <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
       <touchpointData size='1'>
         <instructions size='1'>
           <instruction key='manifest'>
-            Bundle-SymbolicName: jclouds-compute&#xA;Bundle-Version: 1.9.1&#xA;
+            Bundle-SymbolicName: jclouds-compute&#xA;Bundle-Version: 1.9.3&#xA;
           </instruction>
         </instructions>
       </touchpointData>
     </unit>
-    <unit id='sts' version='1.9.1' singleton='false'>
-      <update id='sts' range='[0.0.0,1.9.1)' severity='0'/>
+    <unit id='sts' version='1.9.3' singleton='false'>
+      <update id='sts' range='[0.0.0,1.9.3)' severity='0'/>
       <properties size='4'>
         <property name='org.eclipse.equinox.p2.name' value='jclouds sts api'/>
         <property name='org.eclipse.equinox.p2.description' value='jclouds components to access an implementation of Security Token Service (STS)'/>
@@ -2046,29 +2047,29 @@
         <property name='org.eclipse.equinox.p2.doc.url' value='http://www.apache.org/'/>
       </properties>
       <provides size='17'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='sts' version='1.9.1'/>
-        <provided namespace='osgi.bundle' name='sts' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.aws.filters' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.aws.config' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.aws.xml' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.aws.binders' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.aws' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.aws.handlers' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.aws.util' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.aws.domain' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.aws.reference' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.sts.config' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.sts.xml' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.sts.domain' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.sts' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.sts.options' version='1.9.1'/>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='sts' version='1.9.3'/>
+        <provided namespace='osgi.bundle' name='sts' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.aws.filters' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.aws.config' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.aws.xml' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.aws.binders' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.aws' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.aws.handlers' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.aws.util' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.aws.domain' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.aws.reference' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.sts.config' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.sts.xml' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.sts.domain' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.sts' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.sts.options' version='1.9.3'/>
         <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
       </provides>
       <requires size='34'>
-        <required namespace='java.package' name='com.google.common.base' range='[16.0.0,17.0.0)'/>
-        <required namespace='java.package' name='com.google.common.collect' range='[16.0.0,17.0.0)'/>
-        <required namespace='java.package' name='com.google.common.hash' range='[16.0.0,17.0.0)'/>
-        <required namespace='java.package' name='com.google.common.io' range='[16.0.0,17.0.0)'/>
+        <required namespace='java.package' name='com.google.common.base' range='[16.0.1,20.0.0)'/>
+        <required namespace='java.package' name='com.google.common.collect' range='[16.0.1,20.0.0)'/>
+        <required namespace='java.package' name='com.google.common.hash' range='[16.0.1,20.0.0)'/>
+        <required namespace='java.package' name='com.google.common.io' range='[16.0.1,20.0.0)'/>
         <required namespace='java.package' name='com.google.inject' range='[1.3.0,2.0.0)'/>
         <required namespace='java.package' name='com.google.inject.binder' range='[1.3.0,2.0.0)'/>
         <required namespace='java.package' name='javax.annotation' range='0.0.0'/>
@@ -2076,44 +2077,44 @@
         <required namespace='java.package' name='javax.crypto.spec' range='0.0.0'/>
         <required namespace='java.package' name='javax.inject' range='0.0.0'/>
         <required namespace='java.package' name='javax.ws.rs' range='[1.1.0,2.0.0)'/>
-        <required namespace='java.package' name='org.jclouds.apis' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.apis.internal' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.crypto' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.date' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.domain' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.http' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.http.annotation' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.http.functions' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.http.handlers' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.http.internal' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.http.options' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.http.utils' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.io' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.location' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.logging' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.providers' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.reflect' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.rest' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.rest.annotations' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.rest.config' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.rest.internal' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.util' range='1.9.1'/>
+        <required namespace='java.package' name='org.jclouds.apis' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.apis.internal' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.crypto' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.date' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.domain' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.http' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.http.annotation' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.http.functions' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.http.handlers' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.http.internal' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.http.options' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.http.utils' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.io' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.location' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.logging' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.providers' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.reflect' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.rest' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.rest.annotations' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.rest.config' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.rest.internal' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.util' range='1.9.3'/>
         <required namespace='java.package' name='org.xml.sax' range='0.0.0'/>
       </requires>
       <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='sts' version='1.9.1'/>
+        <artifact classifier='osgi.bundle' id='sts' version='1.9.3'/>
       </artifacts>
       <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
       <touchpointData size='1'>
         <instructions size='1'>
           <instruction key='manifest'>
-            Bundle-SymbolicName: sts&#xA;Bundle-Version: 1.9.1&#xA;
+            Bundle-SymbolicName: sts&#xA;Bundle-Version: 1.9.3&#xA;
           </instruction>
         </instructions>
       </touchpointData>
     </unit>
-    <unit id='jclouds-joda' version='1.9.1' singleton='false'>
-      <update id='jclouds-joda' range='[0.0.0,1.9.1)' severity='0'/>
+    <unit id='jclouds-joda' version='1.9.3' singleton='false'>
+      <update id='jclouds-joda' range='[0.0.0,1.9.3)' severity='0'/>
       <properties size='4'>
         <property name='org.eclipse.equinox.p2.name' value='jclouds joda DateService Module'/>
         <property name='org.eclipse.equinox.p2.description' value='jclouds joda DateService Module'/>
@@ -2121,29 +2122,29 @@
         <property name='org.eclipse.equinox.p2.doc.url' value='http://www.apache.org/'/>
       </properties>
       <provides size='5'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='jclouds-joda' version='1.9.1'/>
-        <provided namespace='osgi.bundle' name='jclouds-joda' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.date.joda' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.date.joda.config' version='1.9.1'/>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='jclouds-joda' version='1.9.3'/>
+        <provided namespace='osgi.bundle' name='jclouds-joda' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.date.joda' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.date.joda.config' version='1.9.3'/>
         <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
       </provides>
       <requires size='7'>
         <required namespace='java.package' name='com.google.inject' range='[1.3.0,2.0.0)'/>
         <required namespace='java.package' name='com.google.inject.binder' range='[1.3.0,2.0.0)'/>
         <required namespace='java.package' name='javax.inject' range='0.0.0'/>
-        <required namespace='java.package' name='org.jclouds.date' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.date.internal' range='1.9.1'/>
+        <required namespace='java.package' name='org.jclouds.date' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.date.internal' range='1.9.3'/>
         <required namespace='java.package' name='org.joda.time' range='[2.1.0,3.0.0)'/>
         <required namespace='java.package' name='org.joda.time.format' range='[2.1.0,3.0.0)'/>
       </requires>
       <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='jclouds-joda' version='1.9.1'/>
+        <artifact classifier='osgi.bundle' id='jclouds-joda' version='1.9.3'/>
       </artifacts>
       <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
       <touchpointData size='1'>
         <instructions size='1'>
           <instruction key='manifest'>
-            Bundle-SymbolicName: jclouds-joda&#xA;Bundle-Version: 1.9.1&#xA;
+            Bundle-SymbolicName: jclouds-joda&#xA;Bundle-Version: 1.9.3&#xA;
           </instruction>
         </instructions>
       </touchpointData>
@@ -2416,8 +2417,8 @@
         </instructions>
       </touchpointData>
     </unit>
-    <unit id='aws-ec2' version='1.9.1' singleton='false'>
-      <update id='aws-ec2' range='[0.0.0,1.9.1)' severity='0'/>
+    <unit id='aws-ec2' version='1.9.3' singleton='false'>
+      <update id='aws-ec2' range='[0.0.0,1.9.3)' severity='0'/>
       <properties size='4'>
         <property name='org.eclipse.equinox.p2.name' value='jclouds Amazon EC2 provider'/>
         <property name='org.eclipse.equinox.p2.description' value='EC2 implementation targeted to Amazon Web Services'/>
@@ -2425,34 +2426,34 @@
         <property name='org.eclipse.equinox.p2.doc.url' value='http://www.apache.org/'/>
       </properties>
       <provides size='21'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='aws-ec2' version='1.9.1'/>
-        <provided namespace='osgi.bundle' name='aws-ec2' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.aws.ec2.compute.strategy' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.aws.ec2.compute.functions' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.aws.ec2.compute.extensions' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.aws.ec2.features' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.aws.ec2.options' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.aws.ec2' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.aws.ec2.functions' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.aws.ec2.compute' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.aws.ec2.compute.loaders' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.aws.ec2.binders' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.aws.ec2.compute.config' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.aws.ec2.config' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.aws.ec2.compute.internal' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.aws.ec2.reference' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.aws.ec2.predicates' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.aws.ec2.xml' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.aws.ec2.compute.suppliers' version='1.9.1'/>
-        <provided namespace='java.package' name='org.jclouds.aws.ec2.domain' version='1.9.1'/>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='aws-ec2' version='1.9.3'/>
+        <provided namespace='osgi.bundle' name='aws-ec2' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.aws.ec2.compute.strategy' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.aws.ec2.compute.functions' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.aws.ec2.compute.extensions' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.aws.ec2.features' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.aws.ec2.options' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.aws.ec2' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.aws.ec2.functions' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.aws.ec2.compute' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.aws.ec2.compute.loaders' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.aws.ec2.binders' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.aws.ec2.compute.config' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.aws.ec2.config' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.aws.ec2.compute.internal' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.aws.ec2.reference' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.aws.ec2.predicates' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.aws.ec2.xml' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.aws.ec2.compute.suppliers' version='1.9.3'/>
+        <provided namespace='java.package' name='org.jclouds.aws.ec2.domain' version='1.9.3'/>
         <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
       </provides>
-      <requires size='74'>
-        <required namespace='java.package' name='com.google.common.base' range='[16.0.0,17.0.0)'/>
-        <required namespace='java.package' name='com.google.common.cache' range='[16.0.0,17.0.0)'/>
-        <required namespace='java.package' name='com.google.common.collect' range='[16.0.0,17.0.0)'/>
-        <required namespace='java.package' name='com.google.common.reflect' range='[16.0.0,17.0.0)'/>
-        <required namespace='java.package' name='com.google.common.util.concurrent' range='[16.0.0,17.0.0)'/>
+      <requires size='75'>
+        <required namespace='java.package' name='com.google.common.base' range='[16.0.1,20.0.0)'/>
+        <required namespace='java.package' name='com.google.common.cache' range='[16.0.1,20.0.0)'/>
+        <required namespace='java.package' name='com.google.common.collect' range='[16.0.1,20.0.0)'/>
+        <required namespace='java.package' name='com.google.common.reflect' range='[16.0.1,20.0.0)'/>
+        <required namespace='java.package' name='com.google.common.util.concurrent' range='[16.0.1,20.0.0)'/>
         <required namespace='java.package' name='com.google.inject' range='[1.3.0,2.0.0)'/>
         <required namespace='java.package' name='com.google.inject.assistedinject' range='[1.3.0,2.0.0)'/>
         <required namespace='java.package' name='com.google.inject.binder' range='[1.3.0,2.0.0)'/>
@@ -2460,77 +2461,78 @@
         <required namespace='java.package' name='javax.annotation' range='0.0.0'/>
         <required namespace='java.package' name='javax.inject' range='0.0.0'/>
         <required namespace='java.package' name='javax.ws.rs' range='[1.1.0,2.0.0)'/>
-        <required namespace='java.package' name='org.jclouds' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.apis' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.apis.internal' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.aws' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.aws.domain' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.aws.filters' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.aws.util' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.collect' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.compute' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.compute.callables' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.compute.config' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.compute.domain' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.compute.extensions' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.compute.functions' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.compute.internal' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.compute.options' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.compute.reference' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.compute.strategy' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.compute.suppliers' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.compute.util' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.config' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.date' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.date.internal' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.domain' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.ec2' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.ec2.binders' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.ec2.compute' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.ec2.compute.config' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.ec2.compute.domain' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.ec2.compute.extensions' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.ec2.compute.functions' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.ec2.compute.internal' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.ec2.compute.loaders' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.ec2.compute.options' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.ec2.compute.strategy' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.ec2.compute.suppliers' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.ec2.config' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.ec2.domain' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.ec2.features' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.ec2.functions' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.ec2.options' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.ec2.options.internal' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.ec2.reference' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.ec2.xml' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.http' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.http.functions' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.javax.annotation' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.location' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.location.functions' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.logging' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.net.domain' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.providers' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.providers.internal' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.rest' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.rest.annotations' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.rest.internal' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.rest.suppliers' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.scriptbuilder.domain' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.scriptbuilder.functions' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.ssh' range='1.9.1'/>
-        <required namespace='java.package' name='org.jclouds.util' range='1.9.1'/>
+        <required namespace='java.package' name='org.jclouds' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.apis' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.apis.internal' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.aws' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.aws.domain' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.aws.filters' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.aws.util' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.collect' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.compute' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.compute.callables' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.compute.config' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.compute.domain' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.compute.extensions' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.compute.functions' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.compute.internal' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.compute.options' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.compute.reference' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.compute.strategy' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.compute.suppliers' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.compute.util' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.config' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.date' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.date.internal' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.domain' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.ec2' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.ec2.binders' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.ec2.compute' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.ec2.compute.config' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.ec2.compute.domain' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.ec2.compute.extensions' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.ec2.compute.functions' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.ec2.compute.internal' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.ec2.compute.loaders' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.ec2.compute.options' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.ec2.compute.strategy' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.ec2.compute.suppliers' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.ec2.config' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.ec2.domain' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.ec2.features' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.ec2.functions' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.ec2.options' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.ec2.options.internal' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.ec2.reference' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.ec2.xml' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.http' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.http.functions' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.javax.annotation' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.json' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.location' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.location.functions' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.logging' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.net.domain' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.providers' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.providers.internal' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.rest' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.rest.annotations' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.rest.internal' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.rest.suppliers' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.scriptbuilder.domain' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.scriptbuilder.functions' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.ssh' range='1.9.3'/>
+        <required namespace='java.package' name='org.jclouds.util' range='1.9.3'/>
         <required namespace='java.package' name='org.xml.sax' range='0.0.0'/>
       </requires>
       <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='aws-ec2' version='1.9.1'/>
+        <artifact classifier='osgi.bundle' id='aws-ec2' version='1.9.3'/>
       </artifacts>
       <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
       <touchpointData size='1'>
         <instructions size='1'>
           <instruction key='manifest'>
-            Bundle-SymbolicName: aws-ec2&#xA;Bundle-Version: 1.9.1&#xA;
+            Bundle-SymbolicName: aws-ec2&#xA;Bundle-Version: 1.9.3&#xA;
           </instruction>
         </instructions>
       </touchpointData>
