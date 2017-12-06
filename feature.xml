@@ -2,7 +2,7 @@
 <feature
       id="org.apache.jclouds.feature"
       label="Feature"
-      version="2.0.3.1">
+      version="2.0.3.2">
 
    <description url="http://www.example.com/description">
       [Enter Feature Description here.]
@@ -233,14 +233,21 @@
          id="slf4j.api"
          download-size="0"
          install-size="0"
-         version="1.7.5"
+         version="1.7.25"
          unpack="false"/>
 
    <plugin
          id="slf4j.nop"
          download-size="0"
          install-size="0"
-         version="1.7.5"
+         version="1.7.25"
+         unpack="false"/>
+
+   <plugin
+         id="slf4j.simple"
+         download-size="0"
+         install-size="0"
+         version="1.7.25"
          unpack="false"/>
 
    <plugin
