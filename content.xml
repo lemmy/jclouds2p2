@@ -2,38 +2,39 @@
 <?metadataRepository version='1.1.0'?>
 <repository name='file:/home/markus/src/TLA/jclouds2p2/target/repository - metadata' type='org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository' version='1'>
   <properties size='2'>
-    <property name='p2.timestamp' value='1512577717506'/>
+    <property name='p2.timestamp' value='1512588392828'/>
     <property name='p2.compressed' value='false'/>
   </properties>
-  <units size='46'>
-    <unit id='slf4j.nop' version='1.7.5' singleton='false'>
-      <update id='slf4j.nop' range='[0.0.0,1.7.5)' severity='0'/>
+  <units size='47'>
+    <unit id='slf4j.nop' version='1.7.25' singleton='false'>
+      <update id='slf4j.nop' range='[0.0.0,1.7.25)' severity='0'/>
       <properties size='3'>
         <property name='org.eclipse.equinox.p2.name' value='slf4j-nop'/>
         <property name='org.eclipse.equinox.p2.description' value='SLF4J NOP Binding'/>
         <property name='org.eclipse.equinox.p2.provider' value='SLF4J.ORG'/>
       </properties>
       <provides size='5'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='slf4j.nop' version='1.7.5'/>
-        <provided namespace='osgi.bundle' name='slf4j.nop' version='1.7.5'/>
-        <provided namespace='java.package' name='org.slf4j.impl' version='1.7.5'/>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='slf4j.nop' version='1.7.25'/>
+        <provided namespace='osgi.bundle' name='slf4j.nop' version='1.7.25'/>
+        <provided namespace='java.package' name='org.slf4j.impl' version='1.7.25'/>
         <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
-        <provided namespace='osgi.fragment' name='slf4j.api' version='1.7.5'/>
+        <provided namespace='osgi.fragment' name='slf4j.api' version='1.7.25'/>
       </provides>
-      <requires size='4'>
+      <requires size='5'>
         <required namespace='osgi.bundle' name='slf4j.api' range='0.0.0'/>
-        <required namespace='java.package' name='org.slf4j' range='1.7.5'/>
-        <required namespace='java.package' name='org.slf4j.spi' range='1.7.5'/>
-        <required namespace='java.package' name='org.slf4j.helpers' range='1.7.5'/>
+        <required namespace='java.package' name='org.slf4j' range='1.7.25'/>
+        <required namespace='java.package' name='org.slf4j.spi' range='1.7.25'/>
+        <required namespace='java.package' name='org.slf4j.helpers' range='1.7.25'/>
+        <required namespace='java.package' name='org.slf4j.event' range='1.7.25'/>
       </requires>
       <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='slf4j.nop' version='1.7.5'/>
+        <artifact classifier='osgi.bundle' id='slf4j.nop' version='1.7.25'/>
       </artifacts>
       <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
       <touchpointData size='1'>
         <instructions size='1'>
           <instruction key='manifest'>
-            Bundle-SymbolicName: slf4j.nop&#xA;Bundle-Version: 1.7.5&#xA;Fragment-Host: slf4j.api&#xA;
+            Bundle-SymbolicName: slf4j.nop&#xA;Bundle-Version: 1.7.25&#xA;Fragment-Host: slf4j.api&#xA;
           </instruction>
         </instructions>
       </touchpointData>
@@ -645,22 +646,22 @@
         </instructions>
       </touchpointData>
     </unit>
-    <unit id='org.apache.jclouds.feature.feature.jar' version='2.0.3.1'>
+    <unit id='org.apache.jclouds.feature.feature.jar' version='2.0.3.2'>
       <properties size='3'>
         <property name='org.eclipse.equinox.p2.name' value='Feature'/>
         <property name='org.eclipse.equinox.p2.description' value='[Enter Feature Description here.]'/>
         <property name='org.eclipse.equinox.p2.description.url' value='http://www.example.com/description'/>
       </properties>
       <provides size='3'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='org.apache.jclouds.feature.feature.jar' version='2.0.3.1'/>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.apache.jclouds.feature.feature.jar' version='2.0.3.2'/>
         <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
-        <provided namespace='org.eclipse.update.feature' name='org.apache.jclouds.feature' version='2.0.3.1'/>
+        <provided namespace='org.eclipse.update.feature' name='org.apache.jclouds.feature' version='2.0.3.2'/>
       </provides>
       <filter>
         (org.eclipse.update.install.features=true)
       </filter>
       <artifacts size='1'>
-        <artifact classifier='org.eclipse.update.feature' id='org.apache.jclouds.feature' version='2.0.3.1'/>
+        <artifact classifier='org.eclipse.update.feature' id='org.apache.jclouds.feature' version='2.0.3.2'/>
       </artifacts>
       <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
       <touchpointData size='1'>
@@ -755,72 +756,6 @@
           </instruction>
         </instructions>
       </touchpointData>
-    </unit>
-    <unit id='org.apache.jclouds.feature.feature.group' version='2.0.3.1' singleton='false'>
-      <update id='org.apache.jclouds.feature.feature.group' range='[0.0.0,2.0.3.1)' severity='0'/>
-      <properties size='4'>
-        <property name='org.eclipse.equinox.p2.name' value='Feature'/>
-        <property name='org.eclipse.equinox.p2.description' value='[Enter Feature Description here.]'/>
-        <property name='org.eclipse.equinox.p2.description.url' value='http://www.example.com/description'/>
-        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
-      </properties>
-      <provides size='1'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='org.apache.jclouds.feature.feature.group' version='2.0.3.1'/>
-      </provides>
-      <requires size='39'>
-        <required namespace='org.eclipse.equinox.p2.iu' name='aws-ec2' range='[2.0.3,2.0.3]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='aws-s3' range='[2.0.3,2.0.3]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='ec2' range='[2.0.3,2.0.3]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='azurecompute' range='[2.0.3,2.0.3]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-blobstore' range='[2.0.3,2.0.3]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-bouncycastle' range='[2.0.3,2.0.3]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-compute' range='[2.0.3,2.0.3]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-core' range='[2.0.3,2.0.3]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-enterprise' range='[2.0.3,2.0.3]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-joda' range='[2.0.3,2.0.3]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-netty' range='[2.0.3,2.0.3]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-scriptbuilder' range='[2.0.3,2.0.3]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-slf4j' range='[2.0.3,2.0.3]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-sshj' range='[2.0.3,2.0.3]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='com.google.gson' range='[2.5.0,2.5.0]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='com.google.guava' range='[16.0.1,16.0.1]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='com.google.inject' range='[3.0.0,3.0.0]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='com.google.inject.assistedinject' range='[3.0.0,3.0.0]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='com.jcraft.jsch.agentproxy.osgi' range='[0.0.8,0.0.8]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='joda-time' range='[2.1.0,2.1.0]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='com.hierynomus.sshj' range='[0.21.1,0.21.1]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.servicemix.bundles.javax-inject' range='[1.0.0.2,1.0.0.2]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.servicemix.bundles.jsch' range='[0.1.51.1,0.1.51.1]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.servicemix.bundles.jzlib' range='[1.1.3.2,1.1.3.2]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='bcpkix' range='[1.58.0,1.58.0]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='bcprov' range='[1.58.0,1.58.0]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='bcprov-ext' range='[1.58.0,1.58.0]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.servicemix.bundles.aopalliance' range='[1.0.0.6,1.0.0.6]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='s3' range='[2.0.3,2.0.3]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='slf4j.api' range='[1.7.5,1.7.5]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='slf4j.nop' range='[1.7.5,1.7.5]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='sts' range='[2.0.3,2.0.3]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.jboss.netty' range='[3.5.9.Final,3.5.9.Final]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='javax.ws.rs.jsr311-api' range='[1.1.1,1.1.1]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='com.sun.jna' range='[4.1.0,4.1.0]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='com.sun.jna.platform' range='[4.1.0,4.1.0]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.servicemix.bundles.java-xmlbuilder' range='[0.6.0.1,0.6.0.1]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='net.i2p.crypto.eddsa' range='[0.1.0,0.1.0]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.jclouds.feature.feature.jar' range='[2.0.3.1,2.0.3.1]'>
-          <filter>
-            (org.eclipse.update.install.features=true)
-          </filter>
-        </required>
-      </requires>
-      <touchpoint id='null' version='0.0.0'/>
-      <licenses size='1'>
-        <license uri='http://www.example.com/license' url='http://www.example.com/license'>
-          [Enter License Description here.]
-        </license>
-      </licenses>
-      <copyright uri='http://www.example.com/copyright' url='http://www.example.com/copyright'>
-        [Enter Copyright Description here.]
-      </copyright>
     </unit>
     <unit id='com.google.inject.assistedinject' version='3.0.0' singleton='false'>
       <update id='com.google.inject.assistedinject' range='[0.0.0,3.0.0)' severity='0'/>
@@ -1612,35 +1547,103 @@
         </instructions>
       </touchpointData>
     </unit>
-    <unit id='slf4j.api' version='1.7.5' singleton='false'>
-      <update id='slf4j.api' range='[0.0.0,1.7.5)' severity='0'/>
+    <unit id='slf4j.api' version='1.7.25' singleton='false'>
+      <update id='slf4j.api' range='[0.0.0,1.7.25)' severity='0'/>
       <properties size='3'>
         <property name='org.eclipse.equinox.p2.name' value='slf4j-api'/>
         <property name='org.eclipse.equinox.p2.description' value='The slf4j API'/>
         <property name='org.eclipse.equinox.p2.provider' value='SLF4J.ORG'/>
       </properties>
-      <provides size='6'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='slf4j.api' version='1.7.5'/>
-        <provided namespace='osgi.bundle' name='slf4j.api' version='1.7.5'/>
-        <provided namespace='java.package' name='org.slf4j' version='1.7.5'/>
-        <provided namespace='java.package' name='org.slf4j.spi' version='1.7.5'/>
-        <provided namespace='java.package' name='org.slf4j.helpers' version='1.7.5'/>
+      <provides size='7'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='slf4j.api' version='1.7.25'/>
+        <provided namespace='osgi.bundle' name='slf4j.api' version='1.7.25'/>
+        <provided namespace='java.package' name='org.slf4j' version='1.7.25'/>
+        <provided namespace='java.package' name='org.slf4j.spi' version='1.7.25'/>
+        <provided namespace='java.package' name='org.slf4j.helpers' version='1.7.25'/>
+        <provided namespace='java.package' name='org.slf4j.event' version='1.7.25'/>
         <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
       </provides>
       <requires size='1'>
         <required namespace='java.package' name='org.slf4j.impl' range='1.6.0'/>
       </requires>
       <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='slf4j.api' version='1.7.5'/>
+        <artifact classifier='osgi.bundle' id='slf4j.api' version='1.7.25'/>
       </artifacts>
       <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
       <touchpointData size='1'>
         <instructions size='1'>
           <instruction key='manifest'>
-            Bundle-SymbolicName: slf4j.api&#xA;Bundle-Version: 1.7.5&#xA;
+            Bundle-SymbolicName: slf4j.api&#xA;Bundle-Version: 1.7.25&#xA;
           </instruction>
         </instructions>
       </touchpointData>
+    </unit>
+    <unit id='org.apache.jclouds.feature.feature.group' version='2.0.3.2' singleton='false'>
+      <update id='org.apache.jclouds.feature.feature.group' range='[0.0.0,2.0.3.2)' severity='0'/>
+      <properties size='4'>
+        <property name='org.eclipse.equinox.p2.name' value='Feature'/>
+        <property name='org.eclipse.equinox.p2.description' value='[Enter Feature Description here.]'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='http://www.example.com/description'/>
+        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.apache.jclouds.feature.feature.group' version='2.0.3.2'/>
+      </provides>
+      <requires size='40'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='aws-ec2' range='[2.0.3,2.0.3]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='aws-s3' range='[2.0.3,2.0.3]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='ec2' range='[2.0.3,2.0.3]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='azurecompute' range='[2.0.3,2.0.3]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-blobstore' range='[2.0.3,2.0.3]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-bouncycastle' range='[2.0.3,2.0.3]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-compute' range='[2.0.3,2.0.3]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-core' range='[2.0.3,2.0.3]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-enterprise' range='[2.0.3,2.0.3]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-joda' range='[2.0.3,2.0.3]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-netty' range='[2.0.3,2.0.3]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-scriptbuilder' range='[2.0.3,2.0.3]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-slf4j' range='[2.0.3,2.0.3]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-sshj' range='[2.0.3,2.0.3]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='com.google.gson' range='[2.5.0,2.5.0]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='com.google.guava' range='[16.0.1,16.0.1]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='com.google.inject' range='[3.0.0,3.0.0]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='com.google.inject.assistedinject' range='[3.0.0,3.0.0]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='com.jcraft.jsch.agentproxy.osgi' range='[0.0.8,0.0.8]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='joda-time' range='[2.1.0,2.1.0]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='com.hierynomus.sshj' range='[0.21.1,0.21.1]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.servicemix.bundles.javax-inject' range='[1.0.0.2,1.0.0.2]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.servicemix.bundles.jsch' range='[0.1.51.1,0.1.51.1]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.servicemix.bundles.jzlib' range='[1.1.3.2,1.1.3.2]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='bcpkix' range='[1.58.0,1.58.0]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='bcprov' range='[1.58.0,1.58.0]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='bcprov-ext' range='[1.58.0,1.58.0]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.servicemix.bundles.aopalliance' range='[1.0.0.6,1.0.0.6]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='s3' range='[2.0.3,2.0.3]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='slf4j.api' range='[1.7.25,1.7.25]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='slf4j.nop' range='[1.7.25,1.7.25]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='slf4j.simple' range='[1.7.25,1.7.25]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='sts' range='[2.0.3,2.0.3]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.jboss.netty' range='[3.5.9.Final,3.5.9.Final]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='javax.ws.rs.jsr311-api' range='[1.1.1,1.1.1]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='com.sun.jna' range='[4.1.0,4.1.0]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='com.sun.jna.platform' range='[4.1.0,4.1.0]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.servicemix.bundles.java-xmlbuilder' range='[0.6.0.1,0.6.0.1]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.i2p.crypto.eddsa' range='[0.1.0,0.1.0]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.jclouds.feature.feature.jar' range='[2.0.3.2,2.0.3.2]'>
+          <filter>
+            (org.eclipse.update.install.features=true)
+          </filter>
+        </required>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+      <licenses size='1'>
+        <license uri='http://www.example.com/license' url='http://www.example.com/license'>
+          [Enter License Description here.]
+        </license>
+      </licenses>
+      <copyright uri='http://www.example.com/copyright' url='http://www.example.com/copyright'>
+        [Enter Copyright Description here.]
+      </copyright>
     </unit>
     <unit id='aws-s3' version='2.0.3' singleton='false'>
       <update id='aws-s3' range='[0.0.0,2.0.3)' severity='0'/>
@@ -2519,6 +2522,40 @@
         <instructions size='1'>
           <instruction key='manifest'>
             Bundle-SymbolicName: org.apache.servicemix.bundles.jsch&#xA;Bundle-Version: 0.1.51.1&#xA;
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='slf4j.simple' version='1.7.25' singleton='false'>
+      <update id='slf4j.simple' range='[0.0.0,1.7.25)' severity='0'/>
+      <properties size='3'>
+        <property name='org.eclipse.equinox.p2.name' value='slf4j-simple'/>
+        <property name='org.eclipse.equinox.p2.description' value='SLF4J Simple binding'/>
+        <property name='org.eclipse.equinox.p2.provider' value='SLF4J.ORG'/>
+      </properties>
+      <provides size='5'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='slf4j.simple' version='1.7.25'/>
+        <provided namespace='osgi.bundle' name='slf4j.simple' version='1.7.25'/>
+        <provided namespace='java.package' name='org.slf4j.impl' version='1.7.25'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+        <provided namespace='osgi.fragment' name='slf4j.api' version='1.7.25'/>
+      </provides>
+      <requires size='6'>
+        <required namespace='osgi.bundle' name='slf4j.api' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='slf4j.api' range='0.0.0'/>
+        <required namespace='java.package' name='org.slf4j' range='1.7.25'/>
+        <required namespace='java.package' name='org.slf4j.spi' range='1.7.25'/>
+        <required namespace='java.package' name='org.slf4j.helpers' range='1.7.25'/>
+        <required namespace='java.package' name='org.slf4j.event' range='1.7.25'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='slf4j.simple' version='1.7.25'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: slf4j.simple&#xA;Bundle-Version: 1.7.25&#xA;Fragment-Host: slf4j.api&#xA;
           </instruction>
         </instructions>
       </touchpointData>
