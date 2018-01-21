@@ -2,7 +2,7 @@
 <feature
       id="org.apache.jclouds.feature"
       label="Feature"
-      version="2.0.3.2">
+      version="2.0.3.3">
 
    <description url="http://www.example.com/description">
       [Enter Feature Description here.]
@@ -45,6 +45,13 @@
          unpack="false"/>
 
    <plugin
+         id="azurecompute-arm"
+         download-size="0"
+         install-size="0"
+         version="2.0.3"
+         unpack="false"/>
+
+   <plugin
          id="jclouds-blobstore"
          download-size="0"
          install-size="0"
@@ -74,6 +81,34 @@
 
    <plugin
          id="jclouds-enterprise"
+         download-size="0"
+         install-size="0"
+         version="2.0.3"
+         unpack="false"/>
+
+   <plugin
+         id="jclouds-okhttp"
+         download-size="0"
+         install-size="0"
+         version="2.0.3"
+         unpack="false"/>
+
+   <plugin
+         id="org.apache.servicemix.bundles.okhttp"
+         download-size="0"
+         install-size="0"
+         version="2.2.0.1"
+         unpack="false"/>
+
+   <plugin
+         id="org.apache.servicemix.bundles.okio"
+         download-size="0"
+         install-size="0"
+         version="1.2.0.1"
+         unpack="false"/>
+
+   <plugin
+         id="oauth"
          download-size="0"
          install-size="0"
          version="2.0.3"
