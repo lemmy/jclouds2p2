@@ -2,7 +2,7 @@
 <?artifactRepository version='1.1.0'?>
 <repository name='file:/home/markus/src/TLA/jclouds2p2/target/repository - artifacts' type='org.eclipse.equinox.p2.artifact.repository.simpleRepository' version='1'>
   <properties size='3'>
-    <property name='p2.timestamp' value='1516559652020'/>
+    <property name='p2.timestamp' value='1517479057143'/>
     <property name='publishPackFilesAsSiblings' value='true'/>
     <property name='p2.compressed' value='true'/>
   </properties>
@@ -77,6 +77,13 @@
         <property name='download.md5' value='3da033b9318e910a4e3d718a6b1f5b58'/>
       </properties>
     </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.apache.jclouds.feature' version='2.0.3.4'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='1493'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='jclouds-core' version='2.0.3'>
       <properties size='3'>
         <property name='artifact.size' value='751785'/>
@@ -124,13 +131,6 @@
         <property name='artifact.size' value='60690'/>
         <property name='download.size' value='60690'/>
         <property name='download.md5' value='73b5b545b5fcedc0e7f5f1bc0d70dbbe'/>
-      </properties>
-    </artifact>
-    <artifact classifier='org.eclipse.update.feature' id='org.apache.jclouds.feature' version='2.0.3.3'>
-      <properties size='3'>
-        <property name='artifact.size' value='4096'/>
-        <property name='download.size' value='898'/>
-        <property name='download.contentType' value='application/zip'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='com.jcraft.jsch.agentproxy.core' version='0.0.9'>
@@ -198,9 +198,9 @@
     </artifact>
     <artifact classifier='osgi.bundle' id='com.jcraft.jsch.agentproxy.osgi' version='0.0.8'>
       <properties size='3'>
-        <property name='artifact.size' value='35330'/>
-        <property name='download.size' value='35330'/>
-        <property name='download.md5' value='e969c9f065f35858156200f63fbdea1c'/>
+        <property name='artifact.size' value='35331'/>
+        <property name='download.size' value='35331'/>
+        <property name='download.md5' value='c649d7b24cfa3d36632544bb8b372c20'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='s3' version='2.0.3'>
