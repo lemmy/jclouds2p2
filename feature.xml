@@ -2,7 +2,7 @@
 <feature
       id="org.apache.jclouds.feature"
       label="Feature"
-      version="2.1.2.0">
+      version="2.1.2.1">
 
    <license url="">
       MIT License
@@ -166,13 +166,6 @@ SOFTWARE.
          download-size="0"
          install-size="0"
          version="2.5.0"
-         unpack="false"/>
-
-   <plugin
-         id="com.google.guava"
-         download-size="0"
-         install-size="0"
-         version="18.0.0"
          unpack="false"/>
 
    <plugin
