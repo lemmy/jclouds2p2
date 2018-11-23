@@ -2,7 +2,7 @@
 <feature
       id="org.apache.jclouds.feature"
       label="Feature"
-      version="2.1.2.1">
+      version="2.1.2.2">
 
    <license url="">
       MIT License
@@ -308,7 +308,7 @@ SOFTWARE.
          id="javax.ws.rs-api"
          download-size="0"
          install-size="0"
-         version="2.0.1"
+         version="2.1.99.b01"
          unpack="false"/>
 
    <plugin
@@ -336,5 +336,11 @@ SOFTWARE.
          download-size="0"
          install-size="0"
          version="0.1.0"
+         unpack="false"/>
+   <plugin
+         id="jaxb-api"
+         download-size="0"
+         install-size="0"
+         version="2.3.1"
          unpack="false"/>
 </feature>
