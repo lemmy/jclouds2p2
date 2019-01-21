@@ -1,0 +1,389 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<repository name='file:/home/markus/src/TLA/jclouds2p2/target/repository - artifacts' type='org.eclipse.equinox.p2.artifact.repository.simpleRepository' version='1'>
+  <properties size='3'>
+    <property name='p2.timestamp' value='1543172375524'/>
+    <property name='publishPackFilesAsSiblings' value='true'/>
+    <property name='p2.compressed' value='true'/>
+  </properties>
+  <mappings size='5'>
+    <rule filter='(&amp; (classifier=osgi.bundle) (format=packed))' output='${repoUrl}/plugins/${id}_${version}.jar.pack.gz'/>
+    <rule filter='(&amp; (classifier=osgi.bundle))' output='${repoUrl}/plugins/${id}_${version}.jar'/>
+    <rule filter='(&amp; (classifier=binary))' output='${repoUrl}/binary/${id}_${version}'/>
+    <rule filter='(&amp; (classifier=org.eclipse.update.feature) (format=packed))' output='${repoUrl}/features/${id}_${version}.jar.pack.gz'/>
+    <rule filter='(&amp; (classifier=org.eclipse.update.feature))' output='${repoUrl}/features/${id}_${version}.jar'/>
+  </mappings>
+  <artifacts size='53'>
+    <artifact classifier='osgi.bundle' id='org.apache.servicemix.bundles.java-xmlbuilder' version='0.6.0.1'>
+      <properties size='3'>
+        <property name='artifact.size' value='30631'/>
+        <property name='download.size' value='30631'/>
+        <property name='download.md5' value='b4df56b90b489240a8ec1e01492fef5b'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='jclouds-enterprise' version='2.1.2.SNAPSHOT'>
+      <properties size='3'>
+        <property name='artifact.size' value='9850'/>
+        <property name='download.size' value='9850'/>
+        <property name='download.md5' value='e26a1a5f935bce430d8c35adf4647c85'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='jclouds-blobstore' version='2.1.2.SNAPSHOT'>
+      <properties size='3'>
+        <property name='artifact.size' value='192330'/>
+        <property name='download.size' value='192330'/>
+        <property name='download.md5' value='9433ec2c1af61e5a87f1b7e18bd83271'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='jclouds-core' version='2.1.2.SNAPSHOT'>
+      <properties size='3'>
+        <property name='artifact.size' value='755610'/>
+        <property name='download.size' value='755610'/>
+        <property name='download.md5' value='4126c13761e6108084fa861ecaaa4c53'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.google.gson' version='2.5.0'>
+      <properties size='3'>
+        <property name='artifact.size' value='232482'/>
+        <property name='download.size' value='232482'/>
+        <property name='download.md5' value='929d94512e63f6ee2efd8cb57048f310'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='bcprov-ext' version='1.58.0'>
+      <properties size='3'>
+        <property name='artifact.size' value='4025895'/>
+        <property name='download.size' value='4025895'/>
+        <property name='download.md5' value='a7cb0f2ae7767c26a17e8f70555af17f'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.google.inject.assistedinject' version='3.0.0'>
+      <properties size='3'>
+        <property name='artifact.size' value='36998'/>
+        <property name='download.size' value='36998'/>
+        <property name='download.md5' value='64341453ad4102f01761c62a22af0977'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='azurecompute' version='2.1.2.SNAPSHOT'>
+      <properties size='3'>
+        <property name='artifact.size' value='482345'/>
+        <property name='download.size' value='482345'/>
+        <property name='download.md5' value='b79117dc1736b9ad207b277a5e6372f4'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='slf4j.simple' version='1.7.25'>
+      <properties size='3'>
+        <property name='artifact.size' value='15257'/>
+        <property name='download.size' value='15257'/>
+        <property name='download.md5' value='722bb90689aecc523e3fe317e1f0984b'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='joda-time' version='2.1.0'>
+      <properties size='3'>
+        <property name='artifact.size' value='570478'/>
+        <property name='download.size' value='570478'/>
+        <property name='download.md5' value='3da033b9318e910a4e3d718a6b1f5b58'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='jclouds-netty' version='2.1.2.SNAPSHOT'>
+      <properties size='3'>
+        <property name='artifact.size' value='11774'/>
+        <property name='download.size' value='11774'/>
+        <property name='download.md5' value='8b33a6beffdc1bdca043b5c54f8d44f9'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='sts' version='2.1.2.SNAPSHOT'>
+      <properties size='3'>
+        <property name='artifact.size' value='71164'/>
+        <property name='download.size' value='71164'/>
+        <property name='download.md5' value='09f822066ab47eb0c3f61d3f932089fe'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='oauth' version='2.1.2.SNAPSHOT'>
+      <properties size='3'>
+        <property name='artifact.size' value='64292'/>
+        <property name='download.size' value='64292'/>
+        <property name='download.md5' value='28f01054ad91d277c3fd51831815e129'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.jcraft.jsch.agentproxy.sshagent' version='0.0.9'>
+      <properties size='3'>
+        <property name='artifact.size' value='4325'/>
+        <property name='download.size' value='4325'/>
+        <property name='download.md5' value='5b3a97dc9ffa5b36b6b3ced0581456a3'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.jcraft.jsch.agentproxy.core' version='0.0.9'>
+      <properties size='3'>
+        <property name='artifact.size' value='9592'/>
+        <property name='download.size' value='9592'/>
+        <property name='download.md5' value='37881dc6a7e29e8f418d21193abb3298'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='jclouds-joda' version='2.1.2.SNAPSHOT'>
+      <properties size='3'>
+        <property name='artifact.size' value='11684'/>
+        <property name='download.size' value='11684'/>
+        <property name='download.md5' value='1c8ad533a9564bceb16fee74d26d37c6'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='slf4j.nop' version='1.7.25'>
+      <properties size='3'>
+        <property name='artifact.size' value='4007'/>
+        <property name='download.size' value='4007'/>
+        <property name='download.md5' value='cd6179c6efe79f6033d3ca013481aaf5'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='bcpkix' version='1.58.0'>
+      <properties size='3'>
+        <property name='artifact.size' value='785915'/>
+        <property name='download.size' value='785915'/>
+        <property name='download.md5' value='b9a0e8cb8dd4001b94acd24903887251'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.jcraft.jsch.agentproxy.usocket-nc' version='0.0.9'>
+      <properties size='3'>
+        <property name='artifact.size' value='5325'/>
+        <property name='download.size' value='5325'/>
+        <property name='download.md5' value='76afbdff6f1d6293bfe6993305ba1659'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.apache.servicemix.bundles.aopalliance' version='1.0.0.6'>
+      <properties size='3'>
+        <property name='artifact.size' value='16513'/>
+        <property name='download.size' value='16513'/>
+        <property name='download.md5' value='20050a1bada2af6617ac6b6b1e3c8cfb'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.sun.jna' version='4.1.0'>
+      <properties size='3'>
+        <property name='artifact.size' value='914597'/>
+        <property name='download.size' value='914597'/>
+        <property name='download.md5' value='b0e08c9936dc52aa40439c71fcad6297'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.jcraft.jsch.agentproxy.usocket-jna' version='0.0.9'>
+      <properties size='3'>
+        <property name='artifact.size' value='6596'/>
+        <property name='download.size' value='6596'/>
+        <property name='download.md5' value='18ff1492b3c94fb7ddab0792efe13b6e'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='aws-ec2' version='2.1.2.SNAPSHOT'>
+      <properties size='3'>
+        <property name='artifact.size' value='269167'/>
+        <property name='download.size' value='269167'/>
+        <property name='download.md5' value='3b0b4ab901397d1df8419c6f640f4ef5'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.jcraft.jsch.agentproxy.osgi' version='0.0.8'>
+      <properties size='3'>
+        <property name='artifact.size' value='35332'/>
+        <property name='download.size' value='35332'/>
+        <property name='download.md5' value='725a28f87dc64b7f39995fc1a3da2a7e'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.sun.jna.platform' version='4.1.0'>
+      <properties size='3'>
+        <property name='artifact.size' value='1464423'/>
+        <property name='download.size' value='1464423'/>
+        <property name='download.md5' value='533e404eda70bbf8e40de134ffeec95b'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='s3' version='2.1.2.SNAPSHOT'>
+      <properties size='3'>
+        <property name='artifact.size' value='225243'/>
+        <property name='download.size' value='225243'/>
+        <property name='download.md5' value='6bfd7c8a5fd17427e6f36148d84491fe'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='slf4j.api' version='1.7.25'>
+      <properties size='3'>
+        <property name='artifact.size' value='41203'/>
+        <property name='download.size' value='41203'/>
+        <property name='download.md5' value='caafe376afb7086dcbee79f780394ca3'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.apache.servicemix.bundles.jsch' version='0.1.51.1'>
+      <properties size='3'>
+        <property name='artifact.size' value='273826'/>
+        <property name='download.size' value='273826'/>
+        <property name='download.md5' value='0678e2cc54e523082f3d75143383d299'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='javax.ws.rs-api' version='2.1.99.b01'>
+      <properties size='3'>
+        <property name='artifact.size' value='126898'/>
+        <property name='download.size' value='126898'/>
+        <property name='download.md5' value='23b81452f9e2076ffefede649975b0d1'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='jclouds-sshj' version='2.1.2.SNAPSHOT'>
+      <properties size='3'>
+        <property name='artifact.size' value='39421'/>
+        <property name='download.size' value='39421'/>
+        <property name='download.md5' value='538a4dd52fed4d41c8306a78a7e8c542'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.jcraft.jsch.agentproxy.pageant' version='0.0.9'>
+      <properties size='3'>
+        <property name='artifact.size' value='7848'/>
+        <property name='download.size' value='7848'/>
+        <property name='download.md5' value='c10b5d389d46e881d2f02001a929f623'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.apache.servicemix.bundles.okio' version='1.2.0.1'>
+      <properties size='3'>
+        <property name='artifact.size' value='62219'/>
+        <property name='download.size' value='62219'/>
+        <property name='download.md5' value='fbc25303f0c50e3cf14eca1c4d95a997'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.apache.servicemix.bundles.jzlib' version='1.1.3.2'>
+      <properties size='3'>
+        <property name='artifact.size' value='78835'/>
+        <property name='download.size' value='78835'/>
+        <property name='download.md5' value='5e2f479b34489ff56e178360fe8d7408'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='jclouds-bouncycastle' version='2.1.2.SNAPSHOT'>
+      <properties size='3'>
+        <property name='artifact.size' value='10492'/>
+        <property name='download.size' value='10492'/>
+        <property name='download.md5' value='dbf82adb0423187028d6876635f85b14'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.hierynomus.sshj' version='0.21.1'>
+      <properties size='3'>
+        <property name='artifact.size' value='466435'/>
+        <property name='download.size' value='466435'/>
+        <property name='download.md5' value='c032167b5c120948565a615f827c5035'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='bcprov' version='1.58.0'>
+      <properties size='3'>
+        <property name='artifact.size' value='3955990'/>
+        <property name='download.size' value='3955990'/>
+        <property name='download.md5' value='0a7ff186ae066c12e7ca5b96397ee233'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.apache.servicemix.bundles.javax-inject' version='1.0.0.2'>
+      <properties size='3'>
+        <property name='artifact.size' value='10879'/>
+        <property name='download.size' value='10879'/>
+        <property name='download.md5' value='d9c40d9e86b3173b06ef167f55a85340'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='jclouds-slf4j' version='2.1.2.SNAPSHOT'>
+      <properties size='3'>
+        <property name='artifact.size' value='11560'/>
+        <property name='download.size' value='11560'/>
+        <property name='download.md5' value='c1bda72f8b727be08254c42fbc9d83b1'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.jcraft.jsch.agentproxy.connector-factory' version='0.0.9'>
+      <properties size='3'>
+        <property name='artifact.size' value='12166'/>
+        <property name='download.size' value='12166'/>
+        <property name='download.md5' value='bb646b6b9bf00a92d1f055fb881e3934'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.jboss.netty' version='3.5.9.Final'>
+      <properties size='3'>
+        <property name='artifact.size' value='1128961'/>
+        <property name='download.size' value='1128961'/>
+        <property name='download.md5' value='fa33422da128c286dc2dc4d4a43ebe8e'/>
+      </properties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.apache.jclouds.feature' version='2.1.2.2'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='1500'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='jclouds-scriptbuilder' version='2.1.2.SNAPSHOT'>
+      <properties size='3'>
+        <property name='artifact.size' value='173302'/>
+        <property name='download.size' value='173302'/>
+        <property name='download.md5' value='c0310970b4b13935d1cb897d107472ef'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='azurecompute-arm' version='2.1.2.SNAPSHOT'>
+      <properties size='3'>
+        <property name='artifact.size' value='959596'/>
+        <property name='download.size' value='959596'/>
+        <property name='download.md5' value='8ddf9f506afa15918ac15ecb9be03d1e'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='net.i2p.crypto.eddsa' version='0.1.0'>
+      <properties size='3'>
+        <property name='artifact.size' value='58839'/>
+        <property name='download.size' value='58839'/>
+        <property name='download.md5' value='9bf5d3a67f8a924ace22f4498efcf342'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='jclouds-compute' version='2.1.2.SNAPSHOT'>
+      <properties size='3'>
+        <property name='artifact.size' value='522961'/>
+        <property name='download.size' value='522961'/>
+        <property name='download.md5' value='c7e26e56ccc4ba3c3e7d2e2a9db0e66d'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.google.guava' version='18.0.0'>
+      <properties size='3'>
+        <property name='artifact.size' value='2256213'/>
+        <property name='download.size' value='2256213'/>
+        <property name='download.md5' value='947641f6bb535b1d942d1bc387c45290'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='javax.activation-api' version='1.2.0'>
+      <properties size='3'>
+        <property name='artifact.size' value='56674'/>
+        <property name='download.size' value='56674'/>
+        <property name='download.md5' value='5e50e56bcf4a3ef3bc758f69f7643c3b'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.google.inject' version='3.0.0'>
+      <properties size='3'>
+        <property name='artifact.size' value='710492'/>
+        <property name='download.size' value='710492'/>
+        <property name='download.md5' value='ca1c7ba366884cfcd2cfb48d2395c400'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='jaxb-api' version='2.3.1'>
+      <properties size='3'>
+        <property name='artifact.size' value='128076'/>
+        <property name='download.size' value='128076'/>
+        <property name='download.md5' value='bcf270d320f645ad19f5edb60091e87f'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.apache.servicemix.bundles.okhttp' version='2.2.0.1'>
+      <properties size='3'>
+        <property name='artifact.size' value='356868'/>
+        <property name='download.size' value='356868'/>
+        <property name='download.md5' value='310950088e652a7189960029505a16ce'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='jclouds-okhttp' version='2.1.2.SNAPSHOT'>
+      <properties size='3'>
+        <property name='artifact.size' value='17764'/>
+        <property name='download.size' value='17764'/>
+        <property name='download.md5' value='03ee4a9b9c89904057ba3c1d35f3f4d9'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='aws-s3' version='2.1.2.SNAPSHOT'>
+      <properties size='3'>
+        <property name='artifact.size' value='30629'/>
+        <property name='download.size' value='30629'/>
+        <property name='download.md5' value='4e4874f0dc984aca9c24a0aeb640a09a'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='ec2' version='2.1.2.SNAPSHOT'>
+      <properties size='3'>
+        <property name='artifact.size' value='402289'/>
+        <property name='download.size' value='402289'/>
+        <property name='download.md5' value='caa4cea610aa7087c4ca728d42fddf2f'/>
+      </properties>
+    </artifact>
+  </artifacts>
+</repository>
