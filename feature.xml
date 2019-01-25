@@ -2,7 +2,7 @@
 <feature
       id="org.apache.jclouds.feature"
       label="Feature"
-      version="2.1.2.2">
+      version="2.1.2.3">
 
    <license url="">
       MIT License
@@ -58,6 +58,13 @@ SOFTWARE.
 
    <plugin
          id="azurecompute-arm"
+         download-size="0"
+         install-size="0"
+         version="2.1.2.SNAPSHOT"
+         unpack="false"/>
+
+   <plugin
+         id="packet"
          download-size="0"
          install-size="0"
          version="2.1.2.SNAPSHOT"
