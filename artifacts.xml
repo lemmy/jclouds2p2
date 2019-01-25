@@ -2,7 +2,7 @@
 <?artifactRepository version='1.1.0'?>
 <repository name='file:/home/markus/src/TLA/jclouds2p2/target/repository - artifacts' type='org.eclipse.equinox.p2.artifact.repository.simpleRepository' version='1'>
   <properties size='3'>
-    <property name='p2.timestamp' value='1548445380123'/>
+    <property name='p2.timestamp' value='1548445528578'/>
     <property name='publishPackFilesAsSiblings' value='true'/>
     <property name='p2.compressed' value='true'/>
   </properties>
@@ -54,6 +54,13 @@
         <property name='artifact.size' value='4025895'/>
         <property name='download.size' value='4025895'/>
         <property name='download.md5' value='a7cb0f2ae7767c26a17e8f70555af17f'/>
+      </properties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.apache.jclouds.feature' version='2.1.2.3'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='1506'/>
+        <property name='download.contentType' value='application/zip'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='com.google.inject.assistedinject' version='3.0.0'>
@@ -186,7 +193,7 @@
       <properties size='3'>
         <property name='artifact.size' value='35331'/>
         <property name='download.size' value='35331'/>
-        <property name='download.md5' value='c0e421107b4b3ab00ff3972c78ffc7db'/>
+        <property name='download.md5' value='3c477b803361c429964979bad1a719c1'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='com.sun.jna.platform' version='4.1.0'>
@@ -299,13 +306,6 @@
         <property name='artifact.size' value='1128961'/>
         <property name='download.size' value='1128961'/>
         <property name='download.md5' value='fa33422da128c286dc2dc4d4a43ebe8e'/>
-      </properties>
-    </artifact>
-    <artifact classifier='org.eclipse.update.feature' id='org.apache.jclouds.feature' version='2.1.2.2'>
-      <properties size='3'>
-        <property name='artifact.size' value='4096'/>
-        <property name='download.size' value='1506'/>
-        <property name='download.contentType' value='application/zip'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='jclouds-scriptbuilder' version='2.1.2.SNAPSHOT'>
