@@ -2,10 +2,10 @@
 <?metadataRepository version='1.1.0'?>
 <repository name='file:/home/markus/src/TLA/jclouds2p2/target/repository - metadata' type='org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository' version='1'>
   <properties size='2'>
-    <property name='p2.timestamp' value='1543172375530'/>
+    <property name='p2.timestamp' value='1548445380127'/>
     <property name='p2.compressed' value='true'/>
   </properties>
-  <units size='54'>
+  <units size='55'>
     <unit id='azurecompute-arm' version='2.1.2.SNAPSHOT' singleton='false'>
       <update id='azurecompute-arm' range='[0.0.0,2.1.2.SNAPSHOT)' severity='0'/>
       <properties size='4'>
@@ -14,11 +14,12 @@
         <property name='org.eclipse.equinox.p2.provider' value='The Apache Software Foundation'/>
         <property name='org.eclipse.equinox.p2.doc.url' value='http://www.apache.org/'/>
       </properties>
-      <provides size='21'>
+      <provides size='23'>
         <provided namespace='org.eclipse.equinox.p2.iu' name='azurecompute-arm' version='2.1.2.SNAPSHOT'/>
         <provided namespace='osgi.bundle' name='azurecompute-arm' version='2.1.2.SNAPSHOT'/>
         <provided namespace='java.package' name='org.jclouds.azurecompute.arm.compute.domain' version='2.1.2.SNAPSHOT'/>
         <provided namespace='java.package' name='org.jclouds.azurecompute.arm.compute.extensions' version='2.1.2.SNAPSHOT'/>
+        <provided namespace='java.package' name='org.jclouds.azurecompute.arm.domain.loadbalancer' version='2.1.2.SNAPSHOT'/>
         <provided namespace='java.package' name='org.jclouds.azurecompute.arm' version='2.1.2.SNAPSHOT'/>
         <provided namespace='java.package' name='org.jclouds.azurecompute.arm.domain.vpn' version='2.1.2.SNAPSHOT'/>
         <provided namespace='java.package' name='org.jclouds.azurecompute.arm.filters' version='2.1.2.SNAPSHOT'/>
@@ -32,6 +33,7 @@
         <provided namespace='java.package' name='org.jclouds.azurecompute.arm.exceptions' version='2.1.2.SNAPSHOT'/>
         <provided namespace='java.package' name='org.jclouds.azurecompute.arm.config' version='2.1.2.SNAPSHOT'/>
         <provided namespace='java.package' name='org.jclouds.azurecompute.arm.compute.functions' version='2.1.2.SNAPSHOT'/>
+        <provided namespace='java.package' name='org.jclouds.azurecompute.arm.domain.publicipaddress' version='2.1.2.SNAPSHOT'/>
         <provided namespace='java.package' name='org.jclouds.azurecompute.arm.compute.loaders' version='2.1.2.SNAPSHOT'/>
         <provided namespace='java.package' name='org.jclouds.azurecompute.arm.compute' version='2.1.2.SNAPSHOT'/>
         <provided namespace='java.package' name='org.jclouds.azurecompute.arm.domain' version='2.1.2.SNAPSHOT'/>
@@ -2539,12 +2541,13 @@
       <provides size='1'>
         <provided namespace='org.eclipse.equinox.p2.iu' name='org.apache.jclouds.feature.feature.group' version='2.1.2.2'/>
       </provides>
-      <requires size='45'>
+      <requires size='46'>
         <required namespace='org.eclipse.equinox.p2.iu' name='aws-ec2' range='[2.1.2.SNAPSHOT,2.1.2.SNAPSHOT]'/>
         <required namespace='org.eclipse.equinox.p2.iu' name='aws-s3' range='[2.1.2.SNAPSHOT,2.1.2.SNAPSHOT]'/>
         <required namespace='org.eclipse.equinox.p2.iu' name='ec2' range='[2.1.2.SNAPSHOT,2.1.2.SNAPSHOT]'/>
         <required namespace='org.eclipse.equinox.p2.iu' name='azurecompute' range='[2.1.2.SNAPSHOT,2.1.2.SNAPSHOT]'/>
         <required namespace='org.eclipse.equinox.p2.iu' name='azurecompute-arm' range='[2.1.2.SNAPSHOT,2.1.2.SNAPSHOT]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='packet' range='[2.1.2.SNAPSHOT,2.1.2.SNAPSHOT]'/>
         <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-blobstore' range='[2.1.2.SNAPSHOT,2.1.2.SNAPSHOT]'/>
         <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-bouncycastle' range='[2.1.2.SNAPSHOT,2.1.2.SNAPSHOT]'/>
         <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-compute' range='[2.1.2.SNAPSHOT,2.1.2.SNAPSHOT]'/>
@@ -2828,6 +2831,98 @@
         <instructions size='1'>
           <instruction key='manifest'>
             Bundle-SymbolicName: jclouds-sshj&#xA;Bundle-Version: 2.1.2.SNAPSHOT&#xA;
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='packet' version='2.1.2.SNAPSHOT' singleton='false'>
+      <update id='packet' range='[0.0.0,2.1.2.SNAPSHOT)' severity='0'/>
+      <properties size='4'>
+        <property name='org.eclipse.equinox.p2.name' value='jclouds Packet compute API'/>
+        <property name='org.eclipse.equinox.p2.description' value='jclouds components to access an implementation of Packet&apos;s Compute Service'/>
+        <property name='org.eclipse.equinox.p2.provider' value='The Apache Software Foundation'/>
+        <property name='org.eclipse.equinox.p2.doc.url' value='http://www.apache.org/'/>
+      </properties>
+      <provides size='17'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='packet' version='2.1.2.SNAPSHOT'/>
+        <provided namespace='osgi.bundle' name='packet' version='2.1.2.SNAPSHOT'/>
+        <provided namespace='java.package' name='org.jclouds.packet.compute' version='2.1.2.SNAPSHOT'/>
+        <provided namespace='java.package' name='org.jclouds.packet.compute.functions' version='2.1.2.SNAPSHOT'/>
+        <provided namespace='java.package' name='org.jclouds.packet.functions' version='2.1.2.SNAPSHOT'/>
+        <provided namespace='java.package' name='org.jclouds.packet.handlers' version='2.1.2.SNAPSHOT'/>
+        <provided namespace='java.package' name='org.jclouds.packet.filters' version='2.1.2.SNAPSHOT'/>
+        <provided namespace='java.package' name='org.jclouds.packet' version='2.1.2.SNAPSHOT'/>
+        <provided namespace='java.package' name='org.jclouds.packet.compute.config' version='2.1.2.SNAPSHOT'/>
+        <provided namespace='java.package' name='org.jclouds.packet.domain' version='2.1.2.SNAPSHOT'/>
+        <provided namespace='java.package' name='org.jclouds.packet.domain.internal' version='2.1.2.SNAPSHOT'/>
+        <provided namespace='java.package' name='org.jclouds.packet.features' version='2.1.2.SNAPSHOT'/>
+        <provided namespace='java.package' name='org.jclouds.packet.config' version='2.1.2.SNAPSHOT'/>
+        <provided namespace='java.package' name='org.jclouds.packet.domain.options' version='2.1.2.SNAPSHOT'/>
+        <provided namespace='java.package' name='org.jclouds.packet.compute.strategy' version='2.1.2.SNAPSHOT'/>
+        <provided namespace='java.package' name='org.jclouds.packet.compute.options' version='2.1.2.SNAPSHOT'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='51'>
+        <required namespace='java.package' name='com.google.common.base' range='[18.0.0,24.0.0)' optional='true' greedy='false'/>
+        <required namespace='java.package' name='com.google.common.collect' range='[18.0.0,24.0.0)' optional='true' greedy='false'/>
+        <required namespace='java.package' name='com.google.common.net' range='[18.0.0,24.0.0)' optional='true' greedy='false'/>
+        <required namespace='java.package' name='com.google.common.reflect' range='[18.0.0,24.0.0)' optional='true' greedy='false'/>
+        <required namespace='java.package' name='com.google.common.util.concurrent' range='[18.0.0,24.0.0)' optional='true' greedy='false'/>
+        <required namespace='java.package' name='com.google.inject' range='[1.3.0,2.0.0)'/>
+        <required namespace='java.package' name='com.google.inject.binder' range='[1.3.0,2.0.0)'/>
+        <required namespace='java.package' name='com.google.inject.name' range='[1.3.0,2.0.0)'/>
+        <required namespace='java.package' name='javax.annotation' range='0.0.0'/>
+        <required namespace='java.package' name='javax.inject' range='0.0.0'/>
+        <required namespace='java.package' name='javax.ws.rs' range='[2.0.0,3.0.0)'/>
+        <required namespace='java.package' name='org.jclouds' range='2.1.2.SNAPSHOT'/>
+        <required namespace='java.package' name='org.jclouds.apis' range='2.1.2.SNAPSHOT'/>
+        <required namespace='java.package' name='org.jclouds.apis.internal' range='2.1.2.SNAPSHOT'/>
+        <required namespace='java.package' name='org.jclouds.collect' range='2.1.2.SNAPSHOT'/>
+        <required namespace='java.package' name='org.jclouds.collect.internal' range='2.1.2.SNAPSHOT'/>
+        <required namespace='java.package' name='org.jclouds.compute' range='2.1.2.SNAPSHOT'/>
+        <required namespace='java.package' name='org.jclouds.compute.config' range='2.1.2.SNAPSHOT'/>
+        <required namespace='java.package' name='org.jclouds.compute.domain' range='2.1.2.SNAPSHOT'/>
+        <required namespace='java.package' name='org.jclouds.compute.domain.internal' range='2.1.2.SNAPSHOT'/>
+        <required namespace='java.package' name='org.jclouds.compute.functions' range='2.1.2.SNAPSHOT'/>
+        <required namespace='java.package' name='org.jclouds.compute.options' range='2.1.2.SNAPSHOT'/>
+        <required namespace='java.package' name='org.jclouds.compute.reference' range='2.1.2.SNAPSHOT'/>
+        <required namespace='java.package' name='org.jclouds.compute.strategy' range='2.1.2.SNAPSHOT'/>
+        <required namespace='java.package' name='org.jclouds.compute.strategy.impl' range='2.1.2.SNAPSHOT'/>
+        <required namespace='java.package' name='org.jclouds.domain' range='2.1.2.SNAPSHOT'/>
+        <required namespace='java.package' name='org.jclouds.http' range='2.1.2.SNAPSHOT'/>
+        <required namespace='java.package' name='org.jclouds.http.annotation' range='2.1.2.SNAPSHOT'/>
+        <required namespace='java.package' name='org.jclouds.http.functions' range='2.1.2.SNAPSHOT'/>
+        <required namespace='java.package' name='org.jclouds.http.options' range='2.1.2.SNAPSHOT'/>
+        <required namespace='java.package' name='org.jclouds.http.utils' range='2.1.2.SNAPSHOT'/>
+        <required namespace='java.package' name='org.jclouds.io' range='2.1.2.SNAPSHOT'/>
+        <required namespace='java.package' name='org.jclouds.javax.annotation' range='2.1.2.SNAPSHOT'/>
+        <required namespace='java.package' name='org.jclouds.json' range='2.1.2.SNAPSHOT'/>
+        <required namespace='java.package' name='org.jclouds.json.config' range='2.1.2.SNAPSHOT'/>
+        <required namespace='java.package' name='org.jclouds.location' range='2.1.2.SNAPSHOT'/>
+        <required namespace='java.package' name='org.jclouds.location.suppliers' range='2.1.2.SNAPSHOT'/>
+        <required namespace='java.package' name='org.jclouds.location.suppliers.all' range='2.1.2.SNAPSHOT'/>
+        <required namespace='java.package' name='org.jclouds.location.suppliers.implicit' range='2.1.2.SNAPSHOT'/>
+        <required namespace='java.package' name='org.jclouds.logging' range='2.1.2.SNAPSHOT'/>
+        <required namespace='java.package' name='org.jclouds.providers' range='2.1.2.SNAPSHOT'/>
+        <required namespace='java.package' name='org.jclouds.providers.internal' range='2.1.2.SNAPSHOT'/>
+        <required namespace='java.package' name='org.jclouds.reflect' range='2.1.2.SNAPSHOT'/>
+        <required namespace='java.package' name='org.jclouds.rest' range='2.1.2.SNAPSHOT'/>
+        <required namespace='java.package' name='org.jclouds.rest.annotations' range='2.1.2.SNAPSHOT'/>
+        <required namespace='java.package' name='org.jclouds.rest.binders' range='2.1.2.SNAPSHOT'/>
+        <required namespace='java.package' name='org.jclouds.rest.config' range='2.1.2.SNAPSHOT'/>
+        <required namespace='java.package' name='org.jclouds.rest.internal' range='2.1.2.SNAPSHOT'/>
+        <required namespace='java.package' name='org.jclouds.scriptbuilder.domain' range='2.1.2.SNAPSHOT'/>
+        <required namespace='java.package' name='org.jclouds.ssh' range='2.1.2.SNAPSHOT'/>
+        <required namespace='java.package' name='org.jclouds.util' range='2.1.2.SNAPSHOT'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='packet' version='2.1.2.SNAPSHOT'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: packet&#xA;Bundle-Version: 2.1.2.SNAPSHOT&#xA;
           </instruction>
         </instructions>
       </touchpointData>
