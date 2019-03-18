@@ -2,7 +2,7 @@
 <feature
       id="org.apache.jclouds.feature"
       label="Feature"
-      version="2.1.2.10">
+      version="2.1.2.4">
 
    <license url="">
       MIT License
