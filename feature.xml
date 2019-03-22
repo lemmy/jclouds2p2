@@ -2,7 +2,7 @@
 <feature
       id="org.apache.jclouds.feature"
       label="Feature"
-      version="2.1.2.4">
+      version="2.1.2.5">
 
    <license url="">
       MIT License
@@ -187,7 +187,7 @@ SOFTWARE.
          id="com.jcraft.jsch.agentproxy.osgi"
          download-size="0"
          install-size="0"
-         version="0.0.8"
+         version="0.0.9"
          unpack="false"/>
 
    <plugin

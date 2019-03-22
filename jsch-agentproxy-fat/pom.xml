@@ -5,7 +5,7 @@
 
   <groupId>com.jcraft</groupId>
   <artifactId>jsch.agentproxy.osgi</artifactId>
-  <version>0.0.8</version>
+  <version>0.0.9</version>
   <name>Wrapper bundle containing all jsch dependent bundles</name>
   <packaging>bundle</packaging>
 

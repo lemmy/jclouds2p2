@@ -76,7 +76,7 @@
 								<resource>
 									<directory>${basedir}/jsch-agentproxy-fat/target/</directory>
 									<includes>
-										<include>jsch.agentproxy.osgi-0.0.8.jar</include>
+										<include>jsch.agentproxy.osgi-0.0.9.jar</include>
 									</includes>
 								</resource>
 							</resources>
