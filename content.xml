@@ -2,7 +2,7 @@
 <?metadataRepository version='1.2.0'?>
 <repository name='file:/home/markus/src/TLA/_deps/jclouds2p2/target/repository - metadata' type='org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository' version='1'>
   <properties size='2'>
-    <property name='p2.timestamp' value='1552935633117'/>
+    <property name='p2.timestamp' value='1553225321967'/>
     <property name='p2.compressed' value='true'/>
   </properties>
   <units size='54'>
@@ -1086,19 +1086,19 @@
         </instructions>
       </touchpointData>
     </unit>
-    <unit id='com.jcraft.jsch.agentproxy.osgi' version='0.0.8' singleton='false' generation='2'>
-      <update id='com.jcraft.jsch.agentproxy.osgi' range='[0.0.0,0.0.8)' severity='0'/>
+    <unit id='com.jcraft.jsch.agentproxy.osgi' version='0.0.9' singleton='false' generation='2'>
+      <update id='com.jcraft.jsch.agentproxy.osgi' range='[0.0.0,0.0.9)' severity='0'/>
       <properties size='1'>
         <property name='org.eclipse.equinox.p2.name' value='Wrapper bundle containing all jsch dependent bundles'/>
       </properties>
       <provides size='8'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='com.jcraft.jsch.agentproxy.osgi' version='0.0.8'/>
-        <provided namespace='osgi.bundle' name='com.jcraft.jsch.agentproxy.osgi' version='0.0.8'/>
-        <provided namespace='java.package' name='com.jcraft.jsch.agentproxy' version='0.0.8'/>
-        <provided namespace='java.package' name='com.jcraft.jsch.agentproxy.connector' version='0.0.8'/>
-        <provided namespace='java.package' name='com.jcraft.jsch.agentproxy.sshj' version='0.0.8'/>
-        <provided namespace='java.package' name='com.jcraft.jsch.agentproxy.usocket' version='0.0.8'/>
-        <provided namespace='osgi.identity' name='com.jcraft.jsch.agentproxy.osgi' version='0.0.8'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='com.jcraft.jsch.agentproxy.osgi' version='0.0.9'/>
+        <provided namespace='osgi.bundle' name='com.jcraft.jsch.agentproxy.osgi' version='0.0.9'/>
+        <provided namespace='java.package' name='com.jcraft.jsch.agentproxy' version='0.0.9'/>
+        <provided namespace='java.package' name='com.jcraft.jsch.agentproxy.connector' version='0.0.9'/>
+        <provided namespace='java.package' name='com.jcraft.jsch.agentproxy.sshj' version='0.0.9'/>
+        <provided namespace='java.package' name='com.jcraft.jsch.agentproxy.usocket' version='0.0.9'/>
+        <provided namespace='osgi.identity' name='com.jcraft.jsch.agentproxy.osgi' version='0.0.9'>
           <properties size='1'>
             <property name='type' value='osgi.bundle'/>
           </properties>
@@ -1120,13 +1120,13 @@
         <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=1.5))'/>
       </requires>
       <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='com.jcraft.jsch.agentproxy.osgi' version='0.0.8'/>
+        <artifact classifier='osgi.bundle' id='com.jcraft.jsch.agentproxy.osgi' version='0.0.9'/>
       </artifacts>
       <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
       <touchpointData size='1'>
         <instructions size='1'>
           <instruction key='manifest'>
-            Bundle-SymbolicName: com.jcraft.jsch.agentproxy.osgi&#xA;Bundle-Version: 0.0.8&#xA;
+            Bundle-SymbolicName: com.jcraft.jsch.agentproxy.osgi&#xA;Bundle-Version: 0.0.9&#xA;
           </instruction>
         </instructions>
       </touchpointData>
@@ -2166,35 +2166,6 @@
         </instructions>
       </touchpointData>
     </unit>
-    <unit id='org.apache.jclouds.feature.feature.jar' version='2.1.2.4'>
-      <properties size='1'>
-        <property name='org.eclipse.equinox.p2.name' value='Feature'/>
-      </properties>
-      <provides size='3'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='org.apache.jclouds.feature.feature.jar' version='2.1.2.4'/>
-        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
-        <provided namespace='org.eclipse.update.feature' name='org.apache.jclouds.feature' version='2.1.2.4'/>
-      </provides>
-      <filter>
-        (org.eclipse.update.install.features=true)
-      </filter>
-      <artifacts size='1'>
-        <artifact classifier='org.eclipse.update.feature' id='org.apache.jclouds.feature' version='2.1.2.4'/>
-      </artifacts>
-      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='1'>
-          <instruction key='zipped'>
-            true
-          </instruction>
-        </instructions>
-      </touchpointData>
-      <licenses size='1'>
-        <license uri='' url=''>
-          MIT License&#xA;&#xA;Copyright (c) 2018 Microsoft Corporation&#xA;&#xA;Permission is hereby granted, free of charge, to any person obtaining a copy&#xA;of this software and associated documentation files (the &quot;Software&quot;), to deal&#xA;in the Software without restriction, including without limitation the rights&#xA;to use, copy, modify, merge, publish, distribute, sublicense, and/or sell&#xA;copies of the Software, and to permit persons to whom the Software is&#xA;furnished to do so, subject to the following conditions:&#xA;&#xA;The above copyright notice and this permission notice shall be included in all&#xA;copies or substantial portions of the Software.&#xA;&#xA;THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR&#xA;IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,&#xA;FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE&#xA;AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER&#xA;LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,&#xA;OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE&#xA;SOFTWARE.
-        </license>
-      </licenses>
-    </unit>
     <unit id='packet' version='2.1.2' singleton='false'>
       <update id='packet' range='[0.0.0,2.1.2)' severity='0'/>
       <properties size='4'>
@@ -2438,6 +2409,35 @@
         </instructions>
       </touchpointData>
     </unit>
+    <unit id='org.apache.jclouds.feature.feature.jar' version='2.1.2.5'>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.name' value='Feature'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.apache.jclouds.feature.feature.jar' version='2.1.2.5'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
+        <provided namespace='org.eclipse.update.feature' name='org.apache.jclouds.feature' version='2.1.2.5'/>
+      </provides>
+      <filter>
+        (org.eclipse.update.install.features=true)
+      </filter>
+      <artifacts size='1'>
+        <artifact classifier='org.eclipse.update.feature' id='org.apache.jclouds.feature' version='2.1.2.5'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+      <licenses size='1'>
+        <license uri='' url=''>
+          MIT License&#xA;&#xA;Copyright (c) 2018 Microsoft Corporation&#xA;&#xA;Permission is hereby granted, free of charge, to any person obtaining a copy&#xA;of this software and associated documentation files (the &quot;Software&quot;), to deal&#xA;in the Software without restriction, including without limitation the rights&#xA;to use, copy, modify, merge, publish, distribute, sublicense, and/or sell&#xA;copies of the Software, and to permit persons to whom the Software is&#xA;furnished to do so, subject to the following conditions:&#xA;&#xA;The above copyright notice and this permission notice shall be included in all&#xA;copies or substantial portions of the Software.&#xA;&#xA;THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR&#xA;IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,&#xA;FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE&#xA;AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER&#xA;LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,&#xA;OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE&#xA;SOFTWARE.
+        </license>
+      </licenses>
+    </unit>
     <unit id='com.google.inject' version='3.0.0' singleton='false' generation='2'>
       <update id='com.google.inject' range='[0.0.0,3.0.0)' severity='0'/>
       <properties size='4'>
@@ -2595,6 +2595,73 @@
         </instructions>
       </touchpointData>
     </unit>
+    <unit id='org.apache.jclouds.feature.feature.group' version='2.1.2.5' singleton='false'>
+      <update id='org.apache.jclouds.feature.feature.group' range='[0.0.0,2.1.2.5)' severity='0'/>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='Feature'/>
+        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.apache.jclouds.feature.feature.group' version='2.1.2.5'/>
+      </provides>
+      <requires size='45'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='aws-ec2' range='[2.1.2,2.1.2]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='aws-s3' range='[2.1.2,2.1.2]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='ec2' range='[2.1.2,2.1.2]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='azurecompute-arm' range='[2.1.2,2.1.2]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='packet' range='[2.1.2,2.1.2]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-blobstore' range='[2.1.2,2.1.2]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-bouncycastle' range='[2.1.2,2.1.2]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-compute' range='[2.1.2,2.1.2]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-core' range='[2.1.2,2.1.2]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-enterprise' range='[2.1.2,2.1.2]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-okhttp' range='[2.1.2,2.1.2]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.servicemix.bundles.okhttp' range='[2.2.0.1,2.2.0.1]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.servicemix.bundles.okio' range='[1.2.0.1,1.2.0.1]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='oauth' range='[2.1.2,2.1.2]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-joda' range='[2.1.2,2.1.2]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-netty' range='[2.1.2,2.1.2]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-scriptbuilder' range='[2.1.2,2.1.2]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-slf4j' range='[2.1.2,2.1.2]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-sshj' range='[2.1.2,2.1.2]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='com.google.gson' range='[2.5.0,2.5.0]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='com.google.inject' range='[3.0.0,3.0.0]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='com.google.inject.assistedinject' range='[3.0.0,3.0.0]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='com.jcraft.jsch.agentproxy.osgi' range='[0.0.9,0.0.9]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='joda-time' range='[2.1.0,2.1.0]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='com.hierynomus.sshj' range='[0.21.1,0.21.1]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.servicemix.bundles.javax-inject' range='[1.0.0.2,1.0.0.2]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.servicemix.bundles.jsch' range='[0.1.51.1,0.1.51.1]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.servicemix.bundles.jzlib' range='[1.1.3.2,1.1.3.2]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='bcpkix' range='[1.58.0,1.58.0]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='bcprov' range='[1.58.0,1.58.0]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='bcprov-ext' range='[1.58.0,1.58.0]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.servicemix.bundles.aopalliance' range='[1.0.0.6,1.0.0.6]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='s3' range='[2.1.2,2.1.2]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='slf4j.api' range='[1.7.25,1.7.25]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='slf4j.nop' range='[1.7.25,1.7.25]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='slf4j.simple' range='[1.7.25,1.7.25]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='sts' range='[2.1.2,2.1.2]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.jboss.netty' range='[3.5.9.Final,3.5.9.Final]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='javax.ws.rs-api' range='[2.1.99.b01,2.1.99.b01]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='com.sun.jna' range='[4.1.0,4.1.0]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='com.sun.jna.platform' range='[4.1.0,4.1.0]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.servicemix.bundles.java-xmlbuilder' range='[0.6.0.1,0.6.0.1]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.i2p.crypto.eddsa' range='[0.1.0,0.1.0]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='jaxb-api' range='[2.3.1,2.3.1]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.jclouds.feature.feature.jar' range='[2.1.2.5,2.1.2.5]'>
+          <filter>
+            (org.eclipse.update.install.features=true)
+          </filter>
+        </required>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+      <licenses size='1'>
+        <license uri='' url=''>
+          MIT License&#xA;&#xA;Copyright (c) 2018 Microsoft Corporation&#xA;&#xA;Permission is hereby granted, free of charge, to any person obtaining a copy&#xA;of this software and associated documentation files (the &quot;Software&quot;), to deal&#xA;in the Software without restriction, including without limitation the rights&#xA;to use, copy, modify, merge, publish, distribute, sublicense, and/or sell&#xA;copies of the Software, and to permit persons to whom the Software is&#xA;furnished to do so, subject to the following conditions:&#xA;&#xA;The above copyright notice and this permission notice shall be included in all&#xA;copies or substantial portions of the Software.&#xA;&#xA;THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR&#xA;IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,&#xA;FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE&#xA;AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER&#xA;LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,&#xA;OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE&#xA;SOFTWARE.
+        </license>
+      </licenses>
+    </unit>
     <unit id='jclouds-blobstore' version='2.1.2' singleton='false'>
       <update id='jclouds-blobstore' range='[0.0.0,2.1.2)' severity='0'/>
       <properties size='4'>
@@ -2674,73 +2741,6 @@
           </instruction>
         </instructions>
       </touchpointData>
-    </unit>
-    <unit id='org.apache.jclouds.feature.feature.group' version='2.1.2.4' singleton='false'>
-      <update id='org.apache.jclouds.feature.feature.group' range='[0.0.0,2.1.2.4)' severity='0'/>
-      <properties size='2'>
-        <property name='org.eclipse.equinox.p2.name' value='Feature'/>
-        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
-      </properties>
-      <provides size='1'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='org.apache.jclouds.feature.feature.group' version='2.1.2.4'/>
-      </provides>
-      <requires size='45'>
-        <required namespace='org.eclipse.equinox.p2.iu' name='aws-ec2' range='[2.1.2,2.1.2]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='aws-s3' range='[2.1.2,2.1.2]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='ec2' range='[2.1.2,2.1.2]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='azurecompute-arm' range='[2.1.2,2.1.2]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='packet' range='[2.1.2,2.1.2]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-blobstore' range='[2.1.2,2.1.2]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-bouncycastle' range='[2.1.2,2.1.2]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-compute' range='[2.1.2,2.1.2]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-core' range='[2.1.2,2.1.2]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-enterprise' range='[2.1.2,2.1.2]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-okhttp' range='[2.1.2,2.1.2]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.servicemix.bundles.okhttp' range='[2.2.0.1,2.2.0.1]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.servicemix.bundles.okio' range='[1.2.0.1,1.2.0.1]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='oauth' range='[2.1.2,2.1.2]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-joda' range='[2.1.2,2.1.2]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-netty' range='[2.1.2,2.1.2]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-scriptbuilder' range='[2.1.2,2.1.2]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-slf4j' range='[2.1.2,2.1.2]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-sshj' range='[2.1.2,2.1.2]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='com.google.gson' range='[2.5.0,2.5.0]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='com.google.inject' range='[3.0.0,3.0.0]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='com.google.inject.assistedinject' range='[3.0.0,3.0.0]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='com.jcraft.jsch.agentproxy.osgi' range='[0.0.8,0.0.8]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='joda-time' range='[2.1.0,2.1.0]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='com.hierynomus.sshj' range='[0.21.1,0.21.1]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.servicemix.bundles.javax-inject' range='[1.0.0.2,1.0.0.2]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.servicemix.bundles.jsch' range='[0.1.51.1,0.1.51.1]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.servicemix.bundles.jzlib' range='[1.1.3.2,1.1.3.2]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='bcpkix' range='[1.58.0,1.58.0]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='bcprov' range='[1.58.0,1.58.0]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='bcprov-ext' range='[1.58.0,1.58.0]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.servicemix.bundles.aopalliance' range='[1.0.0.6,1.0.0.6]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='s3' range='[2.1.2,2.1.2]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='slf4j.api' range='[1.7.25,1.7.25]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='slf4j.nop' range='[1.7.25,1.7.25]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='slf4j.simple' range='[1.7.25,1.7.25]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='sts' range='[2.1.2,2.1.2]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.jboss.netty' range='[3.5.9.Final,3.5.9.Final]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='javax.ws.rs-api' range='[2.1.99.b01,2.1.99.b01]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='com.sun.jna' range='[4.1.0,4.1.0]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='com.sun.jna.platform' range='[4.1.0,4.1.0]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.servicemix.bundles.java-xmlbuilder' range='[0.6.0.1,0.6.0.1]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='net.i2p.crypto.eddsa' range='[0.1.0,0.1.0]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='jaxb-api' range='[2.3.1,2.3.1]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.jclouds.feature.feature.jar' range='[2.1.2.4,2.1.2.4]'>
-          <filter>
-            (org.eclipse.update.install.features=true)
-          </filter>
-        </required>
-      </requires>
-      <touchpoint id='null' version='0.0.0'/>
-      <licenses size='1'>
-        <license uri='' url=''>
-          MIT License&#xA;&#xA;Copyright (c) 2018 Microsoft Corporation&#xA;&#xA;Permission is hereby granted, free of charge, to any person obtaining a copy&#xA;of this software and associated documentation files (the &quot;Software&quot;), to deal&#xA;in the Software without restriction, including without limitation the rights&#xA;to use, copy, modify, merge, publish, distribute, sublicense, and/or sell&#xA;copies of the Software, and to permit persons to whom the Software is&#xA;furnished to do so, subject to the following conditions:&#xA;&#xA;The above copyright notice and this permission notice shall be included in all&#xA;copies or substantial portions of the Software.&#xA;&#xA;THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR&#xA;IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,&#xA;FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE&#xA;AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER&#xA;LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,&#xA;OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE&#xA;SOFTWARE.
-        </license>
-      </licenses>
     </unit>
     <unit id='aws-s3' version='2.1.2' singleton='false'>
       <update id='aws-s3' range='[0.0.0,2.1.2)' severity='0'/>

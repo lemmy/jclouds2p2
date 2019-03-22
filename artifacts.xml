@@ -2,7 +2,7 @@
 <?artifactRepository version='1.1.0'?>
 <repository name='file:/home/markus/src/TLA/_deps/jclouds2p2/target/repository - artifacts' type='org.eclipse.equinox.p2.artifact.repository.simpleRepository' version='1'>
   <properties size='3'>
-    <property name='p2.timestamp' value='1552935633112'/>
+    <property name='p2.timestamp' value='1553225321962'/>
     <property name='publishPackFilesAsSiblings' value='true'/>
     <property name='p2.compressed' value='true'/>
   </properties>
@@ -194,15 +194,6 @@
         <property name='download.checksum.sha-256' value='a5a0f8d3c1c5fb2df2abc4cb68d79b38e71fb37fc2a84d898d2f775150f43a5f'/>
       </properties>
     </artifact>
-    <artifact classifier='osgi.bundle' id='com.jcraft.jsch.agentproxy.osgi' version='0.0.8'>
-      <properties size='5'>
-        <property name='artifact.size' value='35325'/>
-        <property name='download.size' value='35325'/>
-        <property name='download.md5' value='380a399f75846a8b35f1c48b308389de'/>
-        <property name='download.checksum.md5' value='380a399f75846a8b35f1c48b308389de'/>
-        <property name='download.checksum.sha-256' value='0c0f258fc4329de8ba051d4a003c02aad4838a779018205e2cd46fb78114803d'/>
-      </properties>
-    </artifact>
     <artifact classifier='osgi.bundle' id='com.sun.jna.platform' version='4.1.0'>
       <properties size='5'>
         <property name='artifact.size' value='1464423'/>
@@ -237,12 +228,6 @@
         <property name='download.md5' value='23b81452f9e2076ffefede649975b0d1'/>
         <property name='download.checksum.md5' value='23b81452f9e2076ffefede649975b0d1'/>
         <property name='download.checksum.sha-256' value='2c309eb2c9455ffee9da8518c70a3b6d46be2a269b2e2a101c806a537efe79a4'/>
-      </properties>
-    </artifact>
-    <artifact classifier='org.eclipse.update.feature' id='org.apache.jclouds.feature' version='2.1.2.4'>
-      <properties size='2'>
-        <property name='download.contentType' value='application/zip'/>
-        <property name='download.size' value='1496'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='aws-ec2' version='2.1.2'>
@@ -470,6 +455,12 @@
         <property name='download.checksum.sha-256' value='88b955a0df57880a26a74708bc34f74dcaf8ebf4e78843a28b50eae945732b06'/>
       </properties>
     </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.apache.jclouds.feature' version='2.1.2.5'>
+      <properties size='2'>
+        <property name='download.contentType' value='application/zip'/>
+        <property name='download.size' value='1496'/>
+      </properties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='ec2' version='2.1.2'>
       <properties size='5'>
         <property name='artifact.size' value='402956'/>
@@ -486,6 +477,15 @@
         <property name='download.md5' value='310950088e652a7189960029505a16ce'/>
         <property name='download.checksum.md5' value='310950088e652a7189960029505a16ce'/>
         <property name='download.checksum.sha-256' value='208cf77ba74c2f733dcfc2834d20fae7ab437bc97f87f47f71489b0b19194c59'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.jcraft.jsch.agentproxy.osgi' version='0.0.9'>
+      <properties size='5'>
+        <property name='artifact.size' value='35586'/>
+        <property name='download.size' value='35586'/>
+        <property name='download.md5' value='acaeffa2ed197366ad23c83c6b986002'/>
+        <property name='download.checksum.md5' value='acaeffa2ed197366ad23c83c6b986002'/>
+        <property name='download.checksum.sha-256' value='c5cc5a5e84a64eb5f88f775dbbc0ec0d12c507541beb39f4dd111a96599f531d'/>
       </properties>
     </artifact>
   </artifacts>
