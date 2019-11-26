@@ -2,7 +2,7 @@
 <feature
       id="org.apache.jclouds.feature"
       label="Feature"
-      version="2.1.2.5">
+      version="2.2.0.0">
 
    <license url="">
       MIT License
@@ -32,77 +32,77 @@ SOFTWARE.
          id="aws-ec2"
          download-size="0"
          install-size="0"
-         version="2.1.2"
+         version="2.2.0"
          unpack="false"/>
 
    <plugin
          id="aws-s3"
          download-size="0"
          install-size="0"
-         version="2.1.2"
+         version="2.2.0"
          unpack="false"/>
 
    <plugin
          id="ec2"
          download-size="0"
          install-size="0"
-         version="2.1.2"
+         version="2.2.0"
          unpack="false"/>
 
    <plugin
          id="azurecompute-arm"
          download-size="0"
          install-size="0"
-         version="2.1.2"
+         version="2.2.0"
          unpack="false"/>
 
    <plugin
          id="packet"
          download-size="0"
          install-size="0"
-         version="2.1.2"
+         version="2.2.0"
          unpack="false"/>
 
    <plugin
          id="jclouds-blobstore"
          download-size="0"
          install-size="0"
-         version="2.1.2"
+         version="2.2.0"
          unpack="false"/>
 
    <plugin
          id="jclouds-bouncycastle"
          download-size="0"
          install-size="0"
-         version="2.1.2"
+         version="2.2.0"
          unpack="false"/>
 
    <plugin
          id="jclouds-compute"
          download-size="0"
          install-size="0"
-         version="2.1.2"
+         version="2.2.0"
          unpack="false"/>
 
    <plugin
          id="jclouds-core"
          download-size="0"
          install-size="0"
-         version="2.1.2"
+         version="2.2.0"
          unpack="false"/>
 
    <plugin
          id="jclouds-enterprise"
          download-size="0"
          install-size="0"
-         version="2.1.2"
+         version="2.2.0"
          unpack="false"/>
 
    <plugin
          id="jclouds-okhttp"
          download-size="0"
          install-size="0"
-         version="2.1.2"
+         version="2.2.0"
          unpack="false"/>
 
    <plugin
@@ -123,49 +123,49 @@ SOFTWARE.
          id="oauth"
          download-size="0"
          install-size="0"
-         version="2.1.2"
+         version="2.2.0"
          unpack="false"/>
 
    <plugin
          id="jclouds-joda"
          download-size="0"
          install-size="0"
-         version="2.1.2"
+         version="2.2.0"
          unpack="false"/>
 
    <plugin
          id="jclouds-netty"
          download-size="0"
          install-size="0"
-         version="2.1.2"
+         version="2.2.0"
          unpack="false"/>
 
    <plugin
          id="jclouds-scriptbuilder"
          download-size="0"
          install-size="0"
-         version="2.1.2"
+         version="2.2.0"
          unpack="false"/>
 
    <plugin
          id="jclouds-slf4j"
          download-size="0"
          install-size="0"
-         version="2.1.2"
+         version="2.2.0"
          unpack="false"/>
 
    <plugin
          id="jclouds-sshj"
          download-size="0"
          install-size="0"
-         version="2.1.2"
+         version="2.2.0"
          unpack="false"/>
 
    <plugin
-         id="com.google.gson"
+         id="jclouds-gson"
          download-size="0"
          install-size="0"
-         version="2.5.0"
+         version="2.2.0"
          unpack="false"/>
 
    <plugin
@@ -266,7 +266,7 @@ SOFTWARE.
          id="s3"
          download-size="0"
          install-size="0"
-         version="2.1.2"
+         version="2.2.0"
          unpack="false"/>
 
    <plugin
@@ -294,7 +294,7 @@ SOFTWARE.
          id="sts"
          download-size="0"
          install-size="0"
-         version="2.1.2"
+         version="2.2.0"
          unpack="false"/>
 
    <plugin
