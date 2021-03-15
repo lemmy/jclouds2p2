@@ -2,10 +2,10 @@
 <?metadataRepository version='1.2.0'?>
 <repository name='file:/home/markus/src/TLA/_deps/jclouds2p2/target/repository - metadata' type='org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository' version='1'>
   <properties size='2'>
-    <property name='p2.timestamp' value='1615696735080'/>
+    <property name='p2.timestamp' value='1615837042608'/>
     <property name='p2.compressed' value='true'/>
   </properties>
-  <units size='57'>
+  <units size='58'>
     <unit id='com.jcraft.jsch.agentproxy.pageant' version='0.0.9' singleton='false'>
       <update id='com.jcraft.jsch.agentproxy.pageant' range='[0.0.0,0.0.9)' severity='0'/>
       <properties size='4'>
@@ -39,6 +39,62 @@
         <instructions size='1'>
           <instruction key='manifest'>
             Bundle-SymbolicName: com.jcraft.jsch.agentproxy.pageant&#xA;Bundle-Version: 0.0.9&#xA;
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='jclouds-jsch' version='2.3.0' singleton='false' generation='2'>
+      <update id='jclouds-jsch' range='[0.0.0,2.3.0)' severity='0'/>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='jclouds jsch ssh client'/>
+        <property name='org.eclipse.equinox.p2.description' value='jclouds jsch ssh client'/>
+      </properties>
+      <provides size='6'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='jclouds-jsch' version='2.3.0'/>
+        <provided namespace='osgi.bundle' name='jclouds-jsch' version='2.3.0'/>
+        <provided namespace='java.package' name='org.jclouds.ssh.jsch' version='2.3.0'/>
+        <provided namespace='java.package' name='org.jclouds.ssh.jsch.config' version='2.3.0'/>
+        <provided namespace='osgi.identity' name='jclouds-jsch' version='2.3.0'>
+          <properties size='1'>
+            <property name='type' value='osgi.bundle'/>
+          </properties>
+        </provided>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='24'>
+        <required namespace='java.package' name='com.google.common.base' range='[27.1.0,30.1.0)'/>
+        <required namespace='java.package' name='com.google.common.collect' range='[27.1.0,30.1.0)'/>
+        <required namespace='java.package' name='com.google.common.hash' range='[27.1.0,30.1.0)'/>
+        <required namespace='java.package' name='com.google.common.io' range='[27.1.0,30.1.0)'/>
+        <required namespace='java.package' name='com.google.common.net' range='[27.1.0,30.1.0)'/>
+        <required namespace='java.package' name='com.google.inject' range='[1.4.0,2.0.0)'/>
+        <required namespace='java.package' name='com.google.inject.binder' range='[1.4.0,2.0.0)'/>
+        <required namespace='java.package' name='com.jcraft.jsch' range='0.0.0'/>
+        <required namespace='java.package' name='com.jcraft.jsch.agentproxy' range='[0.0.0,1.0.0)'/>
+        <required namespace='java.package' name='javax.annotation' range='0.0.0'/>
+        <required namespace='java.package' name='javax.inject' range='0.0.0'/>
+        <required namespace='java.package' name='org.jclouds.compute.domain' range='[2.3.0,3.0.0)'/>
+        <required namespace='java.package' name='org.jclouds.domain' range='[2.3.0,3.0.0)'/>
+        <required namespace='java.package' name='org.jclouds.http.handlers' range='[2.3.0,3.0.0)'/>
+        <required namespace='java.package' name='org.jclouds.io' range='[2.3.0,3.0.0)'/>
+        <required namespace='java.package' name='org.jclouds.io.payloads' range='[2.3.0,3.0.0)'/>
+        <required namespace='java.package' name='org.jclouds.javax.annotation' range='[2.3.0,3.0.0)'/>
+        <required namespace='java.package' name='org.jclouds.logging' range='[2.3.0,3.0.0)'/>
+        <required namespace='java.package' name='org.jclouds.proxy' range='[2.3.0,3.0.0)'/>
+        <required namespace='java.package' name='org.jclouds.rest' range='[2.3.0,3.0.0)'/>
+        <required namespace='java.package' name='org.jclouds.ssh' range='[2.3.0,3.0.0)'/>
+        <required namespace='java.package' name='org.jclouds.ssh.config' range='[2.3.0,3.0.0)'/>
+        <required namespace='java.package' name='org.jclouds.util' range='[2.3.0,3.0.0)'/>
+        <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=1.8))'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='jclouds-jsch' version='2.3.0'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: jclouds-jsch&#xA;Bundle-Version: 2.3.0&#xA;
           </instruction>
         </instructions>
       </touchpointData>
@@ -540,7 +596,7 @@
       <provides size='1'>
         <provided namespace='org.eclipse.equinox.p2.iu' name='org.apache.jclouds.feature.feature.group' version='2.3.0.0'/>
       </provides>
-      <requires size='45'>
+      <requires size='41'>
         <required namespace='org.eclipse.equinox.p2.iu' name='aws-ec2' range='[2.3.0,2.3.0]'/>
         <required namespace='org.eclipse.equinox.p2.iu' name='aws-s3' range='[2.3.0,2.3.0]'/>
         <required namespace='org.eclipse.equinox.p2.iu' name='ec2' range='[2.3.0,2.3.0]'/>
@@ -560,18 +616,15 @@
         <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-scriptbuilder' range='[2.3.0,2.3.0]'/>
         <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-slf4j' range='[2.3.0,2.3.0]'/>
         <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-sshj' range='[2.3.0,2.3.0]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-jsch' range='[2.3.0,2.3.0]'/>
         <required namespace='org.eclipse.equinox.p2.iu' name='jclouds-gson' range='[2.2.1,2.2.1]'/>
         <required namespace='org.eclipse.equinox.p2.iu' name='com.google.inject' range='[4.2.3,4.2.3]'/>
         <required namespace='org.eclipse.equinox.p2.iu' name='com.google.inject.assistedinject' range='[4.2.3,4.2.3]'/>
         <required namespace='org.eclipse.equinox.p2.iu' name='com.jcraft.jsch.agentproxy.osgi' range='[0.0.9,0.0.9]'/>
         <required namespace='org.eclipse.equinox.p2.iu' name='joda-time' range='[2.1.0,2.1.0]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='com.hierynomus.sshj' range='[0.27.0,0.27.0]'/>
         <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.servicemix.bundles.javax-inject' range='[1.0.0.2,1.0.0.2]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.servicemix.bundles.jsch' range='[0.1.51.1,0.1.51.1]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.servicemix.bundles.jsch' range='[0.1.55.1,0.1.55.1]'/>
         <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.servicemix.bundles.jzlib' range='[1.1.3.2,1.1.3.2]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='bcpkix' range='[1.58.0,1.58.0]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='bcprov' range='[1.58.0,1.58.0]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='bcprov-ext' range='[1.58.0,1.58.0]'/>
         <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.servicemix.bundles.aopalliance' range='[1.0.0.6,1.0.0.6]'/>
         <required namespace='org.eclipse.equinox.p2.iu' name='s3' range='[2.3.0,2.3.0]'/>
         <required namespace='org.eclipse.equinox.p2.iu' name='slf4j.api' range='[1.7.25,1.7.25]'/>
@@ -583,7 +636,6 @@
         <required namespace='org.eclipse.equinox.p2.iu' name='com.sun.jna' range='[4.1.0,4.1.0]'/>
         <required namespace='org.eclipse.equinox.p2.iu' name='com.sun.jna.platform' range='[4.1.0,4.1.0]'/>
         <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.servicemix.bundles.java-xmlbuilder' range='[0.6.0.1,0.6.0.1]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='net.i2p.crypto.eddsa' range='[0.2.0,0.2.0]'/>
         <required namespace='org.eclipse.equinox.p2.iu' name='jaxb-api' range='[2.3.1,2.3.1]'/>
         <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.jclouds.feature.feature.jar' range='[2.3.0.0,2.3.0.0]'>
           <filter>
@@ -1036,7 +1088,8 @@
         </provided>
         <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
       </provides>
-      <requires size='12'>
+      <requires size='13'>
+        <required namespace='java.package' name='com.jcraft.jsch' range='0.0.0'/>
         <required namespace='java.package' name='com.jcraft.jsch.agentproxy' range='[0.0.0,1.0.0)'/>
         <required namespace='java.package' name='com.jcraft.jsch.agentproxy.connector' range='[0.0.0,1.0.0)'/>
         <required namespace='java.package' name='com.jcraft.jsch.agentproxy.usocket' range='[0.0.0,1.0.0)'/>
@@ -1098,35 +1151,36 @@
         </instructions>
       </touchpointData>
     </unit>
-    <unit id='net.i2p.crypto.eddsa' version='0.2.0' singleton='false' generation='2'>
-      <update id='net.i2p.crypto.eddsa' range='[0.0.0,0.2.0)' severity='0'/>
+    <unit id='net.i2p.crypto.eddsa' version='0.3.0' singleton='false' generation='2'>
+      <update id='net.i2p.crypto.eddsa' range='[0.0.0,0.3.0)' severity='0'/>
       <properties size='2'>
         <property name='org.eclipse.equinox.p2.name' value='EdDSA-Java'/>
         <property name='org.eclipse.equinox.p2.description' value='Implementation of EdDSA in Java'/>
       </properties>
       <provides size='6'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='net.i2p.crypto.eddsa' version='0.2.0'/>
-        <provided namespace='osgi.bundle' name='net.i2p.crypto.eddsa' version='0.2.0'/>
-        <provided namespace='java.package' name='net.i2p.crypto.eddsa' version='0.2.0'/>
-        <provided namespace='java.package' name='net.i2p.crypto.eddsa.spec' version='0.2.0'/>
-        <provided namespace='osgi.identity' name='net.i2p.crypto.eddsa' version='0.2.0'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.i2p.crypto.eddsa' version='0.3.0'/>
+        <provided namespace='osgi.bundle' name='net.i2p.crypto.eddsa' version='0.3.0'/>
+        <provided namespace='java.package' name='net.i2p.crypto.eddsa' version='0.3.0'/>
+        <provided namespace='java.package' name='net.i2p.crypto.eddsa.spec' version='0.3.0'/>
+        <provided namespace='osgi.identity' name='net.i2p.crypto.eddsa' version='0.3.0'>
           <properties size='1'>
             <property name='type' value='osgi.bundle'/>
           </properties>
         </provided>
         <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
       </provides>
-      <requires size='1'>
+      <requires size='2'>
+        <required namespace='java.package' name='sun.security.x509' range='0.0.0'/>
         <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=1.6))'/>
       </requires>
       <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='net.i2p.crypto.eddsa' version='0.2.0'/>
+        <artifact classifier='osgi.bundle' id='net.i2p.crypto.eddsa' version='0.3.0'/>
       </artifacts>
       <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
       <touchpointData size='1'>
         <instructions size='1'>
           <instruction key='manifest'>
-            Bundle-SymbolicName: net.i2p.crypto.eddsa&#xA;Bundle-Version: 0.2.0&#xA;
+            Bundle-SymbolicName: net.i2p.crypto.eddsa&#xA;Bundle-Version: 0.3.0&#xA;
           </instruction>
         </instructions>
       </touchpointData>
@@ -1395,165 +1449,168 @@
         </instructions>
       </touchpointData>
     </unit>
-    <unit id='bcprov-ext' version='1.58.0' singleton='false' generation='2'>
-      <update id='bcprov-ext' range='[0.0.0,1.58.0)' severity='0'/>
+    <unit id='bcprov-ext' version='1.60.0' singleton='false' generation='2'>
+      <update id='bcprov-ext' range='[0.0.0,1.60.0)' severity='0'/>
       <properties size='1'>
         <property name='org.eclipse.equinox.p2.name' value='bcprov-ext'/>
       </properties>
-      <provides size='154'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='bcprov-ext' version='1.58.0'/>
-        <provided namespace='osgi.bundle' name='bcprov-ext' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.anssi' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.bc' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.bsi' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.cmc' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.cmp' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.cms' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.cms.ecc' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.crmf' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.cryptopro' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.dvcs' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.eac' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.esf' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.ess' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.est' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.gm' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.gnu' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.iana' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.icao' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.isismtt' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.isismtt.ocsp' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.isismtt.x509' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.iso' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.kisa' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.microsoft' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.misc' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.mozilla' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.nist' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.nsri' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.ntt' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.ocsp' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.oiw' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.pkcs' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.rosstandart' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.sec' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.smime' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.teletrust' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.tsp' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.ua' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.util' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.x500' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.x500.style' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.x509' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.x509.qualified' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.x509.sigi' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.x9' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.crypto' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.crypto.agreement' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.crypto.agreement.jpake' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.crypto.agreement.kdf' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.crypto.agreement.srp' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.crypto.commitments' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.crypto.digests' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.crypto.ec' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.crypto.encodings' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.crypto.engines' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.crypto.examples' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.crypto.generators' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.crypto.io' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.crypto.kems' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.crypto.macs' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.crypto.modes' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.crypto.modes.gcm' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.crypto.paddings' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.crypto.params' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.crypto.parsers' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.crypto.prng' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.crypto.prng.drbg' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.crypto.signers' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.crypto.tls' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.crypto.util' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.i18n' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.i18n.filter' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.iana' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.jcajce' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.jcajce.io' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.asymmetric' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.asymmetric.dh' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.asymmetric.dsa' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.asymmetric.dstu' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.asymmetric.ec' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.asymmetric.ecgost' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.asymmetric.ecgost12' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.asymmetric.elgamal' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.asymmetric.gost' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.asymmetric.ies' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.asymmetric.rsa' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.asymmetric.util' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.asymmetric.x509' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.config' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.digest' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.drbg' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.keystore' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.keystore.bc' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.keystore.bcfks' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.keystore.pkcs12' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.symmetric' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.symmetric.util' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.util' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.jcajce.spec' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.jcajce.util' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.jce' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.jce.exception' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.jce.interfaces' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.jce.netscape' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.jce.provider' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.jce.spec' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.math' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.math.ec' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.math.ec.custom.djb' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.math.ec.custom.gm' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.math.ec.custom.sec' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.math.ec.endo' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.math.ec.tools' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.math.field' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.math.raw' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.pqc.asn1' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.pqc.crypto' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.pqc.crypto.gmss' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.pqc.crypto.gmss.util' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.pqc.crypto.mceliece' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.pqc.crypto.newhope' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.pqc.crypto.ntru' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.pqc.crypto.rainbow' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.pqc.crypto.rainbow.util' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.pqc.crypto.sphincs' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.pqc.crypto.xmss' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.pqc.jcajce.interfaces' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.pqc.jcajce.provider' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.pqc.jcajce.provider.gmss' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.pqc.jcajce.provider.mceliece' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.pqc.jcajce.provider.newhope' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.pqc.jcajce.provider.rainbow' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.pqc.jcajce.provider.sphincs' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.pqc.jcajce.provider.util' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.pqc.jcajce.provider.xmss' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.pqc.jcajce.spec' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.pqc.math.linearalgebra' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.pqc.math.ntru.euclid' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.pqc.math.ntru.polynomial' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.pqc.math.ntru.util' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.util' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.util.encoders' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.util.io' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.util.io.pem' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.util.test' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.x509' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.x509.extension' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.x509.util' version='1.58.0'/>
-        <provided namespace='osgi.identity' name='bcprov-ext' version='1.58.0'>
+      <provides size='157'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='bcprov-ext' version='1.60.0'/>
+        <provided namespace='osgi.bundle' name='bcprov-ext' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.anssi' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.bc' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.bsi' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.cmc' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.cmp' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.cms' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.cms.ecc' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.crmf' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.cryptopro' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.dvcs' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.eac' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.esf' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.ess' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.est' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.gm' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.gnu' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.iana' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.icao' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.isismtt' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.isismtt.ocsp' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.isismtt.x509' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.iso' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.kisa' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.microsoft' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.misc' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.mozilla' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.nist' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.nsri' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.ntt' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.ocsp' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.oiw' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.pkcs' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.rosstandart' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.sec' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.smime' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.teletrust' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.tsp' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.ua' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.util' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.x500' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.x500.style' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.x509' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.x509.qualified' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.x509.sigi' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.x9' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.crypto' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.crypto.agreement' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.crypto.agreement.jpake' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.crypto.agreement.kdf' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.crypto.agreement.srp' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.crypto.commitments' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.crypto.digests' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.crypto.ec' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.crypto.encodings' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.crypto.engines' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.crypto.examples' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.crypto.generators' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.crypto.io' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.crypto.kems' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.crypto.macs' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.crypto.modes' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.crypto.modes.gcm' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.crypto.modes.kgcm' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.crypto.paddings' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.crypto.params' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.crypto.parsers' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.crypto.prng' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.crypto.prng.drbg' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.crypto.signers' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.crypto.tls' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.crypto.util' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.i18n' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.i18n.filter' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.iana' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.jcajce' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.jcajce.io' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.asymmetric' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.asymmetric.dh' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.asymmetric.dsa' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.asymmetric.dstu' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.asymmetric.ec' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.asymmetric.ecgost' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.asymmetric.ecgost12' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.asymmetric.elgamal' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.asymmetric.gost' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.asymmetric.ies' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.asymmetric.rsa' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.asymmetric.util' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.asymmetric.x509' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.config' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.digest' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.drbg' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.keystore' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.keystore.bc' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.keystore.bcfks' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.keystore.pkcs12' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.symmetric' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.symmetric.util' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.util' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.jcajce.spec' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.jcajce.util' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.jce' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.jce.exception' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.jce.interfaces' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.jce.netscape' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.jce.provider' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.jce.spec' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.math' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.math.ec' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.math.ec.custom.djb' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.math.ec.custom.gm' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.math.ec.custom.sec' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.math.ec.endo' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.math.ec.rfc7748' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.math.ec.rfc8032' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.math.ec.tools' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.math.field' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.math.raw' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.pqc.asn1' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.pqc.crypto' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.pqc.crypto.gmss' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.pqc.crypto.gmss.util' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.pqc.crypto.mceliece' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.pqc.crypto.newhope' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.pqc.crypto.ntru' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.pqc.crypto.rainbow' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.pqc.crypto.rainbow.util' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.pqc.crypto.sphincs' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.pqc.crypto.xmss' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.pqc.jcajce.interfaces' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.pqc.jcajce.provider' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.pqc.jcajce.provider.gmss' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.pqc.jcajce.provider.mceliece' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.pqc.jcajce.provider.newhope' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.pqc.jcajce.provider.rainbow' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.pqc.jcajce.provider.sphincs' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.pqc.jcajce.provider.util' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.pqc.jcajce.provider.xmss' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.pqc.jcajce.spec' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.pqc.math.linearalgebra' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.pqc.math.ntru.euclid' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.pqc.math.ntru.polynomial' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.pqc.math.ntru.util' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.util' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.util.encoders' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.util.io' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.util.io.pem' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.util.test' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.x509' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.x509.extension' version='1.60.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.x509.util' version='1.60.0'/>
+        <provided namespace='osgi.identity' name='bcprov-ext' version='1.60.0'>
           <properties size='1'>
             <property name='type' value='osgi.bundle'/>
           </properties>
@@ -1570,13 +1627,13 @@
         <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=1.5))'/>
       </requires>
       <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='bcprov-ext' version='1.58.0'/>
+        <artifact classifier='osgi.bundle' id='bcprov-ext' version='1.60.0'/>
       </artifacts>
       <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
       <touchpointData size='1'>
         <instructions size='1'>
           <instruction key='manifest'>
-            Bundle-SymbolicName: bcprov-ext&#xA;Bundle-Version: 1.58&#xA;
+            Bundle-SymbolicName: bcprov-ext&#xA;Bundle-Version: 1.60&#xA;
           </instruction>
         </instructions>
       </touchpointData>
@@ -1983,89 +2040,139 @@
         </license>
       </licenses>
     </unit>
-    <unit id='com.hierynomus.sshj' version='0.27.0' singleton='false' generation='2'>
-      <update id='com.hierynomus.sshj' range='[0.0.0,0.27.0)' severity='0'/>
-      <properties size='2'>
-        <property name='org.eclipse.equinox.p2.name' value='sshj'/>
-        <property name='org.eclipse.equinox.p2.description' value='SSHv2 library for Java'/>
+    <unit id='bcpkix' version='1.65.0' singleton='false' generation='2'>
+      <update id='bcpkix' range='[0.0.0,1.65.0)' severity='0'/>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.name' value='bcpkix'/>
       </properties>
-      <provides size='38'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='com.hierynomus.sshj' version='0.27.0'/>
-        <provided namespace='osgi.bundle' name='com.hierynomus.sshj' version='0.27.0'/>
-        <provided namespace='java.package' name='com.hierynomus.sshj.backport' version='0.27.0'/>
-        <provided namespace='java.package' name='com.hierynomus.sshj.secg' version='0.27.0'/>
-        <provided namespace='java.package' name='com.hierynomus.sshj.signature' version='0.27.0'/>
-        <provided namespace='java.package' name='com.hierynomus.sshj.transport' version='0.27.0'/>
-        <provided namespace='java.package' name='com.hierynomus.sshj.transport.cipher' version='0.27.0'/>
-        <provided namespace='java.package' name='com.hierynomus.sshj.transport.kex' version='0.27.0'/>
-        <provided namespace='java.package' name='com.hierynomus.sshj.transport.mac' version='0.27.0'/>
-        <provided namespace='java.package' name='com.hierynomus.sshj.transport.verification' version='0.27.0'/>
-        <provided namespace='java.package' name='com.hierynomus.sshj.userauth.certificate' version='0.27.0'/>
-        <provided namespace='java.package' name='com.hierynomus.sshj.userauth.keyprovider' version='0.27.0'/>
-        <provided namespace='java.package' name='net.schmizz.concurrent' version='0.27.0'/>
-        <provided namespace='java.package' name='net.schmizz.keepalive' version='0.27.0'/>
-        <provided namespace='java.package' name='net.schmizz.sshj' version='0.27.0'/>
-        <provided namespace='java.package' name='net.schmizz.sshj.common' version='0.27.0'/>
-        <provided namespace='java.package' name='net.schmizz.sshj.connection' version='0.27.0'/>
-        <provided namespace='java.package' name='net.schmizz.sshj.connection.channel' version='0.27.0'/>
-        <provided namespace='java.package' name='net.schmizz.sshj.connection.channel.direct' version='0.27.0'/>
-        <provided namespace='java.package' name='net.schmizz.sshj.connection.channel.forwarded' version='0.27.0'/>
-        <provided namespace='java.package' name='net.schmizz.sshj.sftp' version='0.27.0'/>
-        <provided namespace='java.package' name='net.schmizz.sshj.signature' version='0.27.0'/>
-        <provided namespace='java.package' name='net.schmizz.sshj.transport' version='0.27.0'/>
-        <provided namespace='java.package' name='net.schmizz.sshj.transport.cipher' version='0.27.0'/>
-        <provided namespace='java.package' name='net.schmizz.sshj.transport.compression' version='0.27.0'/>
-        <provided namespace='java.package' name='net.schmizz.sshj.transport.digest' version='0.27.0'/>
-        <provided namespace='java.package' name='net.schmizz.sshj.transport.kex' version='0.27.0'/>
-        <provided namespace='java.package' name='net.schmizz.sshj.transport.mac' version='0.27.0'/>
-        <provided namespace='java.package' name='net.schmizz.sshj.transport.random' version='0.27.0'/>
-        <provided namespace='java.package' name='net.schmizz.sshj.transport.verification' version='0.27.0'/>
-        <provided namespace='java.package' name='net.schmizz.sshj.userauth' version='0.27.0'/>
-        <provided namespace='java.package' name='net.schmizz.sshj.userauth.keyprovider' version='0.27.0'/>
-        <provided namespace='java.package' name='net.schmizz.sshj.userauth.method' version='0.27.0'/>
-        <provided namespace='java.package' name='net.schmizz.sshj.userauth.password' version='0.27.0'/>
-        <provided namespace='java.package' name='net.schmizz.sshj.xfer' version='0.27.0'/>
-        <provided namespace='java.package' name='net.schmizz.sshj.xfer.scp' version='0.27.0'/>
-        <provided namespace='osgi.identity' name='com.hierynomus.sshj' version='0.27.0'>
+      <provides size='49'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='bcpkix' version='1.65.0'/>
+        <provided namespace='osgi.bundle' name='bcpkix' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.cert' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.cert.bc' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.cert.cmp' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.cert.crmf' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.cert.crmf.bc' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.cert.crmf.jcajce' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.cert.dane' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.cert.dane.fetcher' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.cert.jcajce' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.cert.ocsp' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.cert.ocsp.jcajce' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.cert.path' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.cert.path.validations' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.cert.selector' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.cert.selector.jcajce' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.cmc' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.cms' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.cms.bc' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.cms.jcajce' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.dvcs' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.eac' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.eac.jcajce' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.eac.operator' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.eac.operator.jcajce' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.est' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.est.jcajce' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.mime' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.mime.encoding' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.mime.smime' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.mozilla' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.mozilla.jcajce' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.openssl' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.openssl.bc' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.openssl.jcajce' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.operator' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.operator.bc' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.operator.jcajce' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.pkcs' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.pkcs.bc' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.pkcs.jcajce' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.pkix' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.pkix.jcajce' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.tsp' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.tsp.cms' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.voms' version='1.65.0'/>
+        <provided namespace='osgi.identity' name='bcpkix' version='1.65.0'>
           <properties size='1'>
             <property name='type' value='osgi.bundle'/>
           </properties>
         </provided>
         <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
       </provides>
-      <requires size='23'>
-        <required namespace='java.package' name='javax.crypto' range='0.0.0'/>
-        <required namespace='java.package' name='javax.crypto.interfaces' range='0.0.0'/>
-        <required namespace='java.package' name='javax.crypto.spec' range='0.0.0'/>
-        <required namespace='java.package' name='net.i2p.crypto.eddsa' range='[0.2.0,1.0.0)'/>
-        <required namespace='java.package' name='net.i2p.crypto.eddsa.spec' range='[0.2.0,1.0.0)'/>
-        <required namespace='java.package' name='com.jcraft.jzlib' range='[1.1.0,2.0.0)' optional='true' greedy='false'/>
-        <required namespace='java.package' name='org.slf4j' range='[1.7.0,5.0.0)'/>
-        <required namespace='java.package' name='org.bouncycastle.asn1' range='[1.60.0,2.0.0)' optional='true' greedy='false'/>
-        <required namespace='java.package' name='org.bouncycastle.asn1.nist' range='[1.60.0,2.0.0)' optional='true' greedy='false'/>
-        <required namespace='java.package' name='org.bouncycastle.asn1.x9' range='[1.60.0,2.0.0)' optional='true' greedy='false'/>
-        <required namespace='java.package' name='org.bouncycastle.crypto.ec' range='[1.60.0,2.0.0)' optional='true' greedy='false'/>
-        <required namespace='java.package' name='org.bouncycastle.crypto.prng' range='[1.60.0,2.0.0)' optional='true' greedy='false'/>
-        <required namespace='java.package' name='org.bouncycastle.jce.spec' range='[1.60.0,2.0.0)' optional='true' greedy='false'/>
-        <required namespace='java.package' name='org.bouncycastle.math.ec' range='[1.60.0,2.0.0)' optional='true' greedy='false'/>
-        <required namespace='java.package' name='org.bouncycastle.openssl' range='[1.60.0,2.0.0)' optional='true' greedy='false'/>
-        <required namespace='java.package' name='org.bouncycastle.openssl.jcajce' range='[1.60.0,2.0.0)' optional='true' greedy='false'/>
-        <required namespace='java.package' name='org.bouncycastle.util.encoders' range='[1.60.0,2.0.0)' optional='true' greedy='false'/>
-        <required namespace='java.package' name='javax.net' range='0.0.0'/>
-        <required namespace='java.package' name='javax.security.auth' range='0.0.0'/>
-        <required namespace='java.package' name='javax.security.auth.login' range='0.0.0'/>
-        <required namespace='java.package' name='org.ietf.jgss' range='0.0.0'/>
-        <required namespace='java.package' name='org.bouncycastle.jce.provider' range='[1.60.0,2.0.0)' optional='true' greedy='false'/>
-        <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=1.6))'/>
+      <requires size='63'>
+        <required namespace='java.package' name='org.bouncycastle.asn1' range='1.65.0'/>
+        <required namespace='java.package' name='org.bouncycastle.asn1.bc' range='1.65.0'/>
+        <required namespace='java.package' name='org.bouncycastle.asn1.bsi' range='1.65.0'/>
+        <required namespace='java.package' name='org.bouncycastle.asn1.cmp' range='1.65.0'/>
+        <required namespace='java.package' name='org.bouncycastle.asn1.cms' range='1.65.0'/>
+        <required namespace='java.package' name='org.bouncycastle.asn1.cms.ecc' range='1.65.0'/>
+        <required namespace='java.package' name='org.bouncycastle.asn1.crmf' range='1.65.0'/>
+        <required namespace='java.package' name='org.bouncycastle.asn1.cryptopro' range='1.65.0'/>
+        <required namespace='java.package' name='org.bouncycastle.asn1.dvcs' range='1.65.0'/>
+        <required namespace='java.package' name='org.bouncycastle.asn1.eac' range='1.65.0'/>
+        <required namespace='java.package' name='org.bouncycastle.asn1.edec' range='1.65.0'/>
+        <required namespace='java.package' name='org.bouncycastle.asn1.ess' range='1.65.0'/>
+        <required namespace='java.package' name='org.bouncycastle.asn1.est' range='1.65.0'/>
+        <required namespace='java.package' name='org.bouncycastle.asn1.gm' range='1.65.0'/>
+        <required namespace='java.package' name='org.bouncycastle.asn1.gnu' range='1.65.0'/>
+        <required namespace='java.package' name='org.bouncycastle.asn1.iana' range='1.65.0'/>
+        <required namespace='java.package' name='org.bouncycastle.asn1.isara' range='1.65.0'/>
+        <required namespace='java.package' name='org.bouncycastle.asn1.isismtt' range='1.65.0'/>
+        <required namespace='java.package' name='org.bouncycastle.asn1.iso' range='1.65.0'/>
+        <required namespace='java.package' name='org.bouncycastle.asn1.kisa' range='1.65.0'/>
+        <required namespace='java.package' name='org.bouncycastle.asn1.misc' range='1.65.0'/>
+        <required namespace='java.package' name='org.bouncycastle.asn1.mozilla' range='1.65.0'/>
+        <required namespace='java.package' name='org.bouncycastle.asn1.nist' range='1.65.0'/>
+        <required namespace='java.package' name='org.bouncycastle.asn1.ntt' range='1.65.0'/>
+        <required namespace='java.package' name='org.bouncycastle.asn1.ocsp' range='1.65.0'/>
+        <required namespace='java.package' name='org.bouncycastle.asn1.oiw' range='1.65.0'/>
+        <required namespace='java.package' name='org.bouncycastle.asn1.pkcs' range='1.65.0'/>
+        <required namespace='java.package' name='org.bouncycastle.asn1.rosstandart' range='1.65.0'/>
+        <required namespace='java.package' name='org.bouncycastle.asn1.sec' range='1.65.0'/>
+        <required namespace='java.package' name='org.bouncycastle.asn1.teletrust' range='1.65.0'/>
+        <required namespace='java.package' name='org.bouncycastle.asn1.tsp' range='1.65.0'/>
+        <required namespace='java.package' name='org.bouncycastle.asn1.x500' range='1.65.0'/>
+        <required namespace='java.package' name='org.bouncycastle.asn1.x500.style' range='1.65.0'/>
+        <required namespace='java.package' name='org.bouncycastle.asn1.x509' range='1.65.0'/>
+        <required namespace='java.package' name='org.bouncycastle.asn1.x9' range='1.65.0'/>
+        <required namespace='java.package' name='org.bouncycastle.crypto' range='1.65.0'/>
+        <required namespace='java.package' name='org.bouncycastle.crypto.digests' range='1.65.0'/>
+        <required namespace='java.package' name='org.bouncycastle.crypto.encodings' range='1.65.0'/>
+        <required namespace='java.package' name='org.bouncycastle.crypto.engines' range='1.65.0'/>
+        <required namespace='java.package' name='org.bouncycastle.crypto.generators' range='1.65.0'/>
+        <required namespace='java.package' name='org.bouncycastle.crypto.io' range='1.65.0'/>
+        <required namespace='java.package' name='org.bouncycastle.crypto.macs' range='1.65.0'/>
+        <required namespace='java.package' name='org.bouncycastle.crypto.modes' range='1.65.0'/>
+        <required namespace='java.package' name='org.bouncycastle.crypto.paddings' range='1.65.0'/>
+        <required namespace='java.package' name='org.bouncycastle.crypto.params' range='1.65.0'/>
+        <required namespace='java.package' name='org.bouncycastle.crypto.signers' range='1.65.0'/>
+        <required namespace='java.package' name='org.bouncycastle.crypto.util' range='1.65.0'/>
+        <required namespace='java.package' name='org.bouncycastle.jcajce' range='1.65.0'/>
+        <required namespace='java.package' name='org.bouncycastle.jcajce.io' range='1.65.0'/>
+        <required namespace='java.package' name='org.bouncycastle.jcajce.spec' range='1.65.0'/>
+        <required namespace='java.package' name='org.bouncycastle.jcajce.util' range='1.65.0'/>
+        <required namespace='java.package' name='org.bouncycastle.math.ec' range='1.65.0'/>
+        <required namespace='java.package' name='org.bouncycastle.math.field' range='1.65.0'/>
+        <required namespace='java.package' name='org.bouncycastle.util' range='1.65.0'/>
+        <required namespace='java.package' name='org.bouncycastle.util.encoders' range='1.65.0'/>
+        <required namespace='java.package' name='org.bouncycastle.util.io' range='1.65.0'/>
+        <required namespace='java.package' name='org.bouncycastle.util.io.pem' range='1.65.0'/>
+        <required namespace='java.package' name='javax.crypto' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='javax.crypto.spec' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='javax.naming' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='javax.naming.directory' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='javax.security.auth.x500' range='0.0.0' optional='true' greedy='false'/>
+        <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=1.5))'/>
       </requires>
       <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='com.hierynomus.sshj' version='0.27.0'/>
+        <artifact classifier='osgi.bundle' id='bcpkix' version='1.65.0'/>
       </artifacts>
       <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
       <touchpointData size='1'>
         <instructions size='1'>
           <instruction key='manifest'>
-            Bundle-SymbolicName: com.hierynomus.sshj&#xA;Bundle-Version: 0.27.0&#xA;
+            Bundle-SymbolicName: bcpkix&#xA;Bundle-Version: 1.65&#xA;
           </instruction>
         </instructions>
       </touchpointData>
@@ -2263,6 +2370,93 @@
         </instructions>
       </touchpointData>
     </unit>
+    <unit id='com.hierynomus.sshj' version='0.29.0' singleton='false' generation='2'>
+      <update id='com.hierynomus.sshj' range='[0.0.0,0.29.0)' severity='0'/>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='sshj'/>
+        <property name='org.eclipse.equinox.p2.description' value='SSHv2 library for Java'/>
+      </properties>
+      <provides size='38'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='com.hierynomus.sshj' version='0.29.0'/>
+        <provided namespace='osgi.bundle' name='com.hierynomus.sshj' version='0.29.0'/>
+        <provided namespace='java.package' name='com.hierynomus.sshj.backport' version='0.29.0'/>
+        <provided namespace='java.package' name='com.hierynomus.sshj.secg' version='0.29.0'/>
+        <provided namespace='java.package' name='com.hierynomus.sshj.signature' version='0.29.0'/>
+        <provided namespace='java.package' name='com.hierynomus.sshj.transport' version='0.29.0'/>
+        <provided namespace='java.package' name='com.hierynomus.sshj.transport.cipher' version='0.29.0'/>
+        <provided namespace='java.package' name='com.hierynomus.sshj.transport.kex' version='0.29.0'/>
+        <provided namespace='java.package' name='com.hierynomus.sshj.transport.mac' version='0.29.0'/>
+        <provided namespace='java.package' name='com.hierynomus.sshj.transport.verification' version='0.29.0'/>
+        <provided namespace='java.package' name='com.hierynomus.sshj.userauth.certificate' version='0.29.0'/>
+        <provided namespace='java.package' name='com.hierynomus.sshj.userauth.keyprovider' version='0.29.0'/>
+        <provided namespace='java.package' name='net.schmizz.concurrent' version='0.29.0'/>
+        <provided namespace='java.package' name='net.schmizz.keepalive' version='0.29.0'/>
+        <provided namespace='java.package' name='net.schmizz.sshj' version='0.29.0'/>
+        <provided namespace='java.package' name='net.schmizz.sshj.common' version='0.29.0'/>
+        <provided namespace='java.package' name='net.schmizz.sshj.connection' version='0.29.0'/>
+        <provided namespace='java.package' name='net.schmizz.sshj.connection.channel' version='0.29.0'/>
+        <provided namespace='java.package' name='net.schmizz.sshj.connection.channel.direct' version='0.29.0'/>
+        <provided namespace='java.package' name='net.schmizz.sshj.connection.channel.forwarded' version='0.29.0'/>
+        <provided namespace='java.package' name='net.schmizz.sshj.sftp' version='0.29.0'/>
+        <provided namespace='java.package' name='net.schmizz.sshj.signature' version='0.29.0'/>
+        <provided namespace='java.package' name='net.schmizz.sshj.transport' version='0.29.0'/>
+        <provided namespace='java.package' name='net.schmizz.sshj.transport.cipher' version='0.29.0'/>
+        <provided namespace='java.package' name='net.schmizz.sshj.transport.compression' version='0.29.0'/>
+        <provided namespace='java.package' name='net.schmizz.sshj.transport.digest' version='0.29.0'/>
+        <provided namespace='java.package' name='net.schmizz.sshj.transport.kex' version='0.29.0'/>
+        <provided namespace='java.package' name='net.schmizz.sshj.transport.mac' version='0.29.0'/>
+        <provided namespace='java.package' name='net.schmizz.sshj.transport.random' version='0.29.0'/>
+        <provided namespace='java.package' name='net.schmizz.sshj.transport.verification' version='0.29.0'/>
+        <provided namespace='java.package' name='net.schmizz.sshj.userauth' version='0.29.0'/>
+        <provided namespace='java.package' name='net.schmizz.sshj.userauth.keyprovider' version='0.29.0'/>
+        <provided namespace='java.package' name='net.schmizz.sshj.userauth.method' version='0.29.0'/>
+        <provided namespace='java.package' name='net.schmizz.sshj.userauth.password' version='0.29.0'/>
+        <provided namespace='java.package' name='net.schmizz.sshj.xfer' version='0.29.0'/>
+        <provided namespace='java.package' name='net.schmizz.sshj.xfer.scp' version='0.29.0'/>
+        <provided namespace='osgi.identity' name='com.hierynomus.sshj' version='0.29.0'>
+          <properties size='1'>
+            <property name='type' value='osgi.bundle'/>
+          </properties>
+        </provided>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='23'>
+        <required namespace='java.package' name='javax.crypto' range='0.0.0'/>
+        <required namespace='java.package' name='javax.crypto.interfaces' range='0.0.0'/>
+        <required namespace='java.package' name='javax.crypto.spec' range='0.0.0'/>
+        <required namespace='java.package' name='net.i2p.crypto.eddsa' range='0.0.0'/>
+        <required namespace='java.package' name='net.i2p.crypto.eddsa.spec' range='0.0.0'/>
+        <required namespace='java.package' name='com.jcraft.jzlib' range='[1.1.0,2.0.0)' optional='true' greedy='false'/>
+        <required namespace='java.package' name='org.slf4j' range='[1.7.0,5.0.0)'/>
+        <required namespace='java.package' name='org.bouncycastle.asn1' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='org.bouncycastle.asn1.nist' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='org.bouncycastle.asn1.x9' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='org.bouncycastle.crypto.ec' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='org.bouncycastle.crypto.prng' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='org.bouncycastle.jce.spec' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='org.bouncycastle.math.ec' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='org.bouncycastle.openssl' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='org.bouncycastle.openssl.jcajce' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='org.bouncycastle.util.encoders' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='javax.net' range='0.0.0'/>
+        <required namespace='java.package' name='javax.security.auth' range='0.0.0'/>
+        <required namespace='java.package' name='javax.security.auth.login' range='0.0.0'/>
+        <required namespace='java.package' name='org.ietf.jgss' range='0.0.0'/>
+        <required namespace='java.package' name='org.bouncycastle.jce.provider' range='0.0.0' optional='true' greedy='false'/>
+        <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=1.7))'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='com.hierynomus.sshj' version='0.29.0'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: com.hierynomus.sshj&#xA;Bundle-Version: 0.29.0&#xA;
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
     <unit id='com.sun.jna.platform' version='4.1.0' singleton='false' generation='2'>
       <update id='com.sun.jna.platform' range='[0.0.0,4.1.0)' severity='0'/>
       <properties size='3'>
@@ -2301,137 +2495,6 @@
         <instructions size='1'>
           <instruction key='manifest'>
             Bundle-SymbolicName: com.sun.jna.platform&#xA;Bundle-Version: 4.1.0&#xA;
-          </instruction>
-        </instructions>
-      </touchpointData>
-    </unit>
-    <unit id='bcpkix' version='1.58.0' singleton='false' generation='2'>
-      <update id='bcpkix' range='[0.0.0,1.58.0)' severity='0'/>
-      <properties size='1'>
-        <property name='org.eclipse.equinox.p2.name' value='bcpkix'/>
-      </properties>
-      <provides size='46'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='bcpkix' version='1.58.0'/>
-        <provided namespace='osgi.bundle' name='bcpkix' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.cert' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.cert.bc' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.cert.cmp' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.cert.crmf' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.cert.crmf.bc' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.cert.crmf.jcajce' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.cert.dane' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.cert.dane.fetcher' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.cert.jcajce' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.cert.ocsp' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.cert.ocsp.jcajce' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.cert.path' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.cert.path.validations' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.cert.selector' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.cert.selector.jcajce' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.cmc' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.cms' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.cms.bc' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.cms.jcajce' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.dvcs' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.eac' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.eac.jcajce' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.eac.operator' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.eac.operator.jcajce' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.est' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.est.jcajce' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.mozilla' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.mozilla.jcajce' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.openssl' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.openssl.bc' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.openssl.jcajce' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.operator' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.operator.bc' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.operator.jcajce' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.pkcs' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.pkcs.bc' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.pkcs.jcajce' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.pkix' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.pkix.jcajce' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.tsp' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.tsp.cms' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.voms' version='1.58.0'/>
-        <provided namespace='osgi.identity' name='bcpkix' version='1.58.0'>
-          <properties size='1'>
-            <property name='type' value='osgi.bundle'/>
-          </properties>
-        </provided>
-        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
-      </provides>
-      <requires size='60'>
-        <required namespace='java.package' name='org.bouncycastle.asn1' range='1.58.0'/>
-        <required namespace='java.package' name='org.bouncycastle.asn1.bc' range='1.58.0'/>
-        <required namespace='java.package' name='org.bouncycastle.asn1.bsi' range='1.58.0'/>
-        <required namespace='java.package' name='org.bouncycastle.asn1.cmp' range='1.58.0'/>
-        <required namespace='java.package' name='org.bouncycastle.asn1.cms' range='1.58.0'/>
-        <required namespace='java.package' name='org.bouncycastle.asn1.cms.ecc' range='1.58.0'/>
-        <required namespace='java.package' name='org.bouncycastle.asn1.crmf' range='1.58.0'/>
-        <required namespace='java.package' name='org.bouncycastle.asn1.cryptopro' range='1.58.0'/>
-        <required namespace='java.package' name='org.bouncycastle.asn1.dvcs' range='1.58.0'/>
-        <required namespace='java.package' name='org.bouncycastle.asn1.eac' range='1.58.0'/>
-        <required namespace='java.package' name='org.bouncycastle.asn1.ess' range='1.58.0'/>
-        <required namespace='java.package' name='org.bouncycastle.asn1.est' range='1.58.0'/>
-        <required namespace='java.package' name='org.bouncycastle.asn1.gm' range='1.58.0'/>
-        <required namespace='java.package' name='org.bouncycastle.asn1.gnu' range='1.58.0'/>
-        <required namespace='java.package' name='org.bouncycastle.asn1.iana' range='1.58.0'/>
-        <required namespace='java.package' name='org.bouncycastle.asn1.iso' range='1.58.0'/>
-        <required namespace='java.package' name='org.bouncycastle.asn1.kisa' range='1.58.0'/>
-        <required namespace='java.package' name='org.bouncycastle.asn1.misc' range='1.58.0'/>
-        <required namespace='java.package' name='org.bouncycastle.asn1.mozilla' range='1.58.0'/>
-        <required namespace='java.package' name='org.bouncycastle.asn1.nist' range='1.58.0'/>
-        <required namespace='java.package' name='org.bouncycastle.asn1.ntt' range='1.58.0'/>
-        <required namespace='java.package' name='org.bouncycastle.asn1.ocsp' range='1.58.0'/>
-        <required namespace='java.package' name='org.bouncycastle.asn1.oiw' range='1.58.0'/>
-        <required namespace='java.package' name='org.bouncycastle.asn1.pkcs' range='1.58.0'/>
-        <required namespace='java.package' name='org.bouncycastle.asn1.rosstandart' range='1.58.0'/>
-        <required namespace='java.package' name='org.bouncycastle.asn1.sec' range='1.58.0'/>
-        <required namespace='java.package' name='org.bouncycastle.asn1.teletrust' range='1.58.0'/>
-        <required namespace='java.package' name='org.bouncycastle.asn1.tsp' range='1.58.0'/>
-        <required namespace='java.package' name='org.bouncycastle.asn1.x500' range='1.58.0'/>
-        <required namespace='java.package' name='org.bouncycastle.asn1.x500.style' range='1.58.0'/>
-        <required namespace='java.package' name='org.bouncycastle.asn1.x509' range='1.58.0'/>
-        <required namespace='java.package' name='org.bouncycastle.asn1.x9' range='1.58.0'/>
-        <required namespace='java.package' name='org.bouncycastle.crypto' range='1.58.0'/>
-        <required namespace='java.package' name='org.bouncycastle.crypto.digests' range='1.58.0'/>
-        <required namespace='java.package' name='org.bouncycastle.crypto.encodings' range='1.58.0'/>
-        <required namespace='java.package' name='org.bouncycastle.crypto.engines' range='1.58.0'/>
-        <required namespace='java.package' name='org.bouncycastle.crypto.generators' range='1.58.0'/>
-        <required namespace='java.package' name='org.bouncycastle.crypto.io' range='1.58.0'/>
-        <required namespace='java.package' name='org.bouncycastle.crypto.macs' range='1.58.0'/>
-        <required namespace='java.package' name='org.bouncycastle.crypto.modes' range='1.58.0'/>
-        <required namespace='java.package' name='org.bouncycastle.crypto.paddings' range='1.58.0'/>
-        <required namespace='java.package' name='org.bouncycastle.crypto.params' range='1.58.0'/>
-        <required namespace='java.package' name='org.bouncycastle.crypto.signers' range='1.58.0'/>
-        <required namespace='java.package' name='org.bouncycastle.crypto.util' range='1.58.0'/>
-        <required namespace='java.package' name='org.bouncycastle.jcajce' range='1.58.0'/>
-        <required namespace='java.package' name='org.bouncycastle.jcajce.io' range='1.58.0'/>
-        <required namespace='java.package' name='org.bouncycastle.jcajce.spec' range='1.58.0'/>
-        <required namespace='java.package' name='org.bouncycastle.jcajce.util' range='1.58.0'/>
-        <required namespace='java.package' name='org.bouncycastle.math.ec' range='1.58.0'/>
-        <required namespace='java.package' name='org.bouncycastle.math.field' range='1.58.0'/>
-        <required namespace='java.package' name='org.bouncycastle.util' range='1.58.0'/>
-        <required namespace='java.package' name='org.bouncycastle.util.encoders' range='1.58.0'/>
-        <required namespace='java.package' name='org.bouncycastle.util.io' range='1.58.0'/>
-        <required namespace='java.package' name='org.bouncycastle.util.io.pem' range='1.58.0'/>
-        <required namespace='java.package' name='javax.crypto' range='0.0.0' optional='true' greedy='false'/>
-        <required namespace='java.package' name='javax.crypto.spec' range='0.0.0' optional='true' greedy='false'/>
-        <required namespace='java.package' name='javax.naming' range='0.0.0' optional='true' greedy='false'/>
-        <required namespace='java.package' name='javax.naming.directory' range='0.0.0' optional='true' greedy='false'/>
-        <required namespace='java.package' name='javax.security.auth.x500' range='0.0.0' optional='true' greedy='false'/>
-        <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=1.5))'/>
-      </requires>
-      <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='bcpkix' version='1.58.0'/>
-      </artifacts>
-      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='1'>
-          <instruction key='manifest'>
-            Bundle-SymbolicName: bcpkix&#xA;Bundle-Version: 1.58&#xA;
           </instruction>
         </instructions>
       </touchpointData>
@@ -2635,6 +2698,200 @@
         <instructions size='1'>
           <instruction key='manifest'>
             Bundle-SymbolicName: com.google.inject&#xA;Bundle-Version: 4.2.3&#xA;
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='bcprov' version='1.65.0' singleton='false' generation='2'>
+      <update id='bcprov' range='[0.0.0,1.65.0)' severity='0'/>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.name' value='bcprov'/>
+      </properties>
+      <provides size='162'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='bcprov' version='1.65.0'/>
+        <provided namespace='osgi.bundle' name='bcprov' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.anssi' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.bc' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.bsi' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.cmc' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.cmp' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.cms' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.cms.ecc' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.crmf' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.cryptlib' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.cryptopro' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.dvcs' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.eac' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.edec' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.esf' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.ess' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.est' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.gm' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.gnu' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.iana' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.icao' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.isara' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.isismtt' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.isismtt.ocsp' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.isismtt.x509' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.iso' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.kisa' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.microsoft' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.misc' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.mozilla' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.nist' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.nsri' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.ntt' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.ocsp' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.oiw' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.pkcs' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.rosstandart' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.sec' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.smime' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.teletrust' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.tsp' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.ua' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.util' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.x500' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.x500.style' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.x509' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.x509.qualified' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.x509.sigi' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.asn1.x9' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.crypto' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.crypto.agreement' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.crypto.agreement.jpake' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.crypto.agreement.kdf' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.crypto.agreement.srp' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.crypto.commitments' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.crypto.digests' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.crypto.ec' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.crypto.encodings' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.crypto.engines' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.crypto.examples' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.crypto.generators' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.crypto.io' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.crypto.kems' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.crypto.macs' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.crypto.modes' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.crypto.modes.gcm' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.crypto.modes.kgcm' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.crypto.paddings' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.crypto.params' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.crypto.parsers' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.crypto.prng' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.crypto.prng.drbg' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.crypto.signers' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.crypto.util' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.i18n' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.i18n.filter' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.iana' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.jcajce' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.jcajce.interfaces' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.jcajce.io' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.asymmetric' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.asymmetric.dh' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.asymmetric.dsa' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.asymmetric.dstu' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.asymmetric.ec' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.asymmetric.ecgost' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.asymmetric.ecgost12' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.asymmetric.edec' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.asymmetric.elgamal' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.asymmetric.gost' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.asymmetric.ies' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.asymmetric.rsa' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.asymmetric.util' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.asymmetric.x509' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.config' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.digest' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.drbg' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.keystore' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.keystore.bc' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.keystore.bcfks' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.keystore.pkcs12' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.symmetric' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.symmetric.util' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.util' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.jcajce.spec' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.jcajce.util' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.jce' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.jce.exception' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.jce.interfaces' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.jce.netscape' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.jce.provider' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.jce.spec' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.math' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.math.ec' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.math.ec.custom.djb' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.math.ec.custom.gm' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.math.ec.custom.sec' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.math.ec.endo' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.math.ec.rfc7748' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.math.ec.rfc8032' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.math.ec.tools' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.math.field' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.math.raw' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.pqc.asn1' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.pqc.crypto' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.pqc.crypto.gmss' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.pqc.crypto.gmss.util' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.pqc.crypto.lms' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.pqc.crypto.mceliece' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.pqc.crypto.newhope' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.pqc.crypto.qtesla' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.pqc.crypto.rainbow' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.pqc.crypto.rainbow.util' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.pqc.crypto.sphincs' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.pqc.crypto.util' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.pqc.crypto.xmss' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.pqc.jcajce.interfaces' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.pqc.jcajce.provider' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.pqc.jcajce.provider.gmss' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.pqc.jcajce.provider.lms' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.pqc.jcajce.provider.mceliece' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.pqc.jcajce.provider.newhope' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.pqc.jcajce.provider.qtesla' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.pqc.jcajce.provider.rainbow' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.pqc.jcajce.provider.sphincs' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.pqc.jcajce.provider.util' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.pqc.jcajce.provider.xmss' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.pqc.jcajce.spec' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.pqc.math.linearalgebra' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.util' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.util.encoders' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.util.io' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.util.io.pem' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.util.test' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.x509' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.x509.extension' version='1.65.0'/>
+        <provided namespace='java.package' name='org.bouncycastle.x509.util' version='1.65.0'/>
+        <provided namespace='osgi.identity' name='bcprov' version='1.65.0'>
+          <properties size='1'>
+            <property name='type' value='osgi.bundle'/>
+          </properties>
+        </provided>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='7'>
+        <required namespace='java.package' name='javax.crypto' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='javax.crypto.interfaces' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='javax.crypto.spec' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='javax.naming' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='javax.naming.directory' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='javax.security.auth.x500' range='0.0.0' optional='true' greedy='false'/>
+        <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=1.5))'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='bcprov' version='1.65.0'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: bcprov&#xA;Bundle-Version: 1.65&#xA;
           </instruction>
         </instructions>
       </touchpointData>
@@ -3083,188 +3340,6 @@
         </instructions>
       </touchpointData>
     </unit>
-    <unit id='bcprov' version='1.58.0' singleton='false' generation='2'>
-      <update id='bcprov' range='[0.0.0,1.58.0)' severity='0'/>
-      <properties size='1'>
-        <property name='org.eclipse.equinox.p2.name' value='bcprov'/>
-      </properties>
-      <provides size='150'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='bcprov' version='1.58.0'/>
-        <provided namespace='osgi.bundle' name='bcprov' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.anssi' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.bc' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.bsi' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.cmc' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.cmp' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.cms' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.cms.ecc' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.crmf' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.cryptopro' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.dvcs' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.eac' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.esf' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.ess' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.est' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.gm' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.gnu' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.iana' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.icao' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.isismtt' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.isismtt.ocsp' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.isismtt.x509' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.iso' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.kisa' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.microsoft' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.misc' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.mozilla' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.nist' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.nsri' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.ntt' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.ocsp' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.oiw' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.pkcs' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.rosstandart' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.sec' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.smime' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.teletrust' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.tsp' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.ua' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.util' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.x500' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.x500.style' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.x509' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.x509.qualified' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.x509.sigi' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.asn1.x9' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.crypto' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.crypto.agreement' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.crypto.agreement.jpake' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.crypto.agreement.kdf' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.crypto.agreement.srp' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.crypto.commitments' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.crypto.digests' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.crypto.ec' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.crypto.encodings' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.crypto.engines' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.crypto.examples' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.crypto.generators' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.crypto.io' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.crypto.kems' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.crypto.macs' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.crypto.modes' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.crypto.modes.gcm' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.crypto.paddings' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.crypto.params' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.crypto.parsers' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.crypto.prng' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.crypto.prng.drbg' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.crypto.signers' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.crypto.tls' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.crypto.util' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.i18n' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.i18n.filter' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.iana' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.jcajce' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.jcajce.io' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.asymmetric' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.asymmetric.dh' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.asymmetric.dsa' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.asymmetric.dstu' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.asymmetric.ec' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.asymmetric.ecgost' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.asymmetric.ecgost12' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.asymmetric.elgamal' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.asymmetric.gost' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.asymmetric.ies' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.asymmetric.rsa' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.asymmetric.util' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.asymmetric.x509' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.config' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.digest' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.drbg' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.keystore' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.keystore.bc' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.keystore.bcfks' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.keystore.pkcs12' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.symmetric' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.symmetric.util' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.jcajce.provider.util' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.jcajce.spec' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.jcajce.util' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.jce' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.jce.exception' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.jce.interfaces' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.jce.netscape' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.jce.provider' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.jce.spec' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.math' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.math.ec' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.math.ec.custom.djb' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.math.ec.custom.gm' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.math.ec.custom.sec' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.math.ec.endo' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.math.ec.tools' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.math.field' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.math.raw' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.pqc.asn1' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.pqc.crypto' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.pqc.crypto.gmss' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.pqc.crypto.gmss.util' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.pqc.crypto.mceliece' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.pqc.crypto.newhope' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.pqc.crypto.rainbow' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.pqc.crypto.rainbow.util' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.pqc.crypto.sphincs' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.pqc.crypto.xmss' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.pqc.jcajce.interfaces' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.pqc.jcajce.provider' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.pqc.jcajce.provider.gmss' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.pqc.jcajce.provider.mceliece' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.pqc.jcajce.provider.newhope' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.pqc.jcajce.provider.rainbow' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.pqc.jcajce.provider.sphincs' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.pqc.jcajce.provider.util' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.pqc.jcajce.provider.xmss' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.pqc.jcajce.spec' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.pqc.math.linearalgebra' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.util' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.util.encoders' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.util.io' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.util.io.pem' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.util.test' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.x509' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.x509.extension' version='1.58.0'/>
-        <provided namespace='java.package' name='org.bouncycastle.x509.util' version='1.58.0'/>
-        <provided namespace='osgi.identity' name='bcprov' version='1.58.0'>
-          <properties size='1'>
-            <property name='type' value='osgi.bundle'/>
-          </properties>
-        </provided>
-        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
-      </provides>
-      <requires size='7'>
-        <required namespace='java.package' name='javax.crypto' range='0.0.0' optional='true' greedy='false'/>
-        <required namespace='java.package' name='javax.crypto.interfaces' range='0.0.0' optional='true' greedy='false'/>
-        <required namespace='java.package' name='javax.crypto.spec' range='0.0.0' optional='true' greedy='false'/>
-        <required namespace='java.package' name='javax.naming' range='0.0.0' optional='true' greedy='false'/>
-        <required namespace='java.package' name='javax.naming.directory' range='0.0.0' optional='true' greedy='false'/>
-        <required namespace='java.package' name='javax.security.auth.x500' range='0.0.0' optional='true' greedy='false'/>
-        <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=1.5))'/>
-      </requires>
-      <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='bcprov' version='1.58.0'/>
-      </artifacts>
-      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='1'>
-          <instruction key='manifest'>
-            Bundle-SymbolicName: bcprov&#xA;Bundle-Version: 1.58&#xA;
-          </instruction>
-        </instructions>
-      </touchpointData>
-    </unit>
     <unit id='jclouds-joda' version='2.3.0' singleton='false' generation='2'>
       <update id='jclouds-joda' range='[0.0.0,2.3.0)' severity='0'/>
       <properties size='2'>
@@ -3431,22 +3506,22 @@
         </instructions>
       </touchpointData>
     </unit>
-    <unit id='org.apache.servicemix.bundles.jsch' version='0.1.51.1' singleton='false'>
-      <update id='org.apache.servicemix.bundles.jsch' range='[0.0.0,0.1.51.1)' severity='0'/>
+    <unit id='org.apache.servicemix.bundles.jsch' version='0.1.55.1' singleton='false'>
+      <update id='org.apache.servicemix.bundles.jsch' range='[0.0.0,0.1.55.1)' severity='0'/>
       <properties size='4'>
         <property name='org.eclipse.equinox.p2.name' value='Apache ServiceMix :: Bundles :: jsch'/>
-        <property name='org.eclipse.equinox.p2.description' value='This OSGi bundle wraps jsch 0.1.51 jar file.'/>
+        <property name='org.eclipse.equinox.p2.description' value='This OSGi bundle wraps jsch 0.1.55 jar file.'/>
         <property name='org.eclipse.equinox.p2.provider' value='The Apache Software Foundation'/>
         <property name='org.eclipse.equinox.p2.doc.url' value='http://www.apache.org/'/>
       </properties>
       <provides size='8'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='org.apache.servicemix.bundles.jsch' version='0.1.51.1'/>
-        <provided namespace='osgi.bundle' name='org.apache.servicemix.bundles.jsch' version='0.1.51.1'/>
-        <provided namespace='java.package' name='com.jcraft.jsch.jgss' version='0.1.51'/>
-        <provided namespace='java.package' name='com.jcraft.jsch.jcraft' version='0.1.51'/>
-        <provided namespace='java.package' name='com.jcraft.jsch' version='0.1.51'/>
-        <provided namespace='java.package' name='com.jcraft.jsch.jce' version='0.1.51'/>
-        <provided namespace='osgi.identity' name='org.apache.servicemix.bundles.jsch' version='0.1.51.1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.apache.servicemix.bundles.jsch' version='0.1.55.1'/>
+        <provided namespace='osgi.bundle' name='org.apache.servicemix.bundles.jsch' version='0.1.55.1'/>
+        <provided namespace='java.package' name='com.jcraft.jsch.jcraft' version='0.1.55'/>
+        <provided namespace='java.package' name='com.jcraft.jsch.jce' version='0.1.55'/>
+        <provided namespace='java.package' name='com.jcraft.jsch.jgss' version='0.1.55'/>
+        <provided namespace='java.package' name='com.jcraft.jsch' version='0.1.55'/>
+        <provided namespace='osgi.identity' name='org.apache.servicemix.bundles.jsch' version='0.1.55.1'>
           <properties size='1'>
             <property name='type' value='osgi.bundle'/>
           </properties>
@@ -3464,13 +3539,13 @@
         <required namespace='java.package' name='userauth' range='0.0.0' optional='true' greedy='false'/>
       </requires>
       <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='org.apache.servicemix.bundles.jsch' version='0.1.51.1'/>
+        <artifact classifier='osgi.bundle' id='org.apache.servicemix.bundles.jsch' version='0.1.55.1'/>
       </artifacts>
       <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
       <touchpointData size='1'>
         <instructions size='1'>
           <instruction key='manifest'>
-            Bundle-SymbolicName: org.apache.servicemix.bundles.jsch&#xA;Bundle-Version: 0.1.51.1&#xA;
+            Bundle-SymbolicName: org.apache.servicemix.bundles.jsch&#xA;Bundle-Version: 0.1.55.1&#xA;
           </instruction>
         </instructions>
       </touchpointData>
