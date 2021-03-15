@@ -162,6 +162,13 @@ SOFTWARE.
          unpack="false"/>
 
    <plugin
+         id="jclouds-jsch"
+         download-size="0"
+         install-size="0"
+         version="2.3.0"
+         unpack="false"/>
+
+   <plugin
          id="jclouds-gson"
          download-size="0"
          install-size="0"
@@ -198,13 +205,6 @@ SOFTWARE.
          unpack="false"/>
 
    <plugin
-         id="com.hierynomus.sshj"
-         download-size="0"
-         install-size="0"
-         version="0.27.0"
-         unpack="false"/>
-
-   <plugin
          id="org.apache.servicemix.bundles.javax-inject"
          download-size="0"
          install-size="0"
@@ -215,7 +215,7 @@ SOFTWARE.
          id="org.apache.servicemix.bundles.jsch"
          download-size="0"
          install-size="0"
-         version="0.1.51.1"
+         version="0.1.55.1"
          unpack="false"/>
 
 <!--
@@ -232,27 +232,6 @@ SOFTWARE.
          download-size="0"
          install-size="0"
          version="1.1.3.2"
-         unpack="false"/>
-
-   <plugin
-         id="bcpkix"
-         download-size="0"
-         install-size="0"
-         version="1.58.0"
-         unpack="false"/>
-
-   <plugin
-         id="bcprov"
-         download-size="0"
-         install-size="0"
-         version="1.58.0"
-         unpack="false"/>
-
-   <plugin
-         id="bcprov-ext"
-         download-size="0"
-         install-size="0"
-         version="1.58.0"
          unpack="false"/>
 
    <plugin
@@ -331,16 +310,48 @@ SOFTWARE.
          install-size="0"
          version="0.6.0.1"
          unpack="false"/>
-   <plugin
-         id="net.i2p.crypto.eddsa"
-         download-size="0"
-         install-size="0"
-         version="0.2.0"
-         unpack="false"/>
+
    <plugin
          id="jaxb-api"
          download-size="0"
          install-size="0"
          version="2.3.1"
          unpack="false"/>
+
+<!--
+   <plugin
+         id="com.hierynomus.sshj"
+         download-size="0"
+         install-size="0"
+         version="0.29.0"
+         unpack="false"/>
+
+   <plugin
+         id="net.i2p.crypto.eddsa"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="bcpkix"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="bcprov"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="bcprov-ext"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+      -->
 </feature>

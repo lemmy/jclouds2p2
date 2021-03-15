@@ -53,6 +53,11 @@
       <artifactId>jsch.agentproxy.pageant</artifactId>
       <version>${project.version}</version>
     </dependency>
+    <dependency>
+      <groupId>com.jcraft</groupId>
+      <artifactId>jsch.agentproxy.jsch</artifactId>
+      <version>${project.version}</version>
+    </dependency>
   </dependencies>
 
   <build>
